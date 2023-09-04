@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <!--Shimmer-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:shimmer_duration="@integer/shimmerDuration">
+
+        <!-- Adding 3 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shim_become_author" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_with_back" />
+
+        <!-- Author Image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_margin="15dp">
+
+                <!--User image Edit-->
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_author"
+                    app:riv_border_color="@color/primaryDark"
+                    app:riv_border_width="1dp"
+                    app:riv_oval="true" />
+
+                <LinearLayout
+                    android:id="@+id/lyAuthorImgEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_edit2"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Author & Bank Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape_middle"
+            android:backgroundTint="?attr/backgroundcolor"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Author Details -->
+
+                    <!-- Author Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_name"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5">
+
+                        <EditText
+                            android:id="@+id/edtAuthorname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:hint="@string/author_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!-- Author Biodata -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_bio"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5"
+                        android:minHeight="65dp">
+
+                        <EditText
+                            android:id="@+id/edtAuthorBiodata"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="top"
+                            android:hint="@string/author_bio"
+                            android:inputType="textMultiLine"
+                            android:padding="8dp"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!-- Author Address -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_address"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5"
+                        android:minHeight="65dp">
+
+                        <EditText
+                            android:id="@+id/edtAuthoraddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="top"
+                            android:hint="@string/author_address"
+                            android:inputType="textMultiLine"
+                            android:padding="8dp"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!-- Author Email -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_email"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5">
+
+                        <EditText
+                            android:id="@+id/edtAuthoremail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:hint="@string/author_email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!-- Author Password -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_password"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilAuthorPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5"
+                        android:gravity="center"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="false"
+                        app:passwordToggleTint="?attr/tintclr">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtAuthorpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:hint="@string/author_password"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textSize="@dimen/default_texts" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="23dp"
+                        android:background="?attr/splitlineDark"
+                        android:visibility="visible" />
+
+
+                    <!-- Author Bank Details -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_bankdetail"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="@dimen/default_texts" />
+
+                    <!-- BankName -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_bankname"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5">
+
+                        <EditText
+                            android:id="@+id/edtAuthorBankName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:hint="@string/author_bankname"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!-- Account Number -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_accountnum"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5">
+
+                        <EditText
+                            android:id="@+id/edtAuthorAccountNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:hint="@string/author_accountnum"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!-- Bank IFSC Number -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_ifsc"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5">
+
+                        <EditText
+                            android:id="@+id/edtAuthorIFSC"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:hint="@string/author_ifsc"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!-- Bank Holder Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/author_bankholder"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="@dimen/text_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5">
+
+                        <EditText
+                            android:id="@+id/edtAuthorBankHolderName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:hint="@string/author_bankholder"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+
+                    <!-- Register Button -->
+                    <LinearLayout
+                        android:id="@+id/lyRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginVertical="25dp"
+                        android:background="@drawable/author_round_bg_corner"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:theme="@style/AppTheme.MyRipple">
+
+                        <TextView
+                            android:id="@+id/txtRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="@string/register"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_15" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

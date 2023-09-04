@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">الكتاب الاليكتروني</string>
+
+    <!--Welcome -->
+    <string name="next">التالى</string>
+    <string name="skip">تخطى</string>
+    <string name="start">فهمتك</string>
+
+    <string name="wel_one">Best Book for you</string>
+    <string name="wel_two">Best Magazine for you</string>
+    <string name="wel_three">Become a Author</string>
+    <string name="wel_four">Payment Gateway &amp; Wallet</string>
+    <string name="wel_sub_one">From Classic to Contemopory you will find everything here</string>
+    <string name="wel_sub_two">The best Magazine Collections available here</string>
+    <string name="wel_sub_three">User become Author &amp; publish own Books / Magazine on Application</string>
+    <string name="wel_sub_four">To Buy a Paid book using Wallet &amp; Managed by Payment gateways</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="internet_error">خطأ في الاتصال بالشبكة !!!</string>
+    <string name="permission_necessary">إذن ضروري</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">إذن التخزين ضروري لقراءة وكتابة الحدث.</string>
+    <string name="settings">إعدادات</string>
+    <string name="cancel_">إلغاء</string>
+    <string name="permission">إذن</string>
+    <string name="permission_alert">تنبيه الإذن</string>
+    <string name="we_need_storage_permission_for_save_video">نحتاج إلى إذن تخزين لحفظ ملف الوسائط في وحدة تخزين خارجية.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">نحتاج إلى وحدة تخزين خارجية وإذن الكاميرا لتحميل صورة الملف الشخصي.</string>
+    <string name="yesterday">في الامس</string>
+    <string name="day_ago">منذ يوم</string>
+    <!--Network and Permission END-->
+
+    <!--Login-->
+    <string name="email">عنوان البريد الإلكتروني</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="remember">تذكرنى</string>
+    <string name="enter_email">أدخل البريد الإلكتروني.</string>
+    <string name="enter_password">أدخل كلمة المرور.</string>
+    <string name="enter_phone_number">أدخل رقم الهاتف.</string>
+    <string name="enter_fullname">أدخل الاسم الكامل.</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="skip1">تخطى</string>
+    <string name="dont">ليس لديك حساب؟</string>
+    <string name="signup"> سجل</string>
+    <string name="logout"> تسجيل خروج</string>
+    <string name="guest_user">حساب زائر</string>
+    <!--End Login-->
+
+    <!--Registration-->
+    <string name="full_name">الاسم الكامل</string>
+    <string name="phone">هاتف</string>
+    <string name="signup_cap">سجل</string>
+    <string name="already_account">لديك بالفعل حساب بعد؟</string>
+    <!--End Registration-->
+
+    <!--OTP Login START-->
+    <string name="otp_verification">التحقق من OTP</string>
+    <string name="enter_your_mobile_no">أدخل رقم هاتفك المحمول</string>
+    <string name="enter_otp">أدخل OTP المستلم.</string>
+    <string name="enter_coutry_code">أدخل رمز بلدك.</string>
+    <string name="you_will_receive_a_4_digit_code_to_verify_next">سوف تتلقى رمزًا مكونًا من 6 أرقام n\للتحقق بعد ذلك.</string>
+    <string name="send_otp">إرسال OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">أدخل رمز OTP لإرساله n\إلى رقم الهاتف المحمول.</string>
+    <string name="verify_and_proceed">التحقق والمتابعة</string>
+    <string name="send">يرسل</string>
+    <string name="resend_otp">إعادة إرسال OTP</string>
+    <!--OTP Login END-->
+
+    <!--About Us-->
+    <string name="Company">شركة</string>
+    <string name="website">موقع الكتروني</string>
+    <string name="Contact">اتصل</string>
+    <!--End About Us-->
+
+    <!--Home-->
+    <string name="Category">الفئة</string>
+    <string name="Categories">التصنيفات</string>
+    <string name="View_all">عرض الكل</string>
+    <string name="app_bestBook">أفضل الكتب الإلكترونية</string>
+    <string name="New_Arrival_Book">كتاب وصول جديد</string>
+    <string name="You_may_also_like">ربما يعجبك أيضا</string>
+    <string name="Authors">المؤلفون</string>
+    <string name="Free_Book">كتاب مجاني</string>
+    <string name="Paid_Book">كتاب مدفوع</string>
+    <string name="Continue_Reading">أكمل القراءة</string>
+    <string name="Popular_Stories">قصص شعبية</string>
+    <string name="Magazine_category">فئات المجلات</string>
+    <string name="Top_dowloaded">أعلى تحميل</string>
+    <string name="Most_viewed">الأكثر مشاهدة</string>
+    <!--End Home-->
+
+    <!--Search-->
+    <string name="Search">بحث</string>
+    <string name="See_All">اظهار الكل</string>
+    <string name="Payment">دفع</string>
+    <string name="Please_select_any_payment_method">يرجى اختيار أي طريقة الدفع</string>
+    <string name="CONTINUE">استمر</string>
+    <string name="Books">كتب</string>
+    <string name="book">الكتاب : </string>
+    <string name="book_author">مؤلف الكتاب : </string>
+    <string name="information_of_book">معلومات الكتاب</string>
+    <string name="magazine">المجلة : </string>
+    <string name="magazine_author">مؤلف المجلة : </string>
+    <string name="information_of_magazine">معلومات المجلة</string>
+    <string name="Reviews">التعليقات</string>
+    <string name="Downloads">التحميلات</string>
+    <string name="Book_Details">تفاصيل الكتاب</string>
+    <string name="Earn_Rewards">كسب المكافآت</string>
+    <string name="Vouchers_History">تاريخ القسائم</string>
+    <string name="What_is_this_book_about">مقدمة الكتاب</string>
+    <string name="book_introduction">مقدمة الكتاب</string>
+    <string name="thanks_for_feedback">شكرا لك على ملاحظاتك القيمة.</string>
+    <string name="Encourage_authors">شجع المؤلفين</string>
+    <string name="copyright_information">معلومات حقوق التأليف والنشر</string>
+    <string name="sir_we_were_meant_to_be">سيدي ، كان من المفترض أن نكون</string>
+    <string name="magazine_introduction">مقدمة المجلة</string>
+    <string name="magazine_details">تفاصيل المجلة</string>
+    <string name="add_a_comment">اضف تعليق</string>
+    <string name="remove_from_library">إزالة من المكتبة</string>
+    <string name="add_to_library">إضافة إلى مكتبة</string>
+    <string name="free">حر</string>
+    <string name="by">بواسطة</string>
+    <string name="paid">مدفوع</string>
+    <string name="brought">جلبت</string>
+    <string name="downloaded">تم التنزيل</string>
+    <string name="chapters">فصول</string>
+    <string name="chapter">الفصل</string>
+    <string name="buy_now">اشتري الآن</string>
+    <string name="read_now">اقرا الان</string>
+    <string name="Author_caps">مؤلف</string>
+    <string name="Publish_at">للنشر في</string>
+    <string name="Related_Books">كتب ذات صلة</string>
+    <string name="populars_with_same_genres">شعبية مع نفس الأنواع</string>
+    <string name="Comments">تعليقات</string>
+    <string name="Write_your_comments">اكتب تعليقاتك</string>
+    <string name="pack_up">حزم</string>
+    <string name="show_all">عرض الكل</string>
+    <string name="please_enter_comment">من فضلك أدخل التعليق.</string>
+    <string name="already_download">تحميل بالفعل</string>
+    <string name="magazine_download_success">نجاح تحميل المجلات</string>
+    <string name="book_download_success">نجاح تنزيل الكتاب</string>
+    <string name="please_try_again">حاول مرة اخرى.</string>
+    <string name="my_library">مكتبتي</string>
+    <string name="My_Purchase_Books">بلدي شراء الكتب</string>
+    <string name="ALLOW_PERMISSION">السماح إذن</string>
+    <string name="let_me_recommend_you_this_application_to_read_full_book">اسمحوا لي أن أوصيك بهذا التطبيق لقراءة المحتوى الكامل.</string>
+    <!--End Search-->
+
+    <string name="title_home">الصفحة الرئيسية</string>
+    <string name="title_featured">متميز</string>
+    <string name="title_genres">الأنواع</string>
+    <string name="title_magazine">المجلات</string>
+    <string name="title_search">بحث</string>
+    <string name="title_bookmark">المرجعية</string>
+    <string name="title_library">مكتبة</string>
+    <string name="title_Premium">الممتازة</string>
+    <string name="title_settings">الإعدادات</string>
+    <string name="title_profile">الملف الشخصي</string>
+
+    <string name="isRTL">خاطئة</string>
+    <string name="internet_connection">اتصال الإنترنت غير متوفر</string>
+
+    <string name="permission_desc">نحن الآن بحاجة إلى إذنك لمواصلة استخدام التطبيق بشكل مثالي</string>
+    <string name="permission_title">كل شيء على ما يرام</string>
+
+    <string name="save">حفظ</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="change_language">لغة</string>
+    <string name="please_select_subscription_package">يرجى تحديد حزمة الاشتراك.</string>
+    <string name="my_Purchase_book">كتبي التي تم تنزيلها</string>
+    <string name="my_downloaded_book">بلدي شراء الكتب</string>
+    <string name="enable_push_notification">تمكين إشعار الدفع</string>
+    <string name="enable_theme">تمكين وضع يوم / ليلة</string>
+    <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
+    <string name="locally_cached_data">البيانات المخزنة مؤقتا محليا</string>
+    <string name="Privacy_policy">سياسة خاصة</string>
+    <string name="balance">توازن</string>
+    <string name="are_you_sure_you_want_to_logout">هل أنت متأكد أنك تريد تسجيل الخروج ؟</string>
+    <string name="rate_app">قيم التطبيق</string>
+    <string name="share_app">شارك مع الاصدقاء</string>
+    <string name="about_us">معلومات عنا</string>
+    <string name="terms_and_conditions">البنود و الظروف</string>
+    <string name="downloading">جارى التحميل</string>
+    <string name="loading">جار التحميل...</string>
+    <string name="please_wait">أرجو الإنتظار...</string>
+    <string name="cancel">إلغاء</string>
+    <string name="submit">إرسال</string>
+    <string name="expires_on">تنتهي صلاحيته في</string>
+    <string name="add_rate">إضافة معدل</string>
+    <string name="Read">اقرأ</string>
+    <string name="my_package">الاشتراك</string>
+    <string name="title_reward">محفظة نقود</string>
+    <string name="latest_update">اخر تحديث : </string>
+    <string name="contents">محتويات</string>
+    <string name="do_you_want_to_exit">هل تريد الخروج؟</string>
+    <string name="yes">نعم.</string>
+    <string name="no">لا.</string>
+    <string name="delete">حذف</string>
+    <string name="okay">تمام!</string>
+    <string name="choose_one">اختر واحدة</string>
+    <string name="let_me_recommend_you_this_application">دعني أوصيك بهذا التطبيق : </string>
+    <string name="share_with">شارك مع</string>
+    <string name="language_already_selected">اللغة المختارة بالفعل !</string>
+    <string name="are_you_sure_want_to_purchase">هل أنت متأكد من أنك تريد الشراء ؟ </string>
+    <string name="purchase_now">شراء الآن</string>
+    <string name="may_be_later">ربما في وقت لاحق!</string>
+    <string name="your_balance_is_low_please_top_up_your_wallet">رصيدك منخفض. يرجى تعبئة محفظتك</string>
+    <string name="use_my_referral_code">استخدم رمز الإحالة الخاص بي</string>
+    <string name="please_give_feedback_to_author">يرجى إعطاء ملاحظات للمؤلف.</string>
+
+    <!--Payment Activity START-->
+    <string name="payment_details">بيانات الدفع</string>
+    <string name="please_select_any_payment_method">من فضلك ، حدد أي طريقة دفع</string>
+    <string name="payment_methods">طرق الدفع</string>
+    <string name="choose_a_payment_methods_to_pay">اختر طريقة الدفع إلى</string>
+    <string name="pay_with">ادفع عن طريق</string>
+    <string name="Continue">يكمل</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">يدفع</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">عذرا ، لم نتمكن من التحقق من الدفع الخاص بك ، حاول مرة أخرى من فضلك !!!</string>
+    <string name="payable_amount_is">المبلغ المستحق هو :</string>
+    <string name="verification">تحقق</string>
+    <string name="verification_success">تم التحقق بنجاح.</string>
+    <string name="verification_note">* من فضلك ، تحقق من التفاصيل التالية الخاصة بك للمتابعة.</string>
+    <!--Payment Activity END-->
+
+    <!--Prime Membership START-->
+    <string name="Prime_Membership">العضوية الرئيسية</string>
+    <string name="Prime_Benefits">الفوائد الرئيسية</string>
+    <string name="View_All">مشاهدة الكل</string>
+    <string name="Exclusive_for_Newcomer">حصري للوافدين الجدد</string>
+    <string name="Prime_Lists_for_Gems">القوائم الأولية للجواهر</string>
+    <string name="View_all_books">عرض كل الكتب >></string>
+    <string name="About_Prime">حول Prime</string>
+    <string name="vouchers_history">تاريخ القسائم</string>
+    <string name="vouchers">القسائم</string>
+    <string name="gems">الجواهر</string>
+    <string name="tips">نصائح :</string>
+    <string name="watch_video_ad_for_vouchers">مشاهدة إعلان الفيديو للقسائم</string>
+    <string name="watch">يشاهد</string>
+    <string name="continuous_check_in">تسجيل الوصول المستمر</string>
+    <string name="voucher_gems_tips">1. الأحجار الكريمة لها نفس القيمة مع العملات المعدنية. ستنتهي صلاحية جميع القسائم والأحجار الكريمة مع مرور الوقت. الرجاء الاستخدام قبل الموعد النهائي. \ n 2. الأحجار الكريمة لها نفس القيمة مع العملات المعدنية. ستنتهي صلاحية جميع القسائم والأحجار الكريمة مع مرور الوقت. الرجاء الاستخدام قبل الموعد النهائي. \ n 3. الأحجار الكريمة لها نفس القيمة مع العملات المعدنية. ستنتهي صلاحية جميع القسائم والأحجار الكريمة مع مرور الوقت. الرجاء استخدام قبل الموعد النهائي.</string>
+    <string name="coins">عملات معدنية</string>
+    <string name="prime">رئيس</string>
+    <string name="daily_claim_vouchers">قسائم المطالبة اليومية</string>
+    <string name="recharge">تعبئة رصيد</string>
+    <string name="get_more_coins">الحصول على المزيد من النقود</string>
+    <string name="earn_rewards">كسب المكافآت</string>
+    <string name="check_in">تحقق في</string>
+    <string name="my_transaction">معاملتي</string>
+    <string name="my_books">كتبي</string>
+    <string name="books">كتب</string>
+    <string name="magazines">المجلات</string>
+    <string name="wallet_blc_in_coins">رصيد المحفظة</string>
+    <string name="Wallet">محفظة</string>
+    <string name="wallet_history">محفوظات المحفظة</string>
+    <string name="transaction_history">تاريخ المعاملات</string>
+    <string name="add_money_to_wallet">إضافة أموال إلى Wallet</string>
+    <string name="you_are_login_with_social_media">أنت تقوم بتسجيل الدخول باستخدام وسائل التواصل الاجتماعي.</string>
+    <string name="comments_in_total">التعليقات في المجموع</string>
+    <string name="this_file_is_not_available">هذا الملف غير متوفر.</string>
+    <string name="wallet_balance">رصيد المحفظة</string>
+    <string name="payment_gateways">بوابات الدفع</string>
+    <string name="recharge_your_wallet">اشحن محفظتك</string>
+    <string name="add_to_wallet">أضف إلى المحفظة</string>
+    <string name="enter_amount">أدخل المبلغ المخصص ...</string>
+    <string name="your_current_balance_is">رصيدك الحالي هو :</string>
+    <string name="use_wallet_balance">استخدم رصيد المحفظة</string>
+    <string name="pay_now">ادفع الآن</string>
+    <string name="please_enter_valid_amount">الرجاء إدخال مبلغ صالح.</string>
+    <string name="new_password_have_been_send_to_register_email_address">تم إرسال كلمة المرور الجديدة إلى عنوان البريد الإلكتروني المسجل.</string>
+    <string name="update">تحديث</string>
+    <string name="enter_phone_number_profile">أدخل رقم الهاتف...</string>
+    <string name="enter_email_profile">أدخل البريد الإلكتروني ...</string>
+    <string name="enter_address_profile">أدخل العنوان...</string>
+    <string name="enter_your_name_profile">أدخل أسمك...</string>
+    <string name="update_profile">تحديث الملف</string>
+    <string name="enter_password_profile">أدخل كلمة المرور ...</string>
+    <string name="take_photo">تصوير.</string>
+    <string name="choose_from_gallery">اختر من المعرض.</string>
+    <string name="add_photo">إضافة صورة!</string>
+    <string name="forgot_password">هل نسيت كلمة السر ؟</string>
+    <string name="no_books_available">لا كتب متاحة.</string>
+    <string name="register">يسجل</string>
+    <string name="or_login_using_social_media">أو تسجيل الدخول باستخدام وسائل التواصل الاجتماعي</string>
+    <string name="notifications">إشعارات</string>
+    <string name="marked_as_read">تم وضع علامة "مقروءة".</string>
+    <string name="something_went_wrong">هناك خطأ ما!!!</string>
+    <string name="sorry_not_connected_to_internet">آسف! غير متصل بالإنترنت.</string>
+    <!--Prime Membership END-->
+
+
+    <!--- AuthorRegsiter START -->
+    <string name="author_name">اسم المؤلف</string>
+    <string name="author_address">تبوك</string>
+    <string name="author_email">البريد الإلكتروني</string>
+    <string name="author_password">كلمة المرور</string>
+    <string name="author_bankdetail">التفاصيل المصرفية</string>
+    <string name="author_bankname">اسم البنك</string>
+    <string name="author_accountnum">رقم حساب</string>
+    <string name="author_ifsc">كود IFSC</string>
+    <string name="author_bankholder">اسم صاحب البنك</string>
+    <string name="author_register">سجل المؤلف</string>
+    <string name="enter_author_name">أدخل أسمك.</string>
+    <string name="enter_address">أدخل عنوانك.</string>
+    <string name="enter_author_email">أدخل بريدك الإلكتروني.</string>
+    <string name="enter_author_password">ادخل رقمك السري.</string>
+    <string name="enter_author_bank_name">أدخل اسم البنك الخاص بك.</string>
+    <string name="enter_author_account_number">أدخل رقم حسابك المصرفي.</string>
+    <string name="enter_author_ifsc_code">أدخل رمز IFSC.</string>
+    <string name="enter_author_bank_holder_name">أدخل اسم صاحب البنك.</string>
+    <!--- AuthorRegsiter END -->
+
+    <!-- Book Upload START -->
+    <string name="we_need_storage_and_upload_document_file">نحتاج إلى إذن تخزين لتحميل ملفات المستندات.</string>
+    <string name="upload_book">تحميل الكتاب</string>
+    <string name="book_upload">تحميل الكتاب</string>
+    <string name="book_title">عنوان كتاب</string>
+    <string name="book_category">فئة الكتاب</string>
+    <string name="book_cost">تكلفة الكتاب</string>
+    <string name="book_description_title">شرح الكتاب</string>
+    <string name="book_description">اكتب شيئًا مثيرًا للاهتمام حول كتابك ...</string>
+    <string name="upload_samplebook">تحميل نموذج الكتاب</string>
+    <string name="upload_fullbook">تحميل الكتاب كاملا</string>
+    <string name="doc_format">تنسيق pdf ، ملف epub</string>
+    <string name="cover_format">تنسيق png و jpg</string>
+    <string name="book_coverposter">ملصق الغلاف</string>
+    <string name="book_coverposter_name">اسم الصورة</string>
+    <string name="book_name">اسم الكتاب</string>
+    <string name="fill_up_all_fields">من فضلك ، املأ جميع الحقول.</string>
+    <string name="enter_book_title">أدخل عنوان الكتاب.</string>
+    <string name="enter_book_description">أدخل وصف الكتاب.</string>
+    <string name="enter_book_cost">أدخل تكلفة الكتاب.</string>
+    <string name="select_book_category">الرجاء تحديد فئة الكتاب.</string>
+    <string name="select_sample_book">من فضلك ، حدد نموذج الكتاب.</string>
+    <string name="select_full_book">من فضلك ، اختر الكتاب الكامل.</string>
+    <string name="select_book_cover">من فضلك ، حدد صورة غلاف الكتاب.</string>
+    <!-- Book Upload END -->
+
+    <!-- Magazine Upload START -->
+    <string name="upload_magazine">تحميل المجلة</string>
+    <string name="magazine_upload">تحميل مجلة</string>
+    <string name="magazine_title">عنوان المجلة</string>
+    <string name="magazine_category">فئة المجلة</string>
+    <string name="magazine_cost">تكلفة المجلة</string>
+    <string name="magazine_description_title">وصف المجلة</string>
+    <string name="magazine_description">اكتب شيئًا مثيرًا للاهتمام حول مجلتك ...</string>
+    <string name="upload_samplemagazine">تحميل مجلة عينة</string>
+    <string name="upload_fullmagazine">تحميل مجلة كاملة</string>
+    <string name="magazine_coverposter">ملصق الغلاف</string>
+    <string name="magazine_coverposter_name">اسم الصورة</string>
+    <string name="magazine_name">اسم المجلة</string>
+    <string name="enter_magazine_title">أدخل عنوان المجلة</string>
+    <string name="enter_magazine_description">أدخل وصف المجلة.</string>
+    <string name="enter_magazine_cost">أدخل تكلفة المجلة.</string>
+    <string name="select_magazine_category">من فضلك ، اختر فئة المجلة.</string>
+    <string name="select_sample_magazine">من فضلك ، حدد عينة مجلة.</string>
+    <string name="select_full_magazine">من فضلك ، اختر مجلة كاملة.</string>
+    <string name="select_magazine_cover">من فضلك ، اختر صورة غلاف المجلة.</string>
+    <!-- Magazine Upload END -->
+
+    <string name="upload_your_documents">تحميل المستندات الخاصة بك ...</string>
+    <string name="add_documents">أضف المستندات!</string>
+    <string name="upload_new_doc_desc">قم بتحميل كتابك أو مجلتك الجديدة.</string>
+    <string name="internal_storage">التخزين الداخلي</string>
+    <string name="views">الآراء</string>
+    <string name="no_magazines_available">لا توجد مجلات متاحة.</string>
+    <string name="add_book_or_magazine">أضف كتابًا أو مجلة</string>
+    <string name="edit_author_s_profile">تحرير ملف تعريف الكاتب</string>
+    <string name="about">حول</string>
+    <string name="add_new_comment">أضف تعليق جديد</string>
+    <string name="your_rate">تقييمك</string>
+    <string name="story_developement">تطوير القصة</string>
+    <string name="add_a_comment_here">أضف تعليق هنا</string>
+    <string name="add_books">أضف كتبًا</string>
+    <string name="add_magazines">أضف المجلات</string>
+    <string name="author_portfolio">محفظة المؤلف</string>
+    <string name="author_bio">المؤلف السيرة الذاتية</string>
+    <string name="enter_author_bio">أدخل السيرة الذاتية للمؤلف.</string>
+    <string name="update_document_visibility">تحديث رؤية المستند!</string>
+    <string name="update_doc_visibility_desc_inactive">بعد اختيار InActive ، لن يظهر كتابك / مجلتك للآخرين.</string>
+    <string name="update_doc_visibility_desc_active">بعد اختيار نشط ، سيظهر كتابك / مجلتك للآخرين.</string>
+    <string name="active">نشيط</string>
+    <string name="inactive">غير نشط</string>
+    <string name="sell">تخفيض السعر</string>
+    <string name="sells">مبيعات</string>
+    <string name="edit">يحرر</string>
+    <string name="add">يضيف</string>
+    <string name="Become_Author">كن مؤلفًا</string>
+    <string name="update_book">تحديث الكتاب</string>
+    <string name="update_magazine">مجلة التحديث</string>
+    <string name="upgrade_plan_to">خطة الترقية إلى</string>
+    <string name="highly_experience">خبرة عالية</string>
+    <string name="sample_book">كتاب عينة</string>
+    <string name="sample_magazine">مجلة عينة</string>
+    <string name="enter_valid_email">أدخل بريدًا إلكترونيًا صالحًا.</string>
+    <string name="we_need_storage_permission_to_read_document_file">نحتاج إلى إذن تخزين لقراءة ملفات المستندات.</string>
+
+</resources>

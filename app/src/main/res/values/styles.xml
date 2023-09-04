@@ -1,0 +1,200 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+        <item name="backgroundcolor">#FFFFFF</item>
+        <item name="whitelightbackground">@color/white_light</item>
+        <item name="cardbackround">#FFFFFF</item>
+        <item name="accentColorTint">@color/colorAccent</item>
+        <item name="splitline">@color/white_light</item>
+        <item name="splitlineDark">@color/Gray</item>
+        <item name="textcolor">#000</item>
+        <item name="textPrimaryColor">@color/colorPrimary</item>
+        <item name="textPrimaryDarkColor">@color/colorPrimaryDark</item>
+        <item name="textAccentColor">@color/colorAccent</item>
+        <item name="textcolor_desc">@color/darkGray</item>
+        <item name="textcolor_s_desc">@color/lightGray</item>
+        <item name="grayTintColor">@color/Gray</item>
+        <item name="buttoncolor">@color/colorPrimary</item>
+        <item name="toolbartextcolor">@color/colorAccent</item>
+        <item name="toolbarbackground">@color/colorPrimaryDark</item>
+        <item name="toolbarbackTint">@color/colorAccent</item>
+        <item name="categorybordercolor">@color/colorPrimary</item>
+        <item name="viewtextcolor">@color/colorAccent</item>
+        <item name="text_details">@color/text_gray</item>
+        <item name="comment_tint">@color/colorAccent</item>
+        <item name="download_tint_btn">@color/colorAccent</item>
+        <item name="tintclr">@color/colorPrimary</item>
+        <item name="accentIconTint">@color/colorAccent</item>
+        <item name="primaryIconTint">@color/colorPrimary</item>
+        <item name="icontintcolor">@color/black</item>
+        <item name="shimmerTint">@color/lightGray</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+    <style name="darktheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+        <item name="backgroundcolor">@color/lightBlack</item>
+        <item name="whitelightbackground">#111111</item>
+        <item name="cardbackround">#2a2a2a</item>
+        <item name="accentColorTint">@color/colorAccent</item>
+        <item name="splitline">@color/black</item>
+        <item name="splitlineDark">@color/black</item>
+        <item name="textcolor">#ffff</item>
+        <item name="textPrimaryColor">#ffff</item>
+        <item name="textPrimaryDarkColor">#ffff</item>
+        <item name="textAccentColor">@color/colorAccent</item>
+        <item name="textcolor_desc">@color/gray</item>
+        <item name="textcolor_s_desc">@color/lightGray</item>
+        <item name="grayTintColor">@color/Gray</item>
+        <item name="buttoncolor">@color/colorPrimary</item>
+        <item name="toolbartextcolor">#ffff</item>
+        <item name="toolbarbackground">@color/colorPrimaryDark</item>
+        <item name="toolbarbackTint">#ffff</item>
+        <item name="categorybordercolor">#ffff</item>
+        <item name="viewtextcolor">#ffff</item>
+        <item name="text_details">@color/white</item>
+        <item name="comment_tint">@color/white</item>
+        <item name="download_tint_btn">@color/colorPrimary</item>
+        <item name="tintclr">@color/white</item>
+        <item name="accentIconTint">@color/white</item>
+        <item name="primaryIconTint">@color/colorPrimary</item>
+        <item name="icontintcolor">@color/white</item>
+        <item name="shimmerTint">#434343</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:titleTextStyle">@style/Theme.MyAppTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.MyAppTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="YellowCheck">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">?attr/textcolor</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColorPrimary">?attr/textcolor</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AlertDialogDanger" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--Push Notification Switch-->
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:panelColorBackground">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="SwitchCompatTheme">
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/round_bor_top</item>
+    </style>
+
+    <!--BottomSheetDialog-->
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- PopUp Enter Exit Animation -->
+    <style name="PopupAnimation" parent="Widget.AppCompat.PopupWindow">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
+
+    <!-- Ripple effect -->
+    <style name="AppTheme.MyRipple">
+        <item name="colorControlHighlight">@color/extraLightGray</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <!-- Ripple effect -->
+    <style name="AppTheme.MyRipple_selected">
+        <item name="colorControlHighlight">@color/extraLightGray</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="BottomNavigationView.InActive" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_8</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_10</item>
+    </style>
+
+    <!-- TabLayout text -->
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="tab_text2" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/default_texts</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="tab_text3" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

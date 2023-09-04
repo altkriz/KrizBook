@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_bor_top"
+    android:backgroundTint="?attr/backgroundcolor"
+    android:orientation="vertical"
+    android:theme="@style/SheetDialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="@string/recharge_your_wallet"
+        android:textColor="?attr/textcolor"
+        android:textSize="@dimen/text_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin22" />
+
+        <LinearLayout
+            android:id="@+id/lyAddCustomAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_bg_r5"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_amount"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:paddingHorizontal="8dp"
+                    android:singleLine="true"
+                    android:textColor="?attr/textcolor"
+                    android:textColorHint="?attr/textcolor_s_desc"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <!--Confirm-->
+            <LinearLayout
+                android:id="@+id/lyAddMoney"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_bg_circle"
+                android:backgroundTint="?attr/accentColorTint"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="@string/add_to_wallet"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+
+
+Path  :  /home/priyank/Desktop/Application/E-Book/Ebook_v2/playstore/ebook.jks
+
+Alias  :  ebook
+
+Firstname  :  ebook
+
+Password  :  123456789

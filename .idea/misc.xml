@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+<<<<<<< HEAD
+        <entry key="app/src/main/res/layout/activity_aboutus.xml" value="0.16388044579533942" />
+        <entry key="app/src/main/res/layout/activity_privacy_terms.xml" value="0.16388044579533942" />
+        <entry key="app/src/main/res/layout/author_item.xml" value="0.33" />
+=======
+        <entry key="app/src/main/res/drawable/author_register_round_button.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/author_round_bg_corner.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/d_round_white_background.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/ic__coverposter.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/ic__pdfview.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_author.xml" value="0.1155" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/ic_edit2.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/ic_edit3.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/ic_photo.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_photo_1.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_2__1_.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_3.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_3__1_.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_3__2_.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_5.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_6.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_6__2_.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/ly_round_corner.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/round_bg.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/round_bg_r15_white.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/round_bor_light_gray.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/round_bor_top.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/round_corner_bg.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/round_shape_middle.xml" value="0.197" />
+        <entry key="app/src/main/res/drawable/round_textview_corner.xml" value="0.197" />
+        <entry key="app/src/main/res/layout/activity_author_book_upload.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_become_author.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_bookdetails.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.24166666666666667" />
+>>>>>>> d17e337dac854cde60687ac3ff8140508e40c872
+        <entry key="app/src/main/res/layout/authorbooklist.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/feature_item.xml" value="0.19837537409149208" />
+        <entry key="app/src/main/res/layout/homefragment.xml" value="0.16388044579533942" />
+        <entry key="app/src/main/res/layout/loginactivity.xml" value="0.16388044579533942" />
+        <entry key="app/src/main/res/layout/settings.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/toolbar_with_back.xml" value="0.19837537409149208" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

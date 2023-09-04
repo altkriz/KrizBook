@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KrizBook</string>
+
+    <!--Welcome-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="wel_one">Best Book for you</string>
+    <string name="wel_two">Best Magazine for you</string>
+    <string name="wel_three">Become a Author</string>
+    <string name="wel_four">Payment Gateway &amp; Wallet</string>
+    <string name="wel_sub_one">From Classic to Contemopory you will find everything here</string>
+    <string name="wel_sub_two">The best Magazine Collections available here</string>
+    <string name="wel_sub_three">User become Author &amp; publish own Books / Magazine on Application</string>
+    <string name="wel_sub_four">To Buy a Paid book using Wallet &amp; Managed by Payment gateways</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">Sorry! Not connected to internet.</string>
+    <string name="internet_error">Network connection error!!!</string>
+    <string name="permission_necessary">Permission Necessary</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">Storage permission is necessary to read and write event</string>
+    <string name="settings">Settings</string>
+    <string name="cancel_">Cancel</string>
+    <string name="permission">Permission</string>
+    <string name="permission_alert">Permission Alert</string>
+    <string name="we_need_storage_permission_for_save_video">We need storage permission for save media file into external storage.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">We need external storage and camera permission for upload profile picture.</string>
+    <string name="yesterday">yesterday</string>
+    <string name="day_ago">day ago</string>
+    <!--Network and Permission END-->
+
+    <!--Login-->
+    <string name="email">Email Address</string>
+    <string name="email_hint">Email</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Me</string>
+    <string name="enter_email">Enter email.</string>
+    <string name="enter_password">Enter password.</string>
+    <string name="enter_phone_number">Enter phone number.</string>
+    <string name="enter_fullname">Enter fullname.</string>
+    <string name="login">Login</string>
+    <string name="skip1">Skip</string>
+    <string name="dont">Don\'t have an account ?</string>
+    <string name="signup"> Signup</string>
+    <string name="logout"> logout</string>
+    <string name="guest_user">Guest User</string>
+    <!--End Login-->
+
+    <!--Registration-->
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="signup_cap">SIGN UP</string>
+    <string name="already_account">Already have an account yet?</string>
+    <!--End Registration-->
+
+    <!--OTP Login START-->
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_your_mobile_no">Enter Your Mobile number</string>
+    <string name="enter_otp">Enter received OTP.</string>
+    <string name="enter_coutry_code">Enter your country code.</string>
+    <string name="you_will_receive_a_4_digit_code_to_verify_next">You will receive a 6 digit code to \n verify next.</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">Enter OTP code to sent \n to Mobile number.</string>
+    <string name="verify_and_proceed">VERIFY &amp; PROCEED</string>
+    <string name="send">SEND</string>
+    <string name="resend_otp">Resend OTP</string>
+    <!--OTP Login END-->
+
+    <!--About Us-->
+    <string name="Company">Company</string>
+    <string name="website">Website</string>
+    <string name="Contact">Contact</string>
+    <!--End About Us-->
+
+    <!--Home-->
+    <string name="Category">Category</string>
+    <string name="Categories">Categories</string>
+    <string name="View_all">More</string>
+    <string name="app_bestBook">EBook Best</string>
+    <string name="New_Arrival_Book">New Arrival Book</string>
+    <string name="You_may_also_like">You may also Like</string>
+    <string name="Authors">Authors</string>
+    <string name="Free_Book">Free Releases</string>
+    <string name="Paid_Book">Paid Releases</string>
+    <string name="Continue_Reading">Continue Reading</string>
+
+    <string name="Popular_Stories">Popular Stories</string>
+    <string name="Magazine_category">Magazine Categories</string>
+    <string name="Top_dowloaded">Top Downloaded</string>
+    <string name="Most_viewed">Most Viewed</string>
+    <!--End Home-->
+
+    <!--Search-->
+    <string name="Search">Search</string>
+    <string name="See_All">See All</string>
+    <string name="Payment">Payment</string>
+    <string name="Please_select_any_payment_method">Please select any payment method</string>
+    <string name="CONTINUE">CONTINUE</string>
+    <string name="Books">Books</string>
+    <string name="book">Book : </string>
+    <string name="book_author">Book Author : </string>
+    <string name="information_of_book">Information of Book</string>
+    <string name="magazine">Magazine : </string>
+    <string name="magazine_author">Magazine Author : </string>
+    <string name="information_of_magazine">Information of Magazine</string>
+    <string name="Reviews">Reviews</string>
+    <string name="Downloads">Downloads</string>
+    <string name="Book_Details">Book Details</string>
+    <string name="Earn_Rewards">Earn Rewards</string>
+    <string name="Vouchers_History">Vouchers History</string>
+    <string name="What_is_this_book_about">What is this Book about ?</string>
+    <string name="book_introduction">Book Introduction</string>
+    <string name="thanks_for_feedback">Thank you for your valuable feedback.</string>
+    <string name="Encourage_authors">Encourage authors</string>
+    <string name="copyright_information">Copyright information</string>
+    <string name="sir_we_were_meant_to_be">Sir, We Were Meant to Be</string>
+    <string name="magazine_introduction">Magazine Introduction</string>
+    <string name="magazine_details">Magazine Details</string>
+    <string name="add_a_comment">Add a Comment</string>
+    <string name="remove_from_library">Remove from Library</string>
+    <string name="add_to_library">Add to Library</string>
+    <string name="free">Free</string>
+    <string name="by">By</string>
+    <string name="my_library">My Library</string>
+    <string name="paid">Paid</string>
+    <string name="brought">Brought</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="chapters">Chapters</string>
+    <string name="chapter">Chapter</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="read_now">Read Now</string>
+    <string name="Author_caps">AUTHOR</string>
+    <string name="Publish_at">PUBLISH AT</string>
+    <string name="Related_Books">Related Books</string>
+    <string name="populars_with_same_genres">Populars with Same Genres</string>
+    <string name="Comments">Comments</string>
+    <string name="Write_your_comments">Write your comments</string>
+    <string name="pack_up">PACK UP</string>
+    <string name="show_all">SHOW ALL</string>
+    <string name="please_enter_comment">Please, enter comment.</string>
+    <string name="already_download">Already downloaded</string>
+    <string name="magazine_download_success">Magazine download success</string>
+    <string name="book_download_success">Book download success</string>
+    <string name="please_try_again">Please try again.</string>
+    <string name="let_me_recommend_you_this_application_to_read_full_book">Let me recommend you this application to read full content.</string>
+    <string name="My_Purchase_Books">My Purchase Books</string>
+    <string name="ALLOW_PERMISSION">ALLOW PERMISSION</string>
+    <!--End Search-->
+
+    <string name="title_home">Home</string>
+    <string name="title_featured">Featured</string>
+    <string name="title_search">Search</string>
+    <string name="title_genres">Genres</string>
+    <string name="title_magazine">Magazines</string>
+    <string name="title_bookmark">Bookmark</string>
+    <string name="title_library">Library</string>
+    <string name="title_Premium">Premium</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="isRTL">false</string>
+    <string name="internet_connection">Internet connection not available</string>
+
+    <string name="permission_desc">Now we need your permission to continue use the application perfectly</string>
+    <string name="permission_title">Everything is okay</string>
+
+    <string name="save">save</string>
+    <string name="profile">Profile</string>
+    <string name="change_language">Language</string>
+    <string name="please_select_subscription_package">Please Select Subscription Package.</string>
+    <string name="my_Purchase_book">My Transactions</string>
+    <string name="my_downloaded_book">My Library</string>
+    <string name="enable_push_notification">Enable push notification</string>
+    <string name="enable_theme">Enable Day/Night mode</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="locally_cached_data">locally cached data</string>
+    <string name="Privacy_policy">Privacy policy</string>
+    <string name="balance">Balance</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout ?</string>
+    <string name="rate_app">Rate App</string>
+    <string name="share_app">Share with Friends</string>
+    <string name="about_us">About Us</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="downloading">Downloading</string>
+    <string name="loading">Loading...</string>
+    <string name="please_wait">please wait...</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="expires_on">Expires on</string>
+    <string name="add_rate">Add Rate</string>
+    <string name="Read">Read</string>
+    <string name="my_package">Subscription</string>
+    <string name="title_reward">Wallet</string>
+    <string name="latest_update">Latest Update : </string>
+    <string name="contents">Contents</string>
+    <string name="do_you_want_to_exit">Do you want to exit ?</string>
+    <string name="please_give_feedback_to_author">Please give feedback to author.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete">DELETE</string>
+    <string name="okay">Okay!</string>
+    <string name="choose_one">Choose one</string>
+    <string name="let_me_recommend_you_this_application">Let me recommend you this application : </string>
+    <string name="share_with">Share with</string>
+    <string name="language_already_selected">Language already selected!</string>
+    <string name="are_you_sure_want_to_purchase">Are you sure want to purchase ?</string>
+    <string name="purchase_now">Purchase Now</string>
+    <string name="may_be_later">May be later!</string>
+    <string name="your_balance_is_low_please_top_up_your_wallet">Your Balance Is Low. Please Top Up Your Wallet</string>
+    <string name="use_my_referral_code">Use my referral code</string>
+
+    <!--Payment Activity START-->
+    <string name="payment_details">Payment Details</string>
+    <string name="please_select_any_payment_method">Please, select any Payment method</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="choose_a_payment_methods_to_pay">Choose a payment method To</string>
+    <string name="pay_with">Pay with</string>
+    <string name="Continue">Continue</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="pay">PAY</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">Sorry, we could not verify your payment, try again please!!!</string>
+    <string name="payable_amount_is">Payable amount is :</string>
+    <string name="verification">Verification</string>
+    <string name="verification_success">Verification successful.</string>
+    <string name="verification_note">*Please, verify your following detail/s to continue.</string>
+    <!--Payment Activity END-->
+
+    <!--Prime Membership START-->
+    <string name="Prime_Membership">Prime Membership</string>
+    <string name="Prime_Benefits">Prime Benefits</string>
+    <string name="View_All">View all</string>
+    <string name="Exclusive_for_Newcomer">Exclusive for Newcomer</string>
+    <string name="Prime_Lists_for_Gems">Prime Lists for Gems</string>
+    <string name="View_all_books">View all books >></string>
+    <string name="About_Prime">About Prime</string>
+    <string name="vouchers_history">Vouchers History</string>
+    <string name="vouchers">Vouchers</string>
+    <string name="gems">Gems</string>
+    <string name="tips">Tips :</string>
+    <string name="watch_video_ad_for_vouchers">Watch Video Ad for Vouchers</string>
+    <string name="watch">Watch</string>
+    <string name="continuous_check_in">Continuous check-in</string>
+    <string name="voucher_gems_tips">1. Gems have the same value with coins. All Vouchers and Gems will expire overtime. Please use before deadline.\n 2. Gems have the same value with coins. All Vouchers and Gems will expire overtime. Please use before deadline.\n 3. Gems have the same value with coins. All Vouchers and Gems will expire overtime. Please use before deadline.</string>
+    <string name="coins">Coins</string>
+    <string name="prime">Prime</string>
+    <string name="daily_claim_vouchers">Daily Claim Vouchers</string>
+    <string name="recharge">Recharge</string>
+    <string name="get_more_coins">Get more Coins</string>
+    <string name="earn_rewards">Earn Rewards</string>
+    <string name="check_in">Check in</string>
+    <string name="my_transaction">My Transaction</string>
+    <string name="my_books">My Books</string>
+    <string name="books">Books</string>
+    <string name="magazines">Magazines</string>
+    <string name="wallet_blc_in_coins">Wallet Balance</string>
+    <string name="Wallet">Wallet</string>
+    <string name="wallet_history">Wallet History</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="add_money_to_wallet">Add Money To Wallet</string>
+    <string name="you_are_login_with_social_media">You are login with social media.</string>
+    <string name="comments_in_total">Comments in total</string>
+    <string name="this_file_is_not_available">This file is not available.</string>
+    <string name="wallet_balance">Wallet balance</string>
+    <string name="payment_gateways">Payment gateways</string>
+    <string name="recharge_your_wallet">Recharge your wallet</string>
+    <string name="add_to_wallet">Add to wallet</string>
+    <string name="enter_amount">Enter custom amount...</string>
+    <string name="your_current_balance_is">Your current balance is :</string>
+    <string name="use_wallet_balance">Use wallet balance</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="please_enter_valid_amount">Please enter valid amount.</string>
+    <string name="new_password_have_been_send_to_register_email_address">New password have been send to register email address.</string>
+    <string name="update">Update</string>
+    <string name="enter_phone_number_profile">Enter phone number...</string>
+    <string name="enter_email_profile">Enter email...</string>
+    <string name="enter_address_profile">Enter address...</string>
+    <string name="enter_your_name_profile">Enter your name...</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="enter_password_profile">Enter password...</string>
+    <string name="take_photo">Take photo.</string>
+    <string name="choose_from_gallery">Choose from gallery.</string>
+    <string name="add_photo">Add photo!</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="no_books_available">No Books Available.</string>
+    <string name="register">Register</string>
+    <string name="or_login_using_social_media">Or Login using Social media</string>
+    <string name="notifications">Notifications</string>
+    <string name="marked_as_read">Marked as read.</string>
+    <string name="something_went_wrong">Something went wrong!!!</string>
+    <!--Prime Membership END-->
+
+    <!--- AuthorRegsiter START -->
+    <string name="author_name">Author Name</string>
+    <string name="author_address">Address</string>
+    <string name="author_email">Email</string>
+    <string name="author_password">Password</string>
+    <string name="author_bankdetail">Bank Details</string>
+    <string name="author_bankname">Bank Name</string>
+    <string name="author_accountnum">Account Number</string>
+    <string name="author_ifsc">IFSC Code</string>
+    <string name="author_bankholder">Bank holder name</string>
+    <string name="author_register">Author Register</string>
+    <string name="enter_author_name">Enter Your Name.</string>
+    <string name="enter_address">Enter Your Address.</string>
+    <string name="enter_author_email">Enter Your Email.</string>
+    <string name="enter_author_password">Enter Your Password.</string>
+    <string name="enter_author_bank_name">Enter Your Bank Name.</string>
+    <string name="enter_author_account_number">Enter Your Bank Account Number.</string>
+    <string name="enter_author_ifsc_code">Enter IFSC code.</string>
+    <string name="enter_author_bank_holder_name">Enter Bank Holder Name.</string>
+    <!--- AuthorRegsiter END -->
+
+    <!-- Book Upload START -->
+    <string name="we_need_storage_and_upload_document_file">We need storage permission to upload document files.</string>
+    <string name="upload_book">Upload Book</string>
+    <string name="book_upload">Book Upload</string>
+    <string name="book_title">Book Title</string>
+    <string name="book_category">Book Category</string>
+    <string name="book_cost">Book Cost</string>
+    <string name="book_description_title">Book Description</string>
+    <string name="book_description">Write something interesting about your Book...</string>
+    <string name="upload_samplebook">Upload Sample book</string>
+    <string name="upload_fullbook">Upload Full book</string>
+    <string name="doc_format">Format pdf, epub file</string>
+    <string name="cover_format">Format png, jpg</string>
+    <string name="book_coverposter">Cover Poster</string>
+    <string name="book_coverposter_name">Image Name</string>
+    <string name="book_name">Book Name</string>
+    <string name="fill_up_all_fields">Please, fill up all fields.</string>
+    <string name="enter_book_title">Enter Book Title</string>
+    <string name="enter_book_description">Enter Book Description</string>
+    <string name="enter_book_cost">Enter Book Cost</string>
+    <string name="select_book_category">Please, select Book Category.</string>
+    <string name="select_sample_book">Please, select Sample Book.</string>
+    <string name="select_full_book">Please, select Full Book.</string>
+    <string name="select_book_cover">Please, select Book Cover image.</string>
+    <!-- Book Upload END -->
+
+    <!-- Magazine Upload START -->
+    <string name="upload_magazine">Upload Magazine</string>
+    <string name="magazine_upload">Magazine Upload</string>
+    <string name="magazine_title">Magazine Title</string>
+    <string name="magazine_category">Magazine Category</string>
+    <string name="magazine_cost">Magazine Cost</string>
+    <string name="magazine_description_title">Magazine Description</string>
+    <string name="magazine_description">Write something interesting about your Magazine...</string>
+    <string name="upload_samplemagazine">Upload Sample Magazine</string>
+    <string name="upload_fullmagazine">Upload Full Magazine</string>
+    <string name="magazine_coverposter">Cover Poster</string>
+    <string name="magazine_coverposter_name">Image Name</string>
+    <string name="magazine_name">Magazine Name</string>
+    <string name="enter_magazine_title">Enter Magazine Title.</string>
+    <string name="enter_magazine_description">Enter Magazine Description.</string>
+    <string name="enter_magazine_cost">Enter Magazine Cost.</string>
+    <string name="select_magazine_category">Please, select Magazine Category.</string>
+    <string name="select_sample_magazine">Please, select Sample Magazine.</string>
+    <string name="select_full_magazine">Please, select Full Magazine.</string>
+    <string name="select_magazine_cover">Please, select Magazine Cover image.</string>
+    <!-- Magazine Upload END -->
+
+    <string name="upload_your_documents">Upload Your Documents...</string>
+    <string name="add_documents">Add Documents!</string>
+    <string name="upload_new_doc_desc">Upload your new Book or Magazine.</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="views">Views</string>
+    <string name="no_magazines_available">No Magazines Available.</string>
+    <string name="add_book_or_magazine">Add Book or Magazine</string>
+    <string name="edit_author_s_profile">Edit Author Profile</string>
+    <string name="about">About</string>
+    <string name="add_new_comment">Add New Comment</string>
+    <string name="your_rate">Your rate</string>
+    <string name="story_developement">Story Development</string>
+    <string name="add_a_comment_here">Add a comment here</string>
+    <string name="add_books">Add Books</string>
+    <string name="add_magazines">Add Magazines</string>
+    <string name="author_portfolio">Author Portfolio</string>
+    <string name="author_bio">Author Bio</string>
+    <string name="enter_author_bio">Enter Your Bio.</string>
+    <string name="update_document_visibility">Update Document Visibility!</string>
+    <string name="update_doc_visibility_desc_inactive">After Choosing InActive, your book/magazine will not visible to others.</string>
+    <string name="update_doc_visibility_desc_active">After Choosing Active, your book/magazine will visible to others.</string>
+    <string name="active">Active</string>
+    <string name="inactive">InActive</string>
+    <string name="sell">sale</string>
+    <string name="sells">sales</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="Become_Author">Become Author</string>
+    <string name="update_book">Update Book</string>
+    <string name="update_magazine">Update Magazine</string>
+    <string name="upgrade_plan_to">Upgrade plan to</string>
+    <string name="highly_experience">Highly Experience</string>
+    <string name="sample_book">Sample Book</string>
+    <string name="sample_magazine">Sample Magazine</string>
+    <string name="enter_valid_email">Enter valid email.</string>
+    <string name="we_need_storage_permission_to_read_document_file">We need storage permission to read document files.</string>
+
+</resources>

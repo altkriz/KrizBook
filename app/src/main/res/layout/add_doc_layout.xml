@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyAddDocument"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin10"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="@dimen/addNewDocWidth"
+        android:layout_height="@dimen/addNewDocHeight"
+        android:background="@drawable/round_bg_dotted"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin15">
+
+        <TextView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/ic_add_icon" />
+
+        <TextView
+            android:id="@+id/txtAddDocType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin15"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:textColor="@color/text_primaryDark"
+            android:textSize="@dimen/default_texts" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BookDetails">
+
+    <!--Shimmer-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:shimmer_duration="@integer/shimmerDuration">
+
+        <!-- Adding 3 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shim_bookdetails" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundcolor"
+        android:orientation="vertical">
+
+        <!--Toolbar Header-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:statusBarScrim="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="pin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ly_back"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:theme="@style/AppTheme.MyRipple">
+
+                            <TextView
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/ic_back"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/toolbar_title"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.76"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="@string/Book_Details"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/ly_share"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.12"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/ic_share"
+                                android:backgroundTint="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            android:fillViewport="true"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <!--Bottom-->
+                    <LinearLayout
+                        android:id="@+id/ly_below"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ly_top"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/round_bor_top"
+                        android:backgroundTint="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="105dp"
+                            android:orientation="vertical">
+
+                            <!-- Read Book -->
+                            <LinearLayout
+                                android:id="@+id/lyReadSampleBook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="@dimen/margin20"
+                                android:background="@drawable/round_bg_r5_white"
+                                android:backgroundTint="@color/colorAccent"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/margin8"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text="@string/sample_book"
+                                    android:textColor="@color/text_white"
+                                    android:textSize="@dimen/text_11" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/margin10"
+                                android:orientation="vertical">
+
+                                <!--Book Introduction-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:orientation="horizontal">
+
+                                        <View
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="3dp"
+                                            android:layout_marginBottom="3dp"
+                                            android:background="@color/colorPrimaryDark" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/book_introduction"
+                                            android:textColor="?attr/textcolor"
+                                            android:textSize="@dimen/text_16" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/txt_descripation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:autoLink="web"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:gravity="top|center_vertical"
+                                        android:maxLines="3"
+                                        android:textColor="?attr/text_details"
+                                        android:textColorLink="?attr/textAccentColor"
+                                        android:textSize="12dp" />
+
+                                    <!--Show more/less-->
+                                    <LinearLayout
+                                        android:id="@+id/ly_showAll_desc"
+                                        android:layout_width="100dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center|end"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/txt_show_all"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:gravity="center"
+                                            android:text="@string/show_all"
+                                            android:textAllCaps="false"
+                                            android:textColor="?attr/textcolor_s_desc"
+                                            android:textSize="@dimen/text_14" />
+
+                                        <TextView
+                                            android:id="@+id/txt_drop_down"
+                                            android:layout_width="14dp"
+                                            android:layout_height="14dp"
+                                            android:layout_marginStart="8dp"
+                                            android:background="@drawable/ic_arrow_down"
+                                            android:backgroundTint="?attr/textcolor_s_desc"
+                                            android:visibility="visible" />
+
+                                        <TextView
+                                            android:id="@+id/txt_drop_up"
+                                            android:layout_width="14dp"
+                                            android:layout_height="14dp"
+                                            android:layout_marginStart="8dp"
+                                            android:background="@drawable/ic_arrow_down"
+                                            android:backgroundTint="?attr/textcolor_s_desc"
+                                            android:rotation="180"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="?attr/splitline" />
+
+                                <!--Book Content-->
+                                <LinearLayout
+                                    android:id="@+id/ly_book_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:orientation="vertical">
+
+                                    <!--Title-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:orientation="horizontal">
+
+                                        <View
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="3dp"
+                                            android:layout_marginBottom="3dp"
+                                            android:background="@color/colorPrimaryDark" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/contents"
+                                            android:textColor="?attr/textcolor"
+                                            android:textSize="@dimen/text_16" />
+
+                                    </LinearLayout>
+
+                                    <!--Chapter-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <!--Latest Update-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.7"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:gravity="center_vertical"
+                                                android:singleLine="true"
+                                                android:text="@string/latest_update"
+                                                android:textColor="?attr/textcolor"
+                                                android:textSize="@dimen/text_14_" />
+
+                                            <TextView
+                                                android:id="@+id/txt_latest_update"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:gravity="center_vertical"
+                                                android:singleLine="true"
+                                                android:textColor="?attr/textcolor"
+                                                android:textSize="@dimen/text_14_" />
+
+                                        </LinearLayout>
+
+                                        <!--Chapters Count-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center|end"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/txt_chapter_count"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/roboto_medium"
+                                                    android:gravity="center"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="?attr/textcolor_s_desc"
+                                                    android:textSize="@dimen/text_14" />
+
+                                                <TextView
+                                                    android:layout_width="13dp"
+                                                    android:layout_height="13dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="1dp"
+                                                    android:background="@drawable/ic_more"
+                                                    android:backgroundTint="?attr/textcolor_s_desc"
+                                                    android:visibility="visible" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="?attr/splitline" />
+
+                                <!-- Template View for native ad -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <com.facebook.ads.NativeAdLayout
+                                        android:id="@+id/fbNativeTemplate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:visibility="gone" />
+
+                                    <!--  This is your template view -->
+                                    <com.google.android.ads.nativetemplates.TemplateView
+                                        android:id="@+id/nativeTemplate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone"
+                                        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="?attr/splitline"
+                                    android:visibility="gone" />
+
+                                <!--Comments-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:orientation="vertical">
+
+                                    <!--Title & View All-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:orientation="horizontal">
+
+                                        <!--Title-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.8"
+                                            android:gravity="center_vertical|end">
+
+                                            <View
+                                                android:layout_width="3dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="3dp"
+                                                android:layout_marginBottom="3dp"
+                                                android:background="@color/colorPrimaryDark" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginStart="10dp"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/Comments"
+                                                android:textColor="?attr/textcolor"
+                                                android:textSize="@dimen/text_16" />
+
+                                        </LinearLayout>
+
+                                        <!--View All-->
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.2"
+                                            android:gravity="center_vertical|end">
+
+                                            <LinearLayout
+                                                android:id="@+id/ly_comment_viewAll"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical|end"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/roboto_regular"
+                                                    android:gravity="center"
+                                                    android:text="@string/View_All"
+                                                    android:textColor="?attr/viewtextcolor"
+                                                    android:textSize="@dimen/text_12" />
+
+                                                <TextView
+                                                    android:layout_width="10dp"
+                                                    android:layout_height="10dp"
+                                                    android:layout_marginStart="5dp"
+                                                    android:background="@drawable/ic_more" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!--RecyclerView-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:orientation="vertical">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rv_comment"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="3dp"
+                                            android:nestedScrollingEnabled="false"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="?attr/splitline" />
+
+                                <!--Add a Comment-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1.0">
+
+                                    <LinearLayout
+                                        android:id="@+id/ly_add_comment"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:background="@drawable/ic_write_comment"
+                                            android:backgroundTint="?attr/icontintcolor" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="8dp"
+                                            android:gravity="center"
+                                            android:text="@string/add_a_comment"
+                                            android:textColor="?attr/textcolor"
+                                            android:textSize="@dimen/text_14_" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="?attr/splitline" />
+
+                                <!--Related Books-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <!--Title-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:orientation="horizontal">
+
+                                        <View
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="3dp"
+                                            android:layout_marginBottom="3dp"
+                                            android:background="@color/colorPrimaryDark" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/populars_with_same_genres"
+                                            android:textColor="?attr/textcolor"
+                                            android:textSize="@dimen/text_16" />
+
+                                    </LinearLayout>
+
+                                    <!--RecyclerView-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rv_related"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:nestedScrollingEnabled="false"
+                                            android:scrollbars="none"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!--Copyright information Title-->
+                                <LinearLayout
+                                    android:id="@+id/ly_copyright_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="10dp"
+                                    android:orientation="horizontal">
+
+                                    <!--Title-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.9"
+                                        android:gravity="center_vertical|end">
+
+                                        <View
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="3dp"
+                                            android:layout_marginBottom="3dp"
+                                            android:background="@color/colorPrimaryDark" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/copyright_information"
+                                            android:textColor="?attr/textcolor"
+                                            android:textSize="@dimen/text_16" />
+
+                                    </LinearLayout>
+
+                                    <!--Show / Hide-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/txt_show_info"
+                                                android:layout_width="16dp"
+                                                android:layout_height="16dp"
+                                                android:background="@drawable/ic_arrow_down"
+                                                android:backgroundTint="?attr/toolbarbackTint"
+                                                android:gravity="center"
+                                                android:visibility="visible" />
+
+                                            <TextView
+                                                android:id="@+id/txt_hide_info"
+                                                android:layout_width="16dp"
+                                                android:layout_height="16dp"
+                                                android:background="@drawable/ic_arrow_down"
+                                                android:backgroundTint="?attr/toolbarbackTint"
+                                                android:gravity="center"
+                                                android:rotation="180"
+                                                android:visibility="gone" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Copyright information-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ly_below"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/whitelightbackground"
+                        android:orientation="vertical">
+
+                        <!--Details-->
+                        <LinearLayout
+                            android:id="@+id/ly_author_publish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <!--Author Name-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:gravity="center"
+                                    android:text="@string/Author_caps"
+                                    android:textColor="?attr/textcolor_desc"
+                                    android:textSize="@dimen/text_14_" />
+
+                                <!--Author Name-->
+                                <TextView
+                                    android:id="@+id/txt_author_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:gravity="center"
+                                    android:textColor="?attr/textcolor"
+                                    android:textSize="@dimen/text_14" />
+
+                            </LinearLayout>
+
+                            <!--Publish At-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:gravity="center"
+                                    android:text="@string/Publish_at"
+                                    android:textColor="?attr/textcolor_desc"
+                                    android:textSize="@dimen/text_14_" />
+
+                                <!--Publish At-->
+                                <TextView
+                                    android:id="@+id/txt_publish_at"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:gravity="center"
+                                    android:textColor="?attr/textcolor"
+                                    android:textSize="@dimen/text_14" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Top-->
+                    <LinearLayout
+                        android:id="@+id/ly_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="-160dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:orientation="horizontal">
+
+                            <!--Image-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_view"
+                                    android:layout_width="112dp"
+                                    android:layout_height="150dp"
+                                    app:cardBackgroundColor="?attr/cardbackround"
+                                    app:cardCornerRadius="@dimen/card_corner_radius"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/ivThumb"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY" />
+
+                                        <!-- Total Selling -->
+                                        <LinearLayout
+                                            android:id="@+id/lySellCount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="@dimen/margin5"
+                                            android:background="@drawable/round_bg_r5_white"
+                                            android:backgroundTint="@color/overlayDark50"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:paddingHorizontal="@dimen/margin5"
+                                            android:visibility="visible">
+
+                                            <!-- Selling Counts-->
+                                            <TextView
+                                                android:id="@+id/txtSellCount"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:gravity="center"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/default_texts" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin3"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:gravity="center"
+                                                android:text="@string/sells"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_12" />
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                            <!--Name & Details-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="2dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/txt_title"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:ellipsize="end"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:gravity="center_vertical"
+                                            android:maxLines="2"
+                                            android:singleLine="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="25dp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/txt_by_author"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:gravity="center_vertical"
+                                                android:singleLine="true"
+                                                android:textColor="?attr/textcolor"
+                                                android:textSize="@dimen/text_12" />
+
+                                            <TextView
+                                                android:id="@+id/txt_price"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="8dp"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:gravity="center_vertical"
+                                                android:textColor="@color/colorPrimaryDark"
+                                                android:textSize="14dp"
+                                                android:visibility="visible" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+                                            <!--Details-->
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7"
+                                                android:orientation="vertical">
+
+                                                <!-- Doc Category -->
+                                                <TextView
+                                                    android:id="@+id/txt_category"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_medium"
+                                                    android:gravity="center"
+                                                    android:singleLine="true"
+                                                    android:textColor="?attr/textcolor_s_desc"
+                                                    android:textSize="12dp" />
+
+                                                <!-- Rating -->
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="8dp"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="horizontal"
+                                                    android:visibility="visible">
+
+                                                    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                                                        android:id="@+id/ratingbar"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="match_parent"
+                                                        app:srb_borderColor="@color/colorPrimaryDark"
+                                                        app:srb_fillColor="@color/colorPrimaryDark"
+                                                        app:srb_isIndicator="true"
+                                                        app:srb_numberOfStars="5"
+                                                        app:srb_starSize="15dp" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Download-->
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.3"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:id="@+id/lyDownload"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:theme="@style/AppTheme.MyRipple"
+                                                    android:visibility="invisible">
+
+                                                    <TextView
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="30dp"
+                                                        android:background="@drawable/ic_book_download" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!--Read Now & Buy Now-->
+        <RelativeLayout
+            android:id="@+id/rl_buy_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?attr/backgroundcolor"
+            android:visibility="visible"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|snapMargins">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|snapMargins">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/splitline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <!--Read or Buy-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtBuyNow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_14_"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/txt_read"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_14_"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <!-- BookMark -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/whitelightbackground"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_bookmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="?attr/toolbartextcolor"
+                            android:textSize="@dimen/text_14_" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

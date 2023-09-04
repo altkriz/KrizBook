@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="shimmerDuration">1200</integer>
+
+    <integer name="bannerChangeTime">10000</integer>
+
+</resources>

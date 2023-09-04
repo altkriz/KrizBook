@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:orientation="vertical">
+
+    <!--Shimmer-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:shimmer_duration="@integer/shimmerDuration">
+
+        <!-- Adding 3 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shim_author_doc_edit" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_with_back" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Magazine Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/magazine_title"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="@dimen/text_13" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeight"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg_r5">
+
+                    <EditText
+                        android:id="@+id/edtMagazineTitle"
+                        android:layout_width="match_parent"
+                        android:textDirection="locale"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:hint="@string/magazine_title"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingHorizontal="@dimen/margin8"
+                        android:singleLine="true"
+                        android:textColor="?attr/textcolor"
+                        android:textColorHint="?attr/textcolor_s_desc"
+                        android:textSize="@dimen/default_texts" />
+
+                </LinearLayout>
+
+                <!-- Magazine Category -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/magazine_category"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="@dimen/text_13" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeight"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg_r5">
+
+                    <Spinner
+                        android:id="@+id/spinCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/margin8" />
+
+                </LinearLayout>
+
+                <!-- Magazine Cost -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/magazine_cost"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="@dimen/text_13" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rgMagazineCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="?attr/accentIconTint"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/free"
+                            android:textColor="?attr/textcolor"
+                            android:textSize="@dimen/text_13" />
+
+                        <RadioButton
+                            android:id="@+id/rbPaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:buttonTint="?attr/accentIconTint"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/paid"
+                            android:textColor="?attr/textcolor"
+                            android:textSize="@dimen/text_13" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/lyMagazineCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editTextHeight"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg_r5"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/edtMagazinePrice"
+                            android:layout_width="match_parent"
+                            android:textDirection="locale"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="@string/magazine_cost"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:paddingHorizontal="@dimen/margin8"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Magazine Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/magazine_description_title"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="@dimen/text_13" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg_r5"
+                    android:minHeight="80dp">
+
+                    <EditText
+                        android:id="@+id/edtMagazineDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textDirection="locale"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="top"
+                        android:hint="@string/magazine_description"
+                        android:imeOptions="actionNext"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/margin8"
+                        android:textColor="?attr/textcolor"
+                        android:textColorHint="?attr/textcolor_s_desc"
+                        android:textSize="@dimen/default_texts" />
+
+                </LinearLayout>
+
+                <!-- Upload & Uploaded Sample Magazine -->
+                <LinearLayout
+                    android:id="@+id/lyUploadSample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_bg_r5"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_bg_dotted_r5"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <!-- Not Selected Doc -->
+                        <LinearLayout
+                            android:id="@+id/lyEmptySampleMagazine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:background="@drawable/round_bg_r5_white"
+                                android:backgroundTint="@color/extraLightGray2"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:background="@drawable/ic_doc"
+                                    android:backgroundTint="@color/white" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/upload_samplemagazine"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="@dimen/default_texts" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/doc_format"
+                                android:textColor="?attr/textcolor_s_desc"
+                                android:textSize="@dimen/text_12" />
+
+                        </LinearLayout>
+
+                        <!-- Selected Doc -->
+                        <LinearLayout
+                            android:id="@+id/lySelectedSampleMagazine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/round_bg_r5_white"
+                                        android:backgroundTint="@color/primaryDark"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:background="@drawable/ic_image_select" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="@string/upload_samplemagazine"
+                                        android:textColor="?attr/textPrimaryColor"
+                                        android:textSize="@dimen/default_texts" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="@string/doc_format"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center|end"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyViewSampleMagazine"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:theme="@style/AppTheme.MyRipple">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="16dp"
+                                            android:background="@drawable/ic_views"
+                                            android:backgroundTint="?attr/accentIconTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:background="@drawable/edittext_bg_r5"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/margin8"
+                                android:paddingVertical="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="26dp"
+                                        android:layout_height="26dp"
+                                        android:background="@drawable/ic_doc" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtSampleMagazineName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="@dimen/default_texts" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center|end"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyRemoveSampleMagazine"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:gravity="center"
+                                        android:theme="@style/AppTheme.MyRipple">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:background="@drawable/ic_close"
+                                            android:backgroundTint="?attr/textcolor_s_desc" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Upload & Uploaded Full Magazine -->
+                <LinearLayout
+                    android:id="@+id/lyUploadFull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_bg_r5"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_bg_dotted_r5"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <!-- Not Selected Doc -->
+                        <LinearLayout
+                            android:id="@+id/lyEmptyFullMagazine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:background="@drawable/round_bg_r5_white"
+                                android:backgroundTint="@color/extraLightGray2"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:background="@drawable/ic_doc"
+                                    android:backgroundTint="@color/white" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/upload_fullmagazine"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="@dimen/default_texts" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/doc_format"
+                                android:textColor="?attr/textcolor_s_desc"
+                                android:textSize="@dimen/text_12" />
+
+                        </LinearLayout>
+
+                        <!-- Selected Doc -->
+                        <LinearLayout
+                            android:id="@+id/lySelectedFullMagazine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/round_bg_r5_white"
+                                        android:backgroundTint="@color/primaryDark"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:background="@drawable/ic_image_select" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="@string/upload_fullmagazine"
+                                        android:textColor="?attr/textPrimaryColor"
+                                        android:textSize="@dimen/default_texts" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="@string/doc_format"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center|end"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyViewFullMagazine"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:theme="@style/AppTheme.MyRipple">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="16dp"
+                                            android:background="@drawable/ic_views"
+                                            android:backgroundTint="?attr/accentIconTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:background="@drawable/edittext_bg_r5"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/margin8"
+                                android:paddingVertical="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="26dp"
+                                        android:layout_height="26dp"
+                                        android:background="@drawable/ic_doc" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtFullMagazineName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="@dimen/default_texts" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center|end"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyRemoveFullMagazine"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:gravity="center"
+                                        android:theme="@style/AppTheme.MyRipple">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:background="@drawable/ic_close"
+                                            android:backgroundTint="?attr/textcolor_s_desc" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Upload & Uploaded Cover Poster -->
+                <LinearLayout
+                    android:id="@+id/lyUploadCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_bg_r5"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_bg_dotted_r5"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <!-- Not Selected Doc -->
+                        <LinearLayout
+                            android:id="@+id/lyEmptyCover"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:background="@drawable/round_bg_r5_white"
+                                android:backgroundTint="@color/extraLightGray2"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:background="@drawable/ic_image_select" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/magazine_coverposter"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="@dimen/default_texts" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/cover_format"
+                                android:textColor="?attr/textcolor_s_desc"
+                                android:textSize="@dimen/text_12" />
+
+                        </LinearLayout>
+
+                        <!-- Selected Doc -->
+                        <LinearLayout
+                            android:id="@+id/lySelectedCover"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/round_bg_r5_white"
+                                        android:backgroundTint="@color/primaryDark"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:background="@drawable/ic_image_select" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.85"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="@string/magazine_coverposter"
+                                        android:textColor="?attr/textPrimaryColor"
+                                        android:textSize="@dimen/default_texts" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="@string/cover_format"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin8"
+                                android:background="@drawable/edittext_bg_r5"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/margin8"
+                                android:paddingVertical="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="25dp"
+                                        android:layout_height="22dp"
+                                        android:background="@drawable/ic_image" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtMagazineCoverName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="@dimen/default_texts" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center|end"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyRemoveCover"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:gravity="center"
+                                        android:theme="@style/AppTheme.MyRipple">
+
+                                        <TextView
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:background="@drawable/ic_close"
+                                            android:backgroundTint="?attr/textcolor_s_desc" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Submit Button -->
+                <LinearLayout
+                    android:id="@+id/lySubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeight"
+                    android:layout_marginVertical="25dp"
+                    android:background="@drawable/author_round_bg_corner"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:theme="@style/AppTheme.MyRipple">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_15" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

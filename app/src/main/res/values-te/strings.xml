@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ఈబుక్</string>
+
+    <!--Welcome-->
+    <string name="next">తరువాత</string>
+    <string name="skip">దాటవేయి</string>
+    <string name="start">దొరికింది</string>
+
+    <string name="wel_one">Best Book for you</string>
+    <string name="wel_two">Best Magazine for you</string>
+    <string name="wel_three">Become a Author</string>
+    <string name="wel_four">Payment Gateway &amp; Wallet</string>
+    <string name="wel_sub_one">From Classic to Contemopory you will find everything here</string>
+    <string name="wel_sub_two">The best Magazine Collections available here</string>
+    <string name="wel_sub_three">User become Author &amp; publish own Books / Magazine on Application</string>
+    <string name="wel_sub_four">To Buy a Paid book using Wallet &amp; Managed by Payment gateways</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">క్షమించండి! ఇంటర్నెట్‌కు కనెక్ట్ కాలేదు.</string>
+    <string name="internet_error">నెట్‌వర్క్ కనెక్షన్ లోపం!!!</string>
+    <string name="permission_necessary">అనుమతి అవసరం</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">ఈవెంట్‌ను చదవడానికి మరియు వ్రాయడానికి నిల్వ అనుమతి అవసరం</string>
+    <string name="settings">సెట్టింగ్‌లు</string>
+    <string name="cancel_">రద్దు చేయండి</string>
+    <string name="permission">అనుమతి</string>
+    <string name="permission_alert">అనుమతి హెచ్చరిక</string>
+    <string name="we_need_storage_permission_for_save_video">మీడియా ఫైల్‌ను బాహ్య నిల్వలో సేవ్ చేయడానికి మాకు నిల్వ అనుమతి అవసరం.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">ప్రొఫైల్ చిత్రాన్ని అప్‌లోడ్ చేయడానికి మాకు బాహ్య నిల్వ మరియు కెమెరా అనుమతి అవసరం.</string>
+    <string name="yesterday">నిన్న</string>
+    <string name="day_ago">రోజు క్రితం</string>
+    <!--Network and Permission END-->
+
+    <!--Login-->
+    <string name="email">ఇమెయిల్ చిరునామా</string>
+    <string name="email_hint">ఇమెయిల్</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="remember">నన్ను గుర్తు పెట్టుకో</string>
+    <string name="login">ప్రవేశించండి</string>
+    <string name="skip1">దాటవేయి</string>
+    <string name="dont">ఖాతా లేదా?</string>
+    <string name="signup">చేరడం</string>
+    <string name="enter_email">ఇమెయిల్ నమోదు చేయండి.</string>
+    <string name="enter_password">రహస్య సంకేతం తెలపండి.</string>
+    <string name="enter_phone_number">ఫోన్ నంబర్ నమోదు చేయండి.</string>
+    <string name="enter_fullname">పూర్తి పేరు నమోదు చేయండి.</string>
+    <string name="guest_user">అతిథి వినియోగదారు</string>
+    <string name="new_password_have_been_send_to_register_email_address">రిజిస్టర్డ్ ఇమెయిల్ చిరునామాకు కొత్త పాస్‌వర్డ్ పంపబడింది.</string>
+    <string name="send">పంపు</string>
+    <string name="register">నమోదు చేసుకోండి</string>
+    <string name="or_login_using_social_media">లేదా సోషల్ మీడియాను ఉపయోగించి లాగిన్ చేయండి</string>
+    <string name="notifications">నోటిఫికేషన్‌లు</string>
+    <string name="marked_as_read">చదివినట్లు గుర్తు పెట్టబడింది.</string>
+    <string name="forgot_password">పాస్‌వర్డ్ మర్చిపోయారా?</string>
+    <!--End Login-->
+
+    <!--Registration-->
+    <string name="full_name">పూర్తి పేరు</string>
+    <string name="phone">ఫోన్</string>
+    <string name="signup_cap">చేరడం</string>
+    <string name="already_account">ఇంకా ఇంకా ఖాతా ఉందా?</string>
+    <!--End Registration-->
+
+    <!--OTP Login START-->
+    <string name="otp_verification">OTP ధృవీకరణ</string>
+    <string name="enter_your_mobile_no">మీ మొబైల్ నెంబర్ ను ఎంటర్ చేయండి</string>
+    <string name="enter_otp">అందుకున్న OTPని నమోదు చేయండి.</string>
+    <string name="enter_coutry_code">మీ దేశం కోడ్‌ని నమోదు చేయండి.</string>
+    <string name="you_will_receive_a_4_digit_code_to_verify_next">తదుపరి ధృవీకరించడానికి మీరు 4 అంకెల కోడ్‌ని అందుకుంటారు.</string>
+    <string name="send_otp">OTPని పంపండి</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">మొబైల్ నంబర్‌కు పంపడానికి OTP కోడ్‌ని నమోదు చేయండి.</string>
+    <string name="verify_and_proceed">వెరిఫై &amp; ప్రొసీడ్</string>
+    <string name="resend_otp">OTP ను మళ్ళీ పంపు</string>
+    <!--OTP Login END-->
+
+    <!--About Us-->
+    <string name="Company">కంపెనీ</string>
+    <string name="website">వెబ్‌సైట్</string>
+    <string name="Contact">సంప్రదించండి</string>
+    <!--End About Us-->
+
+    <!--Home-->
+    <string name="Category">వర్గం</string>
+    <string name="Categories">కేటగిరీలు</string>
+    <string name="View_all">మరింత</string>
+    <string name="app_bestBook">ఈబుక్ బెస్ట్</string>
+    <string name="New_Arrival_Book">కొత్త రాక పుస్తకం</string>
+    <string name="You_may_also_like">మీకు ఇది కూడా నచ్చవచ్చు</string>
+    <string name="Authors">రచయితలు</string>
+    <string name="Free_Book">ఉచిత విడుదలలు</string>
+    <string name="Paid_Book">చెల్లింపు విడుదలలు</string>
+    <string name="Continue_Reading">చదవడం కొనసాగించు</string>
+    <string name="Popular_Stories">ప్రముఖ కథనాలు</string>
+    <string name="Magazine_category">పత్రిక వర్గాలు</string>
+    <string name="Top_dowloaded">టాప్ డౌన్‌లోడ్ చేయబడింది</string>
+    <string name="Most_viewed">అత్యంత వీక్షించబడిన</string>
+    <!--End Home-->
+
+    <!--Search-->
+    <string name="Search">వెతకండి</string>
+    <string name="See_All">అన్నింటిని చూడు</string>
+    <string name="Payment">చెల్లింపు</string>
+    <string name="Please_select_any_payment_method">దయచేసి ఏదైనా చెల్లింపు పద్ధతిని ఎంచుకోండి</string>
+    <string name="CONTINUE">కొనసాగించు</string>
+    <string name="Books">పుస్తకాలు</string>
+    <string name="book">పుస్తకం :</string>
+    <string name="book_author">పుస్తక రచయిత:</string>
+    <string name="information_of_book">పుస్తకం యొక్క సమాచారం</string>
+    <string name="magazine">పత్రిక:</string>
+    <string name="magazine_author">పత్రిక రచయిత:</string>
+    <string name="information_of_magazine">పత్రిక సమాచారం</string>
+    <string name="Reviews">సమీక్షలు</string>
+    <string name="Downloads">డౌన్‌లోడ్‌లు</string>
+    <string name="Book_Details">పుస్తక వివరాలు</string>
+    <string name="Earn_Rewards">రివార్డులు సంపాదించండి</string>
+    <string name="Vouchers_History">వోచర్ల చరిత్ర</string>
+    <string name="What_is_this_book_about">ఈ పుస్తకం దేని గురించి?</string>
+    <string name="book_introduction">పుస్తక పరిచయం</string>
+    <string name="thanks_for_feedback">మీ విలువైన అభిప్రాయానికి ధన్యవాదాలు.</string>
+    <string name="Encourage_authors">రచయితలను ప్రోత్సహించండి</string>
+    <string name="copyright_information">కాపీరైట్ సమాచారం</string>
+    <string name="sir_we_were_meant_to_be">సర్, మేం ఉండాలనుకున్నాం</string>
+    <string name="magazine_introduction">పత్రిక పరిచయం</string>
+    <string name="magazine_details">పత్రిక వివరాలు</string>
+    <string name="add_a_comment">ఒక వ్యాఖ్యను జోడించండి</string>
+    <string name="Author_caps">రచయిత</string>
+    <string name="Publish_at">ప్రచురించు</string>
+    <string name="Related_Books">సంబంధిత పుస్తకాలు</string>
+    <string name="populars_with_same_genres">ఒకే తరహాలో జనాదరణ పొందినవి</string>
+    <string name="Comments">వ్యాఖ్యలు</string>
+    <string name="Write_your_comments">మీ వ్యాఖ్యలను వ్రాయండి</string>
+    <string name="remove_from_library">లైబ్రరీ నుండి తీసివేయండి</string>
+    <string name="add_to_library">లైబ్రరీకి జోడించండి</string>
+    <string name="free">ఉచిత</string>
+    <string name="my_library">నా లైబ్రరీ</string>
+    <string name="paid">చెల్లించారు</string>
+    <string name="brought">తీసుకువచ్చారు</string>
+    <string name="downloaded">డౌన్‌లోడ్ చేయబడింది</string>
+    <string name="by">ద్వారా</string>
+    <string name="chapters">అధ్యాయాలు</string>
+    <string name="chapter">అధ్యాయం</string>
+    <string name="buy_now">ఇప్పుడే కొనండి</string>
+    <string name="read_now">ఇప్పుడు చదవండి</string>
+    <string name="pack_up">సర్దుకోవడం</string>
+    <string name="show_all">అన్నీ చూపండి</string>
+    <string name="please_enter_comment">దయచేసి, వ్యాఖ్యను నమోదు చేయండి.</string>
+    <string name="already_download">ఇప్పటికే డౌన్‌లోడ్</string>
+    <string name="magazine_download_success">మ్యాగజైన్ డౌన్‌లోడ్ విజయం</string>
+    <string name="book_download_success">బుక్ డౌన్‌లోడ్ విజయం</string>
+    <string name="please_try_again">దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="let_me_recommend_you_this_application_to_read_full_book">పూర్తి కంటెంట్‌ను చదవడానికి ఈ అప్లికేషన్‌ను మీకు సిఫార్సు చేస్తాను.</string>
+    <string name="My_Purchase_Books">నా కొనుగోలు పుస్తకాలు</string>
+    <string name="ALLOW_PERMISSION">అనుమతించదగిన అనుమతి</string>
+    <!--End Search-->
+
+    <string name="title_home">హోమ్</string>
+    <string name="title_genres">శైలులు</string>
+    <string name="title_magazine">పత్రికలు</string>
+    <string name="title_featured">ఫీచర్ చేయబడింది</string>
+    <string name="title_search">వెతకండి</string>
+    <string name="title_bookmark">బుక్ మార్క్</string>
+    <string name="title_library">గ్రంధాలయం</string>
+    <string name="title_Premium">ప్రీమియం</string>
+    <string name="title_settings">సెట్టింగులు</string>
+    <string name="title_profile">ప్రొఫైల్</string>
+    <string name="isRTL">తప్పుడు</string>
+    <string name="internet_connection">ఇంటర్నెట్ కనెక్షన్ అందుబాటులో లేదు</string>
+    <string name="permission_desc">అప్లికేషన్‌ని సంపూర్ణంగా ఉపయోగించడం కొనసాగించడానికి ఇప్పుడు మాకు మీ అనుమతి కావాలి</string>
+    <string name="permission_title">అంతా ఓకే</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="save">సేవ్</string>
+    <string name="my_Purchase_book">నా లావాదేవీలు</string>
+    <string name="my_downloaded_book">నా లైబ్రరీ</string>
+    <string name="please_select_subscription_package">దయచేసి సబ్‌స్క్రిప్షన్ ప్యాకేజీని ఎంచుకోండి.</string>
+    <string name="enable_push_notification">పుష్ నోటిఫికేషన్‌ను ప్రారంభించండి</string>
+    <string name="enable_theme">డే/నైట్ మోడ్‌ని ప్రారంభించండి</string>
+    <string name="clear_cache">కాష్‌ను క్లియర్ చేయండి</string>
+    <string name="locally_cached_data">స్థానికంగా కాష్ చేయబడిన డేటా</string>
+    <string name="Privacy_policy">గోప్యతా విధానం</string>
+    <string name="balance">సంతులనం</string>
+    <string name="are_you_sure_you_want_to_logout">మీరు ఖచ్చితంగా లాగ్ అవుట్ చేయాలనుకుంటున్నారా?</string>
+    <string name="logout">లాగ్ అవుట్</string>
+    <string name="rate_app">రేట్ యాప్</string>
+    <string name="share_app">మిత్రులతో పంచుకొనుట</string>
+    <string name="about_us">మా గురించి</string>
+    <string name="terms_and_conditions">నిబంధనలు &amp; షరతులు</string>
+    <string name="downloading">డౌన్‌లోడ్ చేస్తోంది ...</string>
+    <string name="loading">లోడ్...</string>
+    <string name="please_wait">దయచేసి వేచి ఉండండి ...</string>
+    <string name="change_language">భాష</string>
+    <string name="cancel">రద్దు చేయండి</string>
+    <string name="submit">సమర్పించండి</string>
+    <string name="add_rate">రేటును జోడించండి</string>
+    <string name="Read">చదవండి</string>
+    <string name="my_package">చందా</string>
+    <string name="please_give_feedback_to_author">దయచేసి రచయితకు అభిప్రాయాన్ని తెలియజేయండి.</string>
+    <string name="title_reward">వాలెట్</string>
+    <string name="latest_update">తాజా వార్తలు :</string>
+    <string name="contents">కంటెంట్‌లు</string>
+    <string name="do_you_want_to_exit">మీరు నిష్క్రమించాలనుకుంటున్నారా?</string>
+    <string name="yes">అవును</string>
+    <string name="no">లేదు</string>
+    <string name="expires_on">గడువు ముగుస్తుంది</string>
+    <string name="delete">తొలగించు</string>
+    <string name="okay">సరే!</string>
+    <string name="choose_one">ఒకటి ఎంచుకోండి</string>
+    <string name="let_me_recommend_you_this_application">నేను ఈ అప్లికేషన్‌ను మీకు సిఫార్సు చేస్తాను:</string>
+    <string name="share_with">తో పంచు</string>
+    <string name="language_already_selected">భాష ఇప్పటికే ఎంపిక చేయబడింది!</string>
+    <string name="are_you_sure_want_to_purchase">మీరు ఖచ్చితంగా కొనుగోలు చేయాలనుకుంటున్నారా?</string>
+    <string name="purchase_now">ఇప్పుడు కొను</string>
+    <string name="may_be_later">తర్వాత చూద్దాం!</string>
+    <string name="your_balance_is_low_please_top_up_your_wallet">మీ బ్యాలెన్స్ తక్కువగా ఉంది. దయచేసి మీ వాలెట్‌ను టాప్ అప్ చేయండి</string>
+    <string name="use_my_referral_code">నా రెఫరల్ కోడ్ ఉపయోగించండి</string>
+
+    <!--Update Profile START-->
+    <string name="update">అప్‌డేట్</string>
+    <string name="enter_phone_number_profile">ఫోన్ నంబర్ నమోదు చేయండి ...</string>
+    <string name="enter_email_profile">ఇమెయిల్ నమోదు చేయండి ...</string>
+    <string name="enter_address_profile">చిరునామాను నమోదు చేయండి ...</string>
+    <string name="enter_your_name_profile">మీ పేరు రాయుము, మీ పేరు రాయండి...</string>
+    <string name="update_profile">ప్రొఫైల్‌ని అప్‌డేట్ చేయండి</string>
+    <string name="enter_password_profile">రహస్య సంకేతం తెలపండి...</string>
+    <string name="take_photo">ఫోటో తీసుకో.</string>
+    <string name="choose_from_gallery">గ్యాలరీ నుండి ఎంచుకోండి.</string>
+    <string name="add_photo">ఫోటోను జోడించండి!</string>
+    <!--Update Profile END-->
+
+    <!--Payment Activity START-->
+    <string name="payment_details">చెల్లింపు వివరాలు</string>
+    <string name="please_select_any_payment_method">దయచేసి, ఏదైనా చెల్లింపు పద్ధతిని ఎంచుకోండి</string>
+    <string name="payment_methods">చెల్లింపు పద్ధతులు</string>
+    <string name="choose_a_payment_methods_to_pay">కు చెల్లింపు పద్ధతిని ఎంచుకోండి</string>
+    <string name="pay_with">తో చెల్లించండి</string>
+    <string name="Continue">కొనసాగించండి</string>
+    <string name="paypal">Paypal</string>
+    <string name="razorpay">Razorpay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">చెల్లించండి</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">క్షమించండి, మేము మీ చెల్లింపును ధృవీకరించలేకపోయాము, దయచేసి మళ్లీ ప్రయత్నించండి !!!</string>
+    <string name="payable_amount_is">చెల్లించవలసిన మొత్తం:</string>
+    <string name="verification">ధృవీకరణ</string>
+    <string name="verification_success">ధృవీకరణ విజయవంతమైంది.</string>
+    <string name="verification_note">*దయచేసి, కొనసాగించడానికి మీ క్రింది వివరాలు/లని ధృవీకరించండి.</string>
+    <!--Payment Activity END-->
+
+    <!--Prime Membership & Vouchers START-->
+    <string name="Prime_Membership">ప్రధాన సభ్యత్వం</string>
+    <string name="Prime_Benefits">ప్రధాన ప్రయోజనాలు</string>
+    <string name="View_All">అన్నీ వీక్షించండి</string>
+    <string name="Exclusive_for_Newcomer">కొత్తవారికి ప్రత్యేకమైనది</string>
+    <string name="Prime_Lists_for_Gems">రత్నాల కోసం ప్రధాన జాబితాలు</string>
+    <string name="View_all_books">అన్ని పుస్తకాలను చూడండి >></string>
+    <string name="About_Prime">ప్రైమ్ గురించి</string>
+    <string name="vouchers_history">వోచర్ల చరిత్ర</string>
+    <string name="vouchers">వోచర్‌లు</string>
+    <string name="gems">రత్నాలు</string>
+    <string name="tips">చిట్కాలు:</string>
+    <string name="watch_video_ad_for_vouchers">వోచర్‌ల కోసం వీడియో ప్రకటనను చూడండి</string>
+    <string name="watch">చూడండి</string>
+    <string name="continuous_check_in">నిరంతర చెక్-ఇన్</string>
+    <string name="voucher_gems_tips">1. నాణేలతో రత్నాలు ఒకే విలువను కలిగి ఉంటాయి. అన్ని వోచర్లు మరియు రత్నాలు ఓవర్ టైం గడువు ముగుస్తుంది. దయచేసి గడువుకు ముందు ఉపయోగించండి. \N 2. రత్నాలు నాణేలతో సమానమైన విలువను కలిగి ఉంటాయి. అన్ని వోచర్లు మరియు రత్నాలు ఓవర్ టైం గడువు ముగుస్తుంది. దయచేసి గడువుకు ముందు ఉపయోగించండి. \N 3. రత్నాలు నాణేలతో సమానమైన విలువను కలిగి ఉంటాయి. అన్ని వోచర్లు మరియు రత్నాలు ఓవర్ టైం గడువు ముగుస్తుంది. దయచేసి గడువుకు ముందు ఉపయోగించండి.</string>
+    <string name="coins">నాణేలు</string>
+    <string name="prime">ప్రైమ్</string>
+    <string name="daily_claim_vouchers">రోజువారీ క్లెయిమ్ వోచర్‌లు</string>
+    <string name="recharge">రీఛార్జ్</string>
+    <string name="get_more_coins">మరిన్ని నాణేలు పొందండి</string>
+    <string name="earn_rewards">రివార్డులు సంపాదించండి</string>
+    <string name="check_in">చెక్ ఇన్ చేయండి</string>
+    <string name="my_transaction">నా లావాదేవీ</string>
+    <string name="my_books">నా పుస్తకాలు</string>
+    <string name="books">పుస్తకాలు</string>
+    <string name="magazines">పత్రికలు</string>
+    <string name="wallet_blc_in_coins">వాలెట్ బ్యాలెన్స్</string>
+    <string name="Wallet">వాలెట్</string>
+    <string name="wallet_history">వాలెట్ చరిత్ర</string>
+    <string name="transaction_history">లావాదేవీ చరిత్ర</string>
+    <string name="add_money_to_wallet">వాలెట్‌కు డబ్బు జోడించండి</string>
+    <string name="you_are_login_with_social_media">మీరు సోషల్ మీడియాతో లాగిన్ అయ్యారు.</string>
+    <string name="comments_in_total">మొత్తం వ్యాఖ్యలు</string>
+    <string name="this_file_is_not_available">ఈ ఫైల్ అందుబాటులో లేదు.</string>
+    <string name="wallet_balance">వాలెట్ బ్యాలెన్స్</string>
+    <string name="payment_gateways">చెల్లింపు గేట్‌వేలు</string>
+    <string name="recharge_your_wallet">మీ వాలెట్ రీఛార్జ్ చేయండి</string>
+    <string name="add_to_wallet">వాలెట్‌కు జోడించండి</string>
+    <string name="enter_amount">అనుకూల మొత్తాన్ని నమోదు చేయండి ...</string>
+    <string name="your_current_balance_is">మీ ప్రస్తుత బ్యాలెన్స్:</string>
+    <string name="use_wallet_balance">వాలెట్ బ్యాలెన్స్ ఉపయోగించండి</string>
+    <string name="pay_now">ఇప్పుడు చెల్లించండి</string>
+    <string name="please_enter_valid_amount">దయచేసి చెల్లుబాటు అయ్యే మొత్తాన్ని నమోదు చేయండి.</string>
+    <string name="no_books_available">పుస్తకాలు అందుబాటులో లేవు.</string>
+    <string name="something_went_wrong">ఎక్కడో తేడ జరిగింది!!!</string>
+    <!--Prime Membership & Vouchers END-->
+
+    <!--- AuthorRegsiter START -->
+    <string name="author_name">రచయిత పేరు</string>
+    <string name="author_address">చిరునామా</string>
+    <string name="author_email">ఇమెయిల్</string>
+    <string name="author_password">పాస్వర్డ్</string>
+    <string name="author_bankdetail">బ్యాంక్ వివరములు</string>
+    <string name="author_bankname">బ్యాంక్ పేరు</string>
+    <string name="author_accountnum">ఖాతా సంఖ్య</string>
+    <string name="author_ifsc">IFSC కోడ్</string>
+    <string name="author_bankholder">బ్యాంక్ హోల్డర్ పేరు</string>
+    <string name="author_register">రచయిత రిజిస్టర్</string>
+    <string name="enter_author_name">మీ పేరు రాయుము, మీ పేరు రాయండి.</string>
+    <string name="enter_address">మీ చిరునామాను నమోదు చేయండి.</string>
+    <string name="enter_author_email">మీ ఇమెయిల్‌ను నమోదు చేయండి.</string>
+    <string name="enter_author_password">మీ పాస్వర్డ్ ని నమోదుచేయండి.</string>
+    <string name="enter_author_bank_name">మీ బ్యాంక్ పేరును నమోదు చేయండి.</string>
+    <string name="enter_author_account_number">మీ బ్యాంక్ ఖాతా నంబర్‌ను నమోదు చేయండి.</string>
+    <string name="enter_author_ifsc_code">IFSC కోడ్‌ను నమోదు చేయండి.</string>
+    <string name="enter_author_bank_holder_name">బ్యాంక్ హోల్డర్ పేరును నమోదు చేయండి.</string>
+    <!--- AuthorRegsiter END -->
+
+    <!-- Book Upload START -->
+    <string name="we_need_storage_and_upload_document_file">డాక్యుమెంట్ ఫైల్‌లను అప్‌లోడ్ చేయడానికి మాకు నిల్వ అనుమతి అవసరం.</string>
+    <string name="upload_book">పుస్తకాన్ని అప్‌లోడ్ చేయండి</string>
+    <string name="book_upload">బుక్ అప్‌లోడ్</string>
+    <string name="book_title">పుస్తకం పేరు</string>
+    <string name="book_category">పుస్తక వర్గం</string>
+    <string name="book_cost">బుక్ ఖర్చు</string>
+    <string name="book_description_title">పుస్తక వివరణ</string>
+    <string name="book_description">మీ పుస్తకం గురించి ఆసక్తికరమైన విషయాలు రాయండి...</string>
+    <string name="upload_samplebook">నమూనా పుస్తకాన్ని అప్‌లోడ్ చేయండి</string>
+    <string name="upload_fullbook">పూర్తి పుస్తకాన్ని అప్‌లోడ్ చేయండి</string>
+    <string name="doc_format">pdf, epub ఫైల్‌ని ఫార్మాట్ చేయండి</string>
+    <string name="cover_format">ఫార్మాట్ png, jpg</string>
+    <string name="book_coverposter">కవర్ పోస్టర్</string>
+    <string name="book_coverposter_name">చిత్రం పేరు</string>
+    <string name="book_name">పుస్తకం పేరు</string>
+    <string name="fill_up_all_fields">దయచేసి, అన్ని ఫీల్డ్‌లను పూరించండి.</string>
+    <string name="enter_book_title">పుస్తకం శీర్షికను నమోదు చేయండి.</string>
+    <string name="enter_book_description">పుస్తక వివరణను నమోదు చేయండి.</string>
+    <string name="enter_book_cost">బుక్ ధరను నమోదు చేయండి.</string>
+    <string name="select_book_category">దయచేసి, బుక్ కేటగిరీని ఎంచుకోండి.</string>
+    <string name="select_sample_book">దయచేసి, నమూనా పుస్తకాన్ని ఎంచుకోండి.</string>
+    <string name="select_full_book">దయచేసి, పూర్తి పుస్తకాన్ని ఎంచుకోండి.</string>
+    <string name="select_book_cover">దయచేసి, బుక్ కవర్ చిత్రాన్ని ఎంచుకోండి.</string>
+    <!-- Book Upload END -->
+
+    <!-- Magazine Upload START -->
+    <string name="upload_magazine">పత్రికను అప్‌లోడ్ చేయండి</string>
+    <string name="magazine_upload">పత్రిక అప్‌లోడ్</string>
+    <string name="magazine_title">పత్రిక శీర్షిక</string>
+    <string name="magazine_category">పత్రిక వర్గం</string>
+    <string name="magazine_cost">పత్రిక ఖర్చు</string>
+    <string name="magazine_description_title">పత్రిక వివరణ</string>
+    <string name="magazine_description">మీ మ్యాగజైన్ గురించి ఆసక్తికరమైన విషయాలు రాయండి...</string>
+    <string name="upload_samplemagazine">నమూనా పత్రికను అప్‌లోడ్ చేయండి</string>
+    <string name="upload_fullmagazine">పూర్తి పత్రికను అప్‌లోడ్ చేయండి</string>
+    <string name="magazine_coverposter">కవర్ పోస్టర్</string>
+    <string name="magazine_coverposter_name">చిత్రం పేరు</string>
+    <string name="magazine_name">పత్రిక పేరు</string>
+    <string name="enter_magazine_title">పత్రిక శీర్షికను నమోదు చేయండి</string>
+    <string name="enter_magazine_description">పత్రిక వివరణను నమోదు చేయండి.</string>
+    <string name="enter_magazine_cost">మ్యాగజైన్ ధరను నమోదు చేయండి.</string>
+    <string name="select_magazine_category">దయచేసి, పత్రిక వర్గాన్ని ఎంచుకోండి.</string>
+    <string name="select_sample_magazine">దయచేసి, నమూనా పత్రికను ఎంచుకోండి.</string>
+    <string name="select_full_magazine">దయచేసి, పూర్తి పత్రికను ఎంచుకోండి.</string>
+    <string name="select_magazine_cover">దయచేసి, మ్యాగజైన్ కవర్ చిత్రాన్ని ఎంచుకోండి.</string>
+    <!-- Magazine Upload END -->
+
+    <string name="upload_your_documents">మీ పత్రాలను అప్‌లోడ్ చేయండి...</string>
+    <string name="add_documents">పత్రాలను జోడించండి!</string>
+    <string name="upload_new_doc_desc">మీ కొత్త పుస్తకం లేదా పత్రికను అప్‌లోడ్ చేయండి.</string>
+    <string name="internal_storage">అంతర్గత నిల్వ</string>
+    <string name="views">వీక్షణలు</string>
+    <string name="no_magazines_available">మ్యాగజైన్‌లు ఏవీ అందుబాటులో లేవు.</string>
+    <string name="add_book_or_magazine">పుస్తకం లేదా పత్రికను జోడించండి</string>
+    <string name="edit_author_s_profile">రచయిత ప్రొఫైల్‌ను సవరించండి</string>
+    <string name="about">గురించి</string>
+    <string name="add_new_comment">కొత్త వ్యాఖ్యను జోడించండి</string>
+    <string name="your_rate">మీ రేటు</string>
+    <string name="story_developement">కథ అభివృద్ధి</string>
+    <string name="add_a_comment_here">ఇక్కడ ఒక వ్యాఖ్యను జోడించండి</string>
+    <string name="add_books">పుస్తకాలను జోడించండి</string>
+    <string name="add_magazines">పత్రికలను జోడించండి</string>
+    <string name="author_portfolio">రచయిత పోర్ట్‌ఫోలియో</string>
+    <string name="author_bio">రచయిత బయో</string>
+    <string name="enter_author_bio">రచయిత బయోని నమోదు చేయండి.</string>
+    <string name="update_document_visibility">డాక్యుమెంట్ విజిబిలిటీని అప్‌డేట్ చేయండి!</string>
+    <string name="update_doc_visibility_desc_inactive">ఇన్‌యాక్టివ్‌ని ఎంచుకున్న తర్వాత, మీ పుస్తకం/పత్రిక ఇతరులకు కనిపించదు.</string>
+    <string name="update_doc_visibility_desc_active">యాక్టివ్‌ని ఎంచుకున్న తర్వాత, మీ పుస్తకం/పత్రిక ఇతరులకు కనిపిస్తుంది.</string>
+    <string name="active">చురుకుగా</string>
+    <string name="inactive">క్రియారహితం</string>
+    <string name="sell">అమ్మకం</string>
+    <string name="sells">అమ్మకాలు</string>
+    <string name="edit">సవరించు</string>
+    <string name="add">జోడించు</string>
+    <string name="Become_Author">రచయిత అవ్వండి</string>
+    <string name="update_book">పుస్తకాన్ని నవీకరించండి</string>
+    <string name="update_magazine">పత్రికను నవీకరించండి</string>
+    <string name="upgrade_plan_to">ప్లాన్‌ని అప్‌గ్రేడ్ చేయండి</string>
+    <string name="highly_experience">అధిక అనుభవం</string>
+    <string name="sample_book">నమూనా పుస్తకం</string>
+    <string name="sample_magazine">నమూనా పత్రిక</string>
+    <string name="enter_valid_email">చెల్లుబాటు అయ్యే ఇమెయిల్‌ను నమోదు చేయండి.</string>
+    <string name="we_need_storage_permission_to_read_document_file">డాక్యుమెంట్ ఫైల్‌లను చదవడానికి మాకు నిల్వ అనుమతి అవసరం.</string>
+
+</resources>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Top corner-->
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_corner_shape"
+            android:gravity="center" />
+
+        <!--Bottom corner-->
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_corner_shape"
+            android:gravity="center"
+            android:rotation="180" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.22"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_login_icon"
+                    android:layout_width="@dimen/appIconWidth"
+                    android:layout_height="@dimen/appIconHeight"
+                    android:src="@drawable/app_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_texts" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/etCredHeight"
+                    android:layout_marginTop="@dimen/margin3"
+                    android:background="@drawable/edittext_bg_r5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="@string/email_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="@dimen/margin8"
+                        android:singleLine="true"
+                        android:textColor="?attr/textcolor"
+                        android:textColorHint="?attr/textcolor_s_desc"
+                        android:textDirection="locale"
+                        android:textSize="@dimen/text_15" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="@dimen/margin8"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_texts" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/etCredHeight"
+                    android:layout_marginTop="@dimen/margin3"
+                    android:background="@drawable/edittext_bg_r5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/txt_forgot"
+                            android:background="@null"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="@string/password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:paddingHorizontal="@dimen/margin8"
+                            android:singleLine="true"
+                            android:textColor="?attr/textcolor"
+                            android:textColorHint="?attr/textcolor_s_desc"
+                            android:textDirection="locale"
+                            android:textSize="@dimen/text_15" />
+
+                        <TextView
+                            android:id="@+id/txt_forgot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end|center"
+                            android:text="@string/forgot_password"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="0.47"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <!-- CheckBox for User Data Safety -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:theme="@style/YellowCheck" />
+
+                    <TextView
+                        android:id="@+id/txtUserAgreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="top"
+                        android:textColor="?attr/textcolor_desc"
+                        android:textColorLink="?attr/textcolor"
+                        android:textSize="@dimen/default_texts"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_bor_bg"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <!--Or Login using Social Media-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:text="@string/or_login_using_social_media"
+                            android:textColor="?attr/textcolor"
+                            android:textSize="@dimen/default_texts" />
+
+                    </LinearLayout>
+
+                    <!--Google & Facebook-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <!--Google-->
+                        <LinearLayout
+                            android:id="@+id/lyGmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:theme="@style/AppTheme.MyRipple">
+
+                            <!--Google icon-->
+                            <TextView
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:background="@drawable/ic_gmail"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <!--Facebook-->
+                        <LinearLayout
+                            android:id="@+id/lyFacebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:theme="@style/AppTheme.MyRipple"
+                            android:visibility="visible">
+
+                            <!--Facebook icon-->
+                            <TextView
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:background="@drawable/ic_facebook2"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <!--OTP Login-->
+                        <LinearLayout
+                            android:id="@+id/lyOTPLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:theme="@style/AppTheme.MyRipple"
+                            android:visibility="visible">
+
+                            <!--Mobile icon-->
+                            <TextView
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:background="@drawable/ic_otp"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_gmail">
+
+                            <ImageView
+                                android:id="@+id/ivGoogle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_google"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_fb">
+
+                            <ImageView
+                                android:id="@+id/ivFacebook"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_facebook"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_skip"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_bor"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="@string/skip1"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:gravity="center_horizontal"
+                        android:minHeight="35dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_already_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:letterSpacing="0.05"
+                            android:text="@string/signup"
+                            android:textColor="?attr/textcolor_desc"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

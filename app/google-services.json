@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "815384928117",
+    "firebase_url": "https://krizbook-85082-default-rtdb.firebaseio.com",
+    "project_id": "krizbook-85082",
+    "storage_bucket": "krizbook-85082.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815384928117:android:243150c339689960e37d3c",
+        "android_client_info": {
+          "package_name": "com.kriztech.book"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815384928117-qij33clf0t2mgin6ndqv7r1b5gqbcg3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARi3c8az4Nr1kg83Hbt9ZeAVKs99Xf7mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815384928117-eo6bt8hh2qjn0377ns967p2q57s53ekg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

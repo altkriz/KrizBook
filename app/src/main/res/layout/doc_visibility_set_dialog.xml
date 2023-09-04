@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bor_top"
+        android:backgroundTint="?attr/backgroundcolor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin23"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/update_document_visibility"
+                android:textColor="?attr/textcolor"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/txtVisibilityDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_medium"
+                android:lineSpacingExtra="5dp"
+                android:textColor="?attr/textcolor_desc"
+                android:textSize="@dimen/text_13" />
+
+            <!-- Book Upload -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialogButtonHeight"
+                android:layout_marginTop="@dimen/mainMarginTop"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/margin10">
+
+                <RadioGroup
+                    android:id="@+id/rgDocVisibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rcbActive"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/greenColor"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/active"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="@dimen/text_18" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rcbInActive"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/red"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/inactive"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="@dimen/text_18" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialogButtonHeight"
+                android:layout_marginTop="@dimen/margin20"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lyClickUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_bg_with_bor2"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minWidth="75dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/margin10"
+                    android:theme="@style/AppTheme.MyRipple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="@string/update"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round_bg"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round_bg_r5_white"
+                    android:backgroundTint="?attr/shimmerTint"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Bottom-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Book Title -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="?attr/shimmerTint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/edittext_bg_r5"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="18dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/round_bg_r5_white"
+                    android:backgroundTint="?attr/whitelightbackground" />
+
+            </LinearLayout>
+
+            <!-- Book Category -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="?attr/shimmerTint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/edittext_bg_r5"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="18dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/round_bg_r5_white"
+                    android:backgroundTint="?attr/whitelightbackground" />
+
+            </LinearLayout>
+
+            <!-- Book Cost -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="?attr/shimmerTint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="?attr/shimmerTint" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="15dp"
+                            android:layout_marginStart="@dimen/margin5"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/shimmerTint" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin15"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="?attr/shimmerTint" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="15dp"
+                            android:layout_marginStart="@dimen/margin5"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/shimmerTint" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeight"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg_r5"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_height="18dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="@drawable/round_bg_r5_white"
+                        android:backgroundTint="?attr/whitelightbackground" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Book Description -->
+            <View
+                android:layout_width="85dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="?attr/shimmerTint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/edittext_bg_r5"
+                android:gravity="top"
+                android:minHeight="70dp">
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_bg_r5_white"
+                    android:backgroundTint="?attr/whitelightbackground" />
+
+            </LinearLayout>
+
+            <!-- Upload & Uploaded Sample Book -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/edittext_bg_r5"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_bg_dotted_r5"
+                    android:backgroundTint="?attr/shimmerTint"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <!-- Selected Doc -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.15"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/whitelightbackground"
+                                    android:gravity="center">
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:background="@drawable/ic_image_select"
+                                        android:backgroundTint="?attr/shimmerTint" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.85"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="135dp"
+                                    android:layout_height="18dp"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/shimmerTint" />
+
+                                <View
+                                    android:layout_width="115dp"
+                                    android:layout_height="13dp"
+                                    android:layout_marginTop="@dimen/margin3"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/shimmerTint" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittext_bg_r5"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.15"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
+                                    android:background="@drawable/ic_doc"
+                                    android:backgroundTint="?attr/shimmerTint" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="150dp"
+                                    android:layout_height="12dp"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/whitelightbackground" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.15"
+                                android:gravity="center|end"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:gravity="center">
+
+                                    <View
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:background="@drawable/ic_close"
+                                        android:backgroundTint="?attr/shimmerTint" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Upload & Uploaded Full Book -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/edittext_bg_r5"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_bg_dotted_r5"
+                    android:backgroundTint="?attr/shimmerTint"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <!-- Selected Doc -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.15"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/whitelightbackground"
+                                    android:gravity="center">
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:background="@drawable/ic_image_select"
+                                        android:backgroundTint="?attr/shimmerTint" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.85"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="135dp"
+                                    android:layout_height="18dp"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/shimmerTint" />
+
+                                <View
+                                    android:layout_width="115dp"
+                                    android:layout_height="13dp"
+                                    android:layout_marginTop="@dimen/margin3"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/shimmerTint" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/edittext_bg_r5"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.15"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
+                                    android:background="@drawable/ic_doc"
+                                    android:backgroundTint="?attr/shimmerTint" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="150dp"
+                                    android:layout_height="12dp"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/whitelightbackground" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.15"
+                                android:gravity="center|end"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:gravity="center">
+
+                                    <View
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:background="@drawable/ic_close"
+                                        android:backgroundTint="?attr/shimmerTint" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

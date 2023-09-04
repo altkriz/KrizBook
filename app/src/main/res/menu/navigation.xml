@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_featured"
+        android:icon="@drawable/nav_featured_selector"
+        android:title="@string/title_featured"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/bottom_category"
+        android:icon="@drawable/nav_bookmark_selector"
+        android:title="@string/title_library"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/bottom_wallet"
+        android:icon="@drawable/nav_wallet_selector"
+        android:title="@string/title_reward"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/bottom_latest"
+        android:icon="@drawable/nav_profile_selector"
+        android:title="@string/title_profile"
+        app:showAsAction="withText" />
+</menu>

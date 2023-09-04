@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kitabu pepe</string>
+
+    <!--Welcome-->
+    <string name="next">IJAYO</string>
+    <string name="skip">RUKA</string>
+    <string name="start">NIMEELEWA</string>
+
+    <string name="wel_one">Best Book for you</string>
+    <string name="wel_two">Best Magazine for you</string>
+    <string name="wel_three">Become a Author</string>
+    <string name="wel_four">Payment Gateway &amp; Wallet</string>
+    <string name="wel_sub_one">From Classic to Contemopory you will find everything here</string>
+    <string name="wel_sub_two">The best Magazine Collections available here</string>
+    <string name="wel_sub_three">User become Author &amp; publish own Books / Magazine on Application</string>
+    <string name="wel_sub_four">To Buy a Paid book using Wallet &amp; Managed by Payment gateways</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">Samahani! Haijaunganishwa kwenye mtandao.</string>
+    <string name="internet_error">Hitilafu ya unganisho la mtandao !!!</string>
+    <string name="permission_necessary">Ruhusa Inahitajika</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">Ruhusa ya kuhifadhi ni muhimu kusoma na kuandika hafla</string>
+    <string name="settings">Mipangilio</string>
+    <string name="cancel_">Ghairi</string>
+    <string name="permission">Ruhusa</string>
+    <string name="permission_alert">Arifa ya Ruhusa</string>
+    <string name="we_need_storage_permission_for_save_video">Tunahitaji ruhusa ya kuhifadhi ili kuhifadhi faili ya midia kwenye hifadhi ya nje.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">Tunahitaji hifadhi ya nje na ruhusa ya kamera ili kupakia picha ya wasifu.</string>
+    <string name="yesterday">jana</string>
+    <string name="day_ago">siku iliyopita</string>
+    <!--Network and Permission END-->
+
+    <!--Login-->
+    <string name="email">Barua pepe</string>
+    <string name="email_hint">Barua pepe</string>
+    <string name="password">Nenosiri</string>
+    <string name="remember">Nikumbuke</string>
+    <string name="login">Ingia</string>
+    <string name="skip1">Ruka</string>
+    <string name="dont">Je! Hauna akaunti?</string>
+    <string name="signup">Jisajili</string>
+    <string name="enter_email">Ingiza barua pepe.</string>
+    <string name="enter_password">Ingiza nywila.</string>
+    <string name="enter_phone_number">Ingiza nambari ya simu.</string>
+    <string name="enter_fullname">Ingiza jina kamili.</string>
+    <string name="guest_user">Mtumiaji wa Mgeni</string>
+    <!--End Login-->
+
+    <!--Registration-->
+    <string name="full_name">Jina kamili</string>
+    <string name="phone">Simu</string>
+    <string name="signup_cap">JIANDIKISHE</string>
+    <string name="already_account">Tayari una akaunti Bado?</string>
+    <!--End Registration-->
+
+    <!--OTP Login START-->
+    <string name="otp_verification">Uthibitishaji wa OTP</string>
+    <string name="enter_your_mobile_no">Weka nambari yako ya rununu.</string>
+    <string name="enter_otp">Ingiza OTP iliyopokelewa.</string>
+    <string name="enter_coutry_code">Uthibitishaji wa OTP</string>
+    <string name="you_will_receive_a_4_digit_code_to_verify_next">Utapokea nambari ya kuthibitisha yenye tarakimu 6 ili \n uthibitishe inayofuata.</string>
+    <string name="send_otp">TUMA OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">Weka msimbo wa OTP ili utume \n kwa nambari ya simu ya mkononi.</string>
+    <string name="verify_and_proceed">THIBITISHA NA UENDELEE</string>
+    <string name="resend_otp">Tuma tena OTP</string>
+    <!--OTP Login END-->
+
+    <!--About Us-->
+    <string name="Company">Kampuni</string>
+    <string name="website">Tovuti</string>
+    <string name="Contact">Mawasiliano</string>
+    <!--End About Us-->
+
+    <!--Home-->
+    <string name="Category">Jamii</string>
+    <string name="Categories">Jamii</string>
+    <string name="View_all">Zaidi</string>
+    <string name="app_bestBook">EBook Bora</string>
+    <string name="New_Arrival_Book">Kitabu kipya cha Kuwasili</string>
+    <string name="You_may_also_like">Unaweza pia kupenda</string>
+    <string name="Authors">Waandishi</string>
+    <string name="Free_Book">Kutolewa Bure</string>
+    <string name="Paid_Book">Matoleo ya Kulipwa</string>
+    <string name="Continue_Reading">Endelea kusoma</string>
+    <string name="Popular_Stories">Hadithi Maarufu</string>
+    <string name="Magazine_category">Jamii za Magazeti</string>
+    <string name="Top_dowloaded">Zilizopakuliwa Juu</string>
+    <string name="Most_viewed">Iliyotazamwa zaidi</string>
+    <!--End Home-->
+
+    <!--Search-->
+    <string name="Search">Tafuta</string>
+    <string name="See_All">Ona yote</string>
+    <string name="Payment">Malipo</string>
+    <string name="Please_select_any_payment_method">Tafadhali chagua njia yoyote ya kulipa</string>
+    <string name="CONTINUE">ENDELEA</string>
+    <string name="Books">Vitabu</string>
+    <string name="book">Kitabu:</string>
+    <string name="book_author">Mwandishi wa Kitabu:</string>
+    <string name="information_of_book">Habari ya Kitabu</string>
+    <string name="magazine">Jarida:</string>
+    <string name="magazine_author">Mwandishi wa Jarida:</string>
+    <string name="information_of_magazine">Habari ya Jarida</string>
+    <string name="Reviews">Mapitio</string>
+    <string name="Downloads">Upakuaji</string>
+    <string name="Book_Details">Maelezo ya Kitabu</string>
+    <string name="Earn_Rewards">Pata Zawadi</string>
+    <string name="Vouchers_History">Historia ya Vocha</string>
+    <string name="What_is_this_book_about">Kitabu hiki kinahusu nini?</string>
+    <string name="book_introduction">Utangulizi wa Kitabu</string>
+    <string name="thanks_for_feedback">Asante kwa maoni yako muhimu.</string>
+    <string name="Encourage_authors">Watie moyo waandishi</string>
+    <string name="copyright_information">Maelezo ya hakimiliki</string>
+    <string name="sir_we_were_meant_to_be">Bwana, Tulikuwa na Maana ya Kuwa</string>
+    <string name="magazine_introduction">Utangulizi wa Jarida</string>
+    <string name="magazine_details">Maelezo ya Jarida</string>
+    <string name="add_a_comment">Ongeza Maoni</string>
+    <string name="Author_caps">MWANDISHI</string>
+    <string name="Publish_at">CHAPISHA KWA</string>
+    <string name="Related_Books">Vitabu vinavyohusiana</string>
+    <string name="populars_with_same_genres">Populars na Aina Tofauti</string>
+    <string name="Comments">Maoni</string>
+    <string name="Write_your_comments">Andika maoni yako</string>
+    <string name="remove_from_library">Ondoa kwenye Maktaba</string>
+    <string name="add_to_library">Ongeza kwenye Maktaba</string>
+    <string name="free">Bure</string>
+    <string name="my_library">Maktaba Yangu</string>
+    <string name="paid">Imelipwa</string>
+    <string name="brought">Imeletwa</string>
+    <string name="downloaded">Imepakuliwa</string>
+    <string name="by">Na</string>
+    <string name="chapters">Sura</string>
+    <string name="chapter">Sura</string>
+    <string name="buy_now">Nunua Sasa</string>
+    <string name="read_now">Soma Sasa</string>
+    <string name="pack_up">PAKIZA</string>
+    <string name="show_all">ONYESHA YOTE</string>
+    <string name="please_enter_comment">Tafadhali ingiza maoni.</string>
+    <string name="already_download">Tayari imepakua</string>
+    <string name="magazine_download_success">Ufaulu wa kupakua jarida</string>
+    <string name="book_download_success">Kitabu mafanikio</string>
+    <string name="please_try_again">Tafadhali jaribu tena.</string>
+    <string name="let_me_recommend_you_this_application_to_read_full_book">Napenda kukupendekeza programu tumizi hii kusoma yaliyomo kamili.</string>
+    <string name="My_Purchase_Books">Vitabu vyangu vya Ununuzi</string>
+    <string name="ALLOW_PERMISSION">Ruhusu ruhusa</string>
+    <!--End Search-->
+
+    <string name="title_home">Nyumbani</string>
+    <string name="title_genres">Aina</string>
+    <string name="title_magazine">Magazeti</string>
+    <string name="title_featured">Iliyoangaziwa</string>
+    <string name="title_search">Tafuta</string>
+    <string name="title_bookmark">Alamisho</string>
+    <string name="title_library">Maktaba</string>
+    <string name="title_Premium">Malipo</string>
+    <string name="title_settings">Mipangilio</string>
+    <string name="title_profile">Profaili</string>
+    <string name="isRTL">uwongo</string>
+    <string name="internet_connection">Muunganisho wa mtandao haupatikani</string>
+    <string name="permission_desc">Sasa tunahitaji ruhusa yako kuendelea kutumia programu kikamilifu</string>
+    <string name="permission_title">Kila kitu ni sawa</string>
+    <string name="profile">Profaili</string>
+    <string name="save">kuokoa</string>
+    <string name="my_Purchase_book">Miamala yangu</string>
+    <string name="my_downloaded_book">Maktaba Yangu</string>
+    <string name="please_select_subscription_package">Tafadhali Chagua Kifurushi cha Usajili.</string>
+    <string name="enable_push_notification">Washa arifa ya kushinikiza</string>
+    <string name="enable_theme">Washa hali ya Mchana /Usiku</string>
+    <string name="clear_cache">Ondoa Cache</string>
+    <string name="locally_cached_data">data iliyohifadhiwa kienyeji</string>
+    <string name="Privacy_policy">Sera ya faragha</string>
+    <string name="balance">Usawa</string>
+    <string name="are_you_sure_you_want_to_logout">Je! Una uhakika unataka Kuondoka?</string>
+    <string name="logout">Kuondoka</string>
+    <string name="rate_app">Kiwango cha App</string>
+    <string name="share_app">Shiriki na Marafiki</string>
+    <string name="about_us">Kuhusu sisi</string>
+    <string name="terms_and_conditions">Sheria na Masharti</string>
+    <string name="downloading">Inapakua ...</string>
+    <string name="loading">Inapakia ...</string>
+    <string name="please_wait">Tafadhali subiri...</string>
+    <string name="change_language">Lugha</string>
+    <string name="cancel">Ghairi</string>
+    <string name="submit">Wasilisha</string>
+    <string name="add_rate">Ongeza Kiwango</string>
+    <string name="Read">Soma</string>
+    <string name="my_package">Usajili</string>
+    <string name="title_reward">Pochi</string>
+    <string name="latest_update">Sasisho la hivi karibuni:</string>
+    <string name="contents">Yaliyomo</string>
+    <string name="do_you_want_to_exit">Je! Unataka kutoka?</string>
+    <string name="please_give_feedback_to_author">Tafadhali toa maoni kwa mwandishi.</string>
+    <string name="yes">Ndio</string>
+    <string name="no">Hapana</string>
+    <string name="expires_on">Inaisha tarehe</string>
+    <string name="delete">FUTA</string>
+    <string name="okay">Sawa!</string>
+    <string name="choose_one">Chagua moja</string>
+    <string name="let_me_recommend_you_this_application">Wacha nikupendekeze programu hii:</string>
+    <string name="share_with">Shiriki na</string>
+    <string name="language_already_selected">Lugha tayari imechaguliwa!</string>
+    <string name="are_you_sure_want_to_purchase">Je! Una uhakika unataka kununua?</string>
+    <string name="purchase_now">Nunua Sasa</string>
+    <string name="may_be_later">Labda baadae!</string>
+    <string name="your_balance_is_low_please_top_up_your_wallet">Mizani yako iko chini. Tafadhali Ongeza Pochi Yako</string>
+    <string name="use_my_referral_code">Tumia nambari yangu ya rufaa</string>
+
+    <!--Payment Activity START-->
+    <string name="payment_details">Maelezo ya Malipo</string>
+    <string name="please_select_any_payment_method">Tafadhali, chagua njia yoyote ya Malipo</string>
+    <string name="payment_methods">Njia za Malipo</string>
+    <string name="choose_a_payment_methods_to_pay">Chagua njia ya malipo Kwa</string>
+    <string name="pay_with">Lipa na</string>
+    <string name="Continue">Endelea</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">Kulipa RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">LIPA</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">Samahani, hatukuweza kuthibitisha malipo yako, jaribu tena tafadhali !!!</string>
+    <string name="payable_amount_is">Kiasi kinacholipwa ni:</string>
+    <string name="verification">Uthibitishaji</string>
+    <string name="verification_success">Uthibitishaji umefaulu.</string>
+    <string name="verification_note">*Tafadhali, thibitisha maelezo yako yafuatayo ili kuendelea.</string>
+    <!--Payment Activity END-->
+
+    <!--Prime Membership & Vouchers START-->
+    <string name="Prime_Membership">Uanachama Mkuu</string>
+    <string name="Prime_Benefits">Faida kuu</string>
+    <string name="View_All">Tazama zote</string>
+    <string name="Exclusive_for_Newcomer">Ya kipekee kwa Mgeni</string>
+    <string name="Prime_Lists_for_Gems">Orodha kuu za Vito</string>
+    <string name="View_all_books">Tazama vitabu vyote >></string>
+    <string name="About_Prime">Kuhusu Mkuu</string>
+    <string name="vouchers_history">Historia ya Vocha</string>
+    <string name="vouchers">Vocha</string>
+    <string name="gems">Vito</string>
+    <string name="tips">Vidokezo:</string>
+    <string name="watch_video_ad_for_vouchers">Tazama Tangazo la Video la Vocha</string>
+    <string name="watch">Tazama</string>
+    <string name="continuous_check_in">Kuingia kwa kuendelea</string>
+    <string name="voucher_gems_tips">1. Vito vina thamani sawa na sarafu. Vocha na Vito vyote vitaisha muda wa ziada. Tafadhali tumia kabla ya tarehe ya mwisho. \N 2. Vito vina thamani sawa na sarafu. Vocha na Vito vyote vitaisha muda wa ziada. Tafadhali tumia kabla ya tarehe ya mwisho. \N 3. Vito vina thamani sawa na sarafu. Vocha na Vito vyote vitaisha muda wa ziada. Tafadhali tumia kabla ya tarehe ya mwisho.</string>
+    <string name="coins">Sarafu</string>
+    <string name="prime">Mkuu</string>
+    <string name="daily_claim_vouchers">Vocha za Madai ya Kila siku</string>
+    <string name="recharge">Reji upya</string>
+    <string name="get_more_coins">Pata sarafu zaidi</string>
+    <string name="earn_rewards">Pata Zawadi</string>
+    <string name="check_in">Ingia</string>
+    <string name="my_transaction">Shughuli yangu</string>
+    <string name="my_books">Vitabu Vangu</string>
+    <string name="books">Vitabu</string>
+    <string name="magazines">Magazeti</string>
+    <string name="wallet_blc_in_coins">Usawa wa mkoba</string>
+    <string name="Wallet">Pochi</string>
+    <string name="wallet_history">Historia ya Mkoba</string>
+    <string name="transaction_history">Historia ya Ununuzi</string>
+    <string name="add_money_to_wallet">Ongeza Pesa kwenye Pochi</string>
+    <string name="you_are_login_with_social_media">Unaingia na media ya kijamii.</string>
+    <string name="comments_in_total">Maoni kwa jumla</string>
+    <string name="this_file_is_not_available">Faili hii haipatikani.</string>
+    <string name="wallet_balance">Usawa wa mkoba</string>
+    <string name="payment_gateways">Malango lango</string>
+    <string name="recharge_your_wallet">Chaji tena mkoba wako</string>
+    <string name="add_to_wallet">Ongeza kwenye mkoba</string>
+    <string name="enter_amount">Ingiza kiasi maalum ...</string>
+    <string name="your_current_balance_is">Salio lako la sasa ni:</string>
+    <string name="use_wallet_balance">Tumia usawa wa mkoba</string>
+    <string name="pay_now">LIPA sasa</string>
+    <string name="please_enter_valid_amount">Tafadhali ingiza kiasi halali.</string>
+    <string name="new_password_have_been_send_to_register_email_address">Nenosiri mpya limetumwa kwa anwani ya barua pepe iliyosajiliwa.</string>
+    <string name="send">Tuma</string>
+    <string name="update">Sasisha</string>
+    <string name="enter_phone_number_profile">Ingiza nambari ya simu ...</string>
+    <string name="enter_email_profile">Ingiza barua pepe ...</string>
+    <string name="enter_address_profile">Ingiza anwani ...</string>
+    <string name="enter_your_name_profile">Ingiza jina lako ...</string>
+    <string name="update_profile">Sasisha Profaili</string>
+    <string name="enter_password_profile">Ingiza nywila ...</string>
+    <string name="take_photo">Piga picha.</string>
+    <string name="choose_from_gallery">Chagua kutoka kwa matunzio.</string>
+    <string name="add_photo">Ongeza picha!</string>
+    <string name="forgot_password">Umesahau nywila ?</string>
+    <string name="no_books_available">Hakuna Vitabu Vinapatikana.</string>
+    <string name="register">Sajili</string>
+    <string name="or_login_using_social_media">Au Ingia kwa kutumia Mitandao ya Kijamii</string>
+    <string name="notifications">Arifa</string>
+    <string name="marked_as_read">Imetiwa alama kuwa imesomwa.</string>
+    <string name="something_went_wrong">Kuna kitu kimeharibika!!!</string>
+    <!--Prime Membership & Vouchers END-->
+
+    <!--- AuthorRegsiter START -->
+    <string name="author_name">Jina la Mwandishi</string>
+    <string name="author_address">Anwani</string>
+    <string name="author_email">Barua pepe</string>
+    <string name="author_password">Nenosiri</string>
+    <string name="author_bankdetail">Taarifa za benki</string>
+    <string name="author_bankname">Jina la benki</string>
+    <string name="author_accountnum">Nambari ya Akaunti</string>
+    <string name="author_ifsc">Nambari ya IFSC</string>
+    <string name="author_bankholder">Jina la mmiliki wa benki</string>
+    <string name="author_register">Usajili wa Mwandishi</string>
+    <string name="enter_author_name">Weka Jina Lako.</string>
+    <string name="enter_address">Weka Anwani Yako.</string>
+    <string name="enter_author_email">Weka Barua Pepe Yako.</string>
+    <string name="enter_author_password">Weka Nenosiri Lako.</string>
+    <string name="enter_author_bank_name">Weka Jina la Benki Yako.</string>
+    <string name="enter_author_account_number">Weka Nambari yako ya Akaunti ya Benki.</string>
+    <string name="enter_author_ifsc_code">Weka msimbo wa IFSC.</string>
+    <string name="enter_author_bank_holder_name">Weka Jina la Mmiliki wa Benki.</string>
+    <!--- AuthorRegsiter END -->
+
+    <!-- Book Upload START -->
+    <string name="we_need_storage_and_upload_document_file">Tunahitaji ruhusa ya kuhifadhi ili kupakia faili za hati.</string>
+    <string name="upload_book">Pakia Kitabu</string>
+    <string name="book_upload">Upakiaji wa Kitabu</string>
+    <string name="book_title">Kichwa cha Kitabu</string>
+    <string name="book_category">Kitengo cha Vitabu</string>
+    <string name="book_cost">Gharama ya Kitabu</string>
+    <string name="book_description_title">Maelezo ya Kitabu</string>
+    <string name="book_description">Andika jambo la kuvutia kuhusu Kitabu chako...</string>
+    <string name="upload_samplebook">Pakia Sampuli ya kitabu</string>
+    <string name="upload_fullbook">Pakia kitabu kamili</string>
+    <string name="doc_format">Fomati pdf, faili ya epub</string>
+    <string name="cover_format">Umbizo la png, jpg</string>
+    <string name="book_coverposter">Bango la Jalada</string>
+    <string name="book_coverposter_name">Jina la Picha</string>
+    <string name="book_name">Jina la Kitabu</string>
+    <string name="fill_up_all_fields">Tafadhali, jaza sehemu zote.</string>
+    <string name="enter_book_title">Ingiza Kichwa cha Kitabu.</string>
+    <string name="enter_book_description">Weka Maelezo ya Kitabu.</string>
+    <string name="enter_book_cost">Weka Gharama ya Kitabu.</string>
+    <string name="select_book_category">Tafadhali, chagua Kitengo cha Vitabu.</string>
+    <string name="select_sample_book">Tafadhali, chagua Kitabu cha Mfano.</string>
+    <string name="select_full_book">Tafadhali, chagua Kitabu Kamili.</string>
+    <string name="select_book_cover">Tafadhali, chagua picha ya Jalada la Kitabu.</string>
+    <!-- Book Upload END -->
+
+    <!-- Magazine Upload START -->
+    <string name="upload_magazine">Pakia Jarida</string>
+    <string name="magazine_upload">Upakiaji wa Magazeti</string>
+    <string name="magazine_title">Kichwa cha Magazeti</string>
+    <string name="magazine_category">Jamii ya Magazeti</string>
+    <string name="magazine_cost">Gharama ya Magazeti</string>
+    <string name="magazine_description_title">Maelezo ya Magazeti</string>
+    <string name="magazine_description">Andika jambo la kuvutia kuhusu Gazeti lako...</string>
+    <string name="upload_samplemagazine">Pakia Mfano wa Jarida</string>
+    <string name="upload_fullmagazine">Pakia Magazeti Kamili</string>
+    <string name="magazine_coverposter">Bango la Jalada</string>
+    <string name="magazine_coverposter_name">Jina la Picha</string>
+    <string name="magazine_name">Jina la Jarida</string>
+    <string name="enter_magazine_title">Ingiza Kichwa cha Gazeti</string>
+    <string name="enter_magazine_description">Ingiza Maelezo ya Jarida.</string>
+    <string name="enter_magazine_cost">Ingiza Gharama ya Magazeti.</string>
+    <string name="select_magazine_category">Tafadhali, chagua Kitengo cha Magazeti.</string>
+    <string name="select_sample_magazine">Tafadhali, chagua Mfano wa Jarida.</string>
+    <string name="select_full_magazine">Tafadhali, chagua Jarida Kamili.</string>
+    <string name="select_magazine_cover">Tafadhali, chagua picha ya Jalada la Jarida.</string>
+    <!-- Magazine Upload END -->
+
+    <string name="upload_your_documents">Pakia Hati Zako...</string>
+    <string name="add_documents">Ongeza Nyaraka!</string>
+    <string name="upload_new_doc_desc">Pakia Kitabu au Jarida lako jipya.</string>
+    <string name="internal_storage">Hifadhi ya ndani</string>
+    <string name="views">Maoni</string>
+    <string name="no_magazines_available">Hakuna Majarida Yanayopatikana.</string>
+    <string name="add_book_or_magazine">Ongeza Kitabu au Jarida</string>
+    <string name="edit_author_s_profile">Hariri Wasifu wa Mwandishi</string>
+    <string name="about">Kuhusu</string>
+    <string name="add_new_comment">Ongeza Maoni Mapya</string>
+    <string name="your_rate">Kiwango chako</string>
+    <string name="story_developement">Maendeleo ya Hadithi</string>
+    <string name="add_a_comment_here">Ongeza maoni hapa</string>
+    <string name="add_books">Ongeza Vitabu</string>
+    <string name="add_magazines">Ongeza Magazeti</string>
+    <string name="author_portfolio">Kwingineko ya Mwandishi</string>
+    <string name="author_bio">Wasifu wa Mwandishi</string>
+    <string name="enter_author_bio">Ingiza wasifu wa mwandishi.</string>
+    <string name="update_document_visibility">Sasisha Mwonekano wa Hati!</string>
+    <string name="update_doc_visibility_desc_inactive">Baada ya Kuchagua Haitumiki, kitabu/jarida lako halitaonekana kwa wengine.</string>
+    <string name="update_doc_visibility_desc_active">Baada ya Kuchagua Inayotumika, kitabu/jarida lako litaonekana kwa wengine.</string>
+    <string name="active">Inayotumika</string>
+    <string name="inactive">Haitumiki</string>
+    <string name="sell">mauzo</string>
+    <string name="sells">mauzo</string>
+    <string name="edit">Hariri</string>
+    <string name="add">Ongeza</string>
+    <string name="Become_Author">Kuwa Mwandishi</string>
+    <string name="update_book">Sasisha Kitabu</string>
+    <string name="update_magazine">Sasisha Jarida</string>
+    <string name="upgrade_plan_to">Mpango wa kuboresha</string>
+    <string name="highly_experience">Uzoefu wa Juu</string>
+    <string name="sample_book">Kitabu cha Mfano</string>
+    <string name="sample_magazine">Mfano wa Jarida</string>
+    <string name="enter_valid_email">Weka barua pepe halali.</string>
+    <string name="we_need_storage_permission_to_read_document_file">Tunahitaji ruhusa ya kuhifadhi ili kusoma faili za hati.</string>
+
+</resources>

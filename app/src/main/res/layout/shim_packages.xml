@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbarHeight"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round_bg"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round_bg_r5_white"
+                    android:backgroundTint="?attr/shimmerTint"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin10"
+            android:paddingVertical="@dimen/margin12">
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="15dp"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="?attr/shimmerTint"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/round_bg_r5_white"
+                android:backgroundTint="?attr/shimmerTint"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!--Bottom-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/margin20"
+            android:layout_marginVertical="@dimen/margin10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin15"
+                android:background="@drawable/full_round_bg_primarylight"
+                android:backgroundTint="?attr/shimmerTint"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                        <View
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:gravity="center|end"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/coins"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin15"
+                android:background="@drawable/full_round_bg_primarylight"
+                android:backgroundTint="?attr/shimmerTint"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                        <View
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:gravity="center|end"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/coins"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin15"
+                android:background="@drawable/full_round_bg_primarylight"
+                android:backgroundTint="?attr/shimmerTint"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                        <View
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:gravity="center|end"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/coins"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin15"
+                android:background="@drawable/full_round_bg_primarylight"
+                android:backgroundTint="?attr/shimmerTint"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                        <View
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:gravity="center|end"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/coins"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin15"
+                android:background="@drawable/full_round_bg_primarylight"
+                android:backgroundTint="?attr/shimmerTint"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                        <View
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:gravity="center|end"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/coins"
+                            android:backgroundTint="?attr/grayTintColor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

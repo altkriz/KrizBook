@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bor_top"
+        android:backgroundTint="?attr/backgroundcolor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin23"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/add_documents"
+                android:textColor="?attr/textcolor"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_medium"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/upload_new_doc_desc"
+                android:textColor="?attr/textcolor_desc"
+                android:textSize="@dimen/text_13" />
+
+            <!-- Book Upload -->
+            <LinearLayout
+                android:id="@+id/lyBookUpload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialogButtonHeight"
+                android:layout_marginTop="@dimen/mainMarginTop"
+                android:background="@drawable/round_bg_with_bor"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/margin10"
+                android:theme="@style/AppTheme.MyRipple">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/upload_book"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <!-- Magazine Upload -->
+            <LinearLayout
+                android:id="@+id/lyMagazineUpload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialogButtonHeight"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/round_bg_with_bor"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/margin10"
+                android:theme="@style/AppTheme.MyRipple">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/upload_magazine"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialogButtonHeight"
+                android:layout_marginTop="@dimen/margin20"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lyClickClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_bg_with_bor2"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minWidth="75dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/margin10"
+                    android:theme="@style/AppTheme.MyRipple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="@string/cancel_"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

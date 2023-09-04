@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="dots_height">40dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="slide_title">20dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="min_height">150dp</dimen>
+    <dimen name="card_corner_radius_4">4dp</dimen>
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_corner_radius_1">1dp</dimen>
+    <dimen name="cd_card_elevation">5dp</dimen>
+
+
+    <dimen name="introImageHeight">300dp</dimen>
+    <dimen name="introImageWidth">300dp</dimen>
+
+    <dimen name="homeBannerHeight">135dp</dimen>
+    <dimen name="profileBannerHeight">95dp</dimen>
+
+    <dimen name="tab_height">35dp</dimen>
+    <dimen name="tab_height_new">45dp</dimen>
+    <!-- Login, Registration, Forgot Password Top AppIcon size -->
+    <dimen name="appIconHeight">100dp</dimen>
+    <dimen name="appIconWidth">100dp</dimen>
+
+    <dimen name="editTextHeight">40dp</dimen>
+    <dimen name="etCredHeight">45dp</dimen>
+    <dimen name="toolbarHeight">53dp</dimen>
+
+    <dimen name="toolbar">17dp</dimen>
+    <dimen name="inner_toolbar">16dp</dimen>
+    <dimen name="text_35">35dp</dimen>
+    <dimen name="text_30">30dp</dimen>
+    <dimen name="text_29">29dp</dimen>
+    <dimen name="text_28">28dp</dimen>
+    <dimen name="text_27">27dp</dimen>
+    <dimen name="text_26">26dp</dimen>
+    <dimen name="text_25">25dp</dimen>
+    <dimen name="text_24">24dp</dimen>
+    <dimen name="text_22">22dp</dimen>
+    <dimen name="text_20">20dp</dimen>
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_17">17dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_14_">14dp</dimen>
+    <dimen name="text_14">12dp</dimen>
+    <dimen name="default_texts">14dp</dimen>
+    <dimen name="text_13">13dp</dimen>
+    <dimen name="text_12">12dp</dimen>
+    <dimen name="text_11">11dp</dimen>
+    <dimen name="text_10">10dp</dimen>
+    <dimen name="text_9">9dp</dimen>
+    <dimen name="text_8">8dp</dimen>
+
+    <!--Payment-->
+    <dimen name="pay_toolbar">18dp</dimen>
+    <dimen name="pay_topic">17dp</dimen>
+    <dimen name="pay_card_radius">8dp</dimen>
+    <dimen name="pay_card_elevation">5dp</dimen>
+    <dimen name="pay_sub_topic">16dp</dimen>
+    <dimen name="pay_card_margin_start_end">8dp</dimen>
+
+    <dimen name="noDataHeight">140dp</dimen>
+    <dimen name="noWalletDataHeight">200dp</dimen>
+    <dimen name="noTransactionDataHeight">200dp</dimen>
+
+    <dimen name="dialogButtonHeight">48dp</dimen>
+    <dimen name="mainMarginTop">15dp</dimen>
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin3">3dp</dimen>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin6">6dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin13">13dp</dimen>
+    <dimen name="margin14">14dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin17">17dp</dimen>
+    <dimen name="margin18">18dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin22">22dp</dimen>
+    <dimen name="margin23">23dp</dimen>
+    <dimen name="margin25">25dp</dimen>
+    <dimen name="margin27">27dp</dimen>
+    <dimen name="margin28">28dp</dimen>
+    <dimen name="margin29">29dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="margin32">32dp</dimen>
+    <dimen name="margin35">35dp</dimen>
+    <dimen name="marginStart">23dp</dimen>
+    <dimen name="marginEnd">23dp</dimen>
+
+    <dimen name="rlAuthorBGSize">150dp</dimen>
+    <dimen name="commonItemHeight">127dp</dimen>
+    <dimen name="commonItemWidth">95dp</dimen>
+    <dimen name="viewAllItemHeight">127dp</dimen>
+    <dimen name="viewAllItemWidth">95dp</dimen>
+    <dimen name="viewAllDocHeight">140dp</dimen>
+    <dimen name="addNewDocWidth">100dp</dimen>
+    <dimen name="addNewDocHeight">189dp</dimen>
+
+</resources>

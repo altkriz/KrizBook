@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Top-->
+            <LinearLayout
+                android:id="@+id/lyTop"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/rounded_corner_bottom"
+                android:backgroundTint="?attr/shimmerTint"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!--ToolBar-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <!--Back-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.12"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="17dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_back"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <!--Title-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.76"
+                        android:gravity="center_vertical">
+
+                        <View
+                            android:layout_width="150dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/round_bg_r5_white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.12"
+                        android:gravity="center"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Bottom-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lyTop"
+                android:layout_marginTop="-125dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <!--Continuous check-in-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="@color/extraLightGray"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <!--Continuous check-in-->
+                                <View
+                                    android:layout_width="130dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/round_bg_r5_white"
+                                    android:backgroundTint="?attr/shimmerTint" />
+
+                                <!--Week 1, 2, 3, 4-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal">
+
+                                    <!--Week 1-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_week_bg"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center"
+                                        android:minHeight="100dp"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                        <LinearLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/round_bg_circle"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <View
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:background="@drawable/ic_gift"
+                                                android:backgroundTint="?attr/shimmerTint"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                    <!--Week 2-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_week_bg"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center"
+                                        android:minHeight="100dp"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                        <LinearLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/round_bg_circle"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <View
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:background="@drawable/ic_gift"
+                                                android:backgroundTint="?attr/shimmerTint"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                    <!--Week 3-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_week_bg"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center"
+                                        android:minHeight="100dp"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                        <LinearLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/round_bg_circle"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <View
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:background="@drawable/ic_gift"
+                                                android:backgroundTint="?attr/shimmerTint"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                    <!--Week 4-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_week_bg"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center"
+                                        android:minHeight="100dp"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                        <LinearLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/round_bg_circle"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <View
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:background="@drawable/ic_gift"
+                                                android:backgroundTint="?attr/shimmerTint"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!--Week 5, 6, 7, 8-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal">
+
+                                    <!--Week 5-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_week_bg"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center"
+                                        android:minHeight="100dp"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                        <LinearLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/round_bg_circle"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <View
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:background="@drawable/ic_gift"
+                                                android:backgroundTint="?attr/shimmerTint"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                    <!--Week 6-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_week_bg"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center"
+                                        android:minHeight="100dp"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                        <LinearLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/round_bg_circle"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <View
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:background="@drawable/ic_gift"
+                                                android:backgroundTint="?attr/shimmerTint"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                    <!--Week 7-->
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2.05"
+                                        android:background="@drawable/round_week_bg"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center"
+                                        android:minHeight="100dp"
+                                        android:orientation="vertical">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                        <LinearLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/round_bg_circle"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <View
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:background="@drawable/ic_gift"
+                                                android:backgroundTint="?attr/shimmerTint"
+                                                android:gravity="center" />
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="5dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Watch video-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_bg_r5_white"
+                            android:backgroundTint="@color/extraLightGray"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="horizontal">
+
+                                <!--Prime & Daily claim vouchers-->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="185dp"
+                                        android:layout_height="18dp"
+                                        android:background="@drawable/round_bg_r5_white"
+                                        android:backgroundTint="?attr/shimmerTint" />
+
+                                    <View
+                                        android:layout_width="80dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="3dp"
+                                        android:background="@drawable/round_bg_r5_white"
+                                        android:backgroundTint="?attr/shimmerTint" />
+
+                                </LinearLayout>
+
+                                <!--Watch-->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.3"
+                                    android:gravity="center">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:background="@drawable/round_bg_r12"
+                                        android:backgroundTint="?attr/shimmerTint"
+                                        android:gravity="center">
+
+                                        <View
+                                            android:layout_width="50dp"
+                                            android:layout_height="15dp"
+                                            android:background="@drawable/round_bg_r5_white" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

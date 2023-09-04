@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">I-EBook</string>
+
+    <!--Welcome-->
+    <string name="next">OLANDELAYO</string>
+    <string name="skip">Eqa</string>
+    <string name="start">NGIYITHOLILE</string>
+
+    <string name="wel_one">Best Book for you</string>
+    <string name="wel_two">Best Magazine for you</string>
+    <string name="wel_three">Become a Author</string>
+    <string name="wel_four">Payment Gateway &amp; Wallet</string>
+    <string name="wel_sub_one">From Classic to Contemopory you will find everything here</string>
+    <string name="wel_sub_two">The best Magazine Collections available here</string>
+    <string name="wel_sub_three">User become Author &amp; publish own Books / Magazine on Application</string>
+    <string name="wel_sub_four">To Buy a Paid book using Wallet &amp; Managed by Payment gateways</string>
+    <!--Welcome END-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">Uxolo! Ayixhunyiwe ku-inthanethi.</string>
+    <string name="internet_error">Iphutha lokuxhumeka kwenethiwekhi!!!</string>
+    <string name="permission_necessary">Imvume Iyadingeka</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">Imvume yesitoreji iyadingeka ukuze ufunde futhi ubhale umcimbi</string>
+    <string name="settings">Izilungiselelo</string>
+    <string name="cancel_">Khansela</string>
+    <string name="permission">Imvume</string>
+    <string name="permission_alert">Isexwayiso Semvume</string>
+    <string name="we_need_storage_permission_for_save_video">Sidinga imvume yesitoreji ukuze silondoloze ifayela lemidiya kwisitoreji sangaphandle.</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">Sidinga isitoreji sangaphandle nemvume yekhamera ukuze silayishe isithombe sephrofayela.</string>
+    <string name="yesterday">izolo</string>
+    <string name="day_ago">usuku olwedlule</string>
+    <!--Network and Permission END-->
+
+    <!--Login-->
+    <string name="email">Ikheli le-imeyili</string>
+    <string name="email_hint">Imeyili</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="remember">Ngikhumbule</string>
+    <string name="login">Ngena ngemvume</string>
+    <string name="skip1">Yeqa</string>
+    <string name="dont">Awunayo i-akhawunti?</string>
+    <string name="signup">Bhalisela</string>
+    <string name="enter_email">Faka i-imeyili.</string>
+    <string name="enter_password">Faka iphasiwedi.</string>
+    <string name="enter_phone_number">Faka inombolo yocingo.</string>
+    <string name="enter_fullname">Faka igama eliphelele.</string>
+    <string name="guest_user">Umsebenzisi Wesihambeli</string>
+    <string name="register">Bhalisa</string>
+    <string name="forgot_password">Ukhohlwe iphasiwedi ?</string>
+    <string name="or_login_using_social_media">Noma Ngena ngemvume usebenzisa i-Social media</string>
+    <string name="notifications">Izaziso</string>
+    <string name="marked_as_read">Imakwe njengefundiwe.</string>
+    <!--End Login-->
+
+    <!--Registration-->
+    <string name="full_name">Igama eligcwele</string>
+    <string name="phone">Ucingo</string>
+    <string name="signup_cap">BHALISELA</string>
+    <string name="already_account">Usuvele unayo i-akhawunti okwamanje?</string>
+    <!--End Registration-->
+
+    <!--OTP Login START-->
+    <string name="otp_verification">Ukuqinisekiswa kwe-OTP</string>
+    <string name="enter_your_mobile_no">Faka inombolo yakho yeselula</string>
+    <string name="enter_otp">Faka i-OTP eyamukelwe.</string>
+    <string name="enter_coutry_code">Faka ikhodi yezwe lakho.</string>
+    <string name="you_will_receive_a_4_digit_code_to_verify_next">Uzothola ikhodi enamadijithi angu-6 ukuze\nuqinisekise ngokulandelayo.</string>
+    <string name="send_otp">THUMELA I-OTP</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">Faka ikhodi ye-OTP ezothunyelwa\nenombolweni Yeselula.</string>
+    <string name="verify_and_proceed">QINISEKISA FUTHI UQHUBEKE</string>
+    <string name="resend_otp">Thumela kabusha i-OTP</string>
+    <!--OTP Login END-->
+
+    <!--About Us-->
+    <string name="Company">Inkampani</string>
+    <string name="website">Iwebhusayithi</string>
+    <string name="Contact">Imininingwane</string>
+    <!--End About Us-->
+
+    <!--Home-->
+    <string name="Category">Isigaba</string>
+    <string name="Categories">Izigaba</string>
+    <string name="View_all">Okuningi</string>
+    <string name="app_bestBook">I-EBook Best</string>
+    <string name="New_Arrival_Book">Incwadi Yokufika Entsha</string>
+    <string name="You_may_also_like">Ungahle uthande</string>
+    <string name="Authors">Ababhali</string>
+    <string name="Free_Book">Ukukhishwa kwamahhala</string>
+    <string name="Paid_Book">Ukukhishwa Okukhokhelwe</string>
+    <string name="Continue_Reading">Qhubeka ufunde</string>
+    <string name="Popular_Stories">Izindaba Ezithandwayo</string>
+    <string name="Magazine_category">Izigaba Zomagazini</string>
+    <string name="Top_dowloaded">Okulandiwe okuphezulu</string>
+    <string name="Most_viewed">Okubukwe Kakhulu</string>
+    <!--End Home-->
+
+    <!--Search-->
+    <string name="Search">Sesha</string>
+    <string name="See_All">Bona konke</string>
+    <string name="Payment">Inkokhelo</string>
+    <string name="Please_select_any_payment_method">Sicela ukhethe noma iyiphi indlela yokukhokha</string>
+    <string name="CONTINUE">QHUBEKA</string>
+    <string name="Books">Izincwadi</string>
+    <string name="book">Incwadi:</string>
+    <string name="book_author">Umbhali Wencwadi:</string>
+    <string name="information_of_book">Imininingwane Yencwadi</string>
+    <string name="magazine">Umagazini:</string>
+    <string name="magazine_author">Umbhali Wamagazini:</string>
+    <string name="information_of_magazine">Imininingwane yeMagazini</string>
+    <string name="Reviews">Izibuyekezo</string>
+    <string name="Downloads">Okulandiwe</string>
+    <string name="Book_Details">Imininingwane Yencwadi</string>
+    <string name="Earn_Rewards">Thola Imivuzo</string>
+    <string name="Vouchers_History">Umlando wamavawusha</string>
+    <string name="What_is_this_book_about">Ikhuluma ngani le Ncwadi?</string>
+    <string name="book_introduction">Isingeniso Sencwadi</string>
+    <string name="thanks_for_feedback">Siyabonga ngempendulo yakho ebalulekile.</string>
+    <string name="Encourage_authors">Khuthaza ababhali</string>
+    <string name="copyright_information">Imininingwane ye-copyright</string>
+    <string name="sir_we_were_meant_to_be">Mnumzane, Besiqonde Ukuba</string>
+    <string name="magazine_introduction">Isingeniso Semagazini</string>
+    <string name="magazine_details">Imininingwane Yemagazini</string>
+    <string name="add_a_comment">Faka amazwana</string>
+    <string name="Author_caps">UMBHALI</string>
+    <string name="Publish_at">SHicilela AT</string>
+    <string name="Related_Books">Izincwadi Ezihlobene</string>
+    <string name="populars_with_same_genres">Ama-Populars anezinhlobo ezifanayo</string>
+    <string name="Comments">Amazwana</string>
+    <string name="Write_your_comments">Bhala imibono yakho</string>
+    <string name="remove_from_library">Susa kulabhulali</string>
+    <string name="add_to_library">Ngeza kulabhulali</string>
+    <string name="free">Mahhala</string>
+    <string name="my_library">Umtapo Wami Wezincwadi</string>
+    <string name="paid">Kukhokhelwe</string>
+    <string name="brought">Kulethwe</string>
+    <string name="downloaded">Kulandiwe</string>
+    <string name="by">Ngu</string>
+    <string name="chapters">Izahluko</string>
+    <string name="chapter">Isahluko</string>
+    <string name="buy_now">Thenga Manje</string>
+    <string name="read_now">Funda Manje</string>
+    <string name="pack_up">QOQA</string>
+    <string name="show_all">VEZA KONKE</string>
+    <string name="please_enter_comment">Ngiyacela, faka amazwana.</string>
+    <string name="already_download">Isivele ilandiwe</string>
+    <string name="magazine_download_success">Magazine download impumelelo</string>
+    <string name="book_download_success">Impumelelo yokulanda incwadi</string>
+    <string name="please_try_again">Ngicela uzame futhi.</string>
+    <string name="let_me_recommend_you_this_application_to_read_full_book">Ake ngincome lolu hlelo lokusebenza ukufunda okuqukethwe okugcwele.</string>
+    <string name="My_Purchase_Books">Izincwadi Zami Zokuthenga</string>
+    <string name="ALLOW_PERMISSION">VUMELA IMVUME</string>
+    <!--End Search-->
+
+    <string name="title_home">Ikhaya</string>
+    <string name="title_genres">Izinhlobo</string>
+    <string name="title_magazine">Omagazini</string>
+    <string name="title_featured">Okufakiwe</string>
+    <string name="title_search">Sesha</string>
+    <string name="title_bookmark">Ibhukhimakhi</string>
+    <string name="title_library">Umtapo Wezincwadi</string>
+    <string name="title_Premium">I-Premium</string>
+    <string name="title_settings">Amasethingi</string>
+    <string name="title_profile">Iphrofayela</string>
+    <string name="isRTL">amanga</string>
+    <string name="internet_connection">Ukuxhumeka kwe-inthanethi akutholakali</string>
+    <string name="permission_desc">Manje sidinga imvume yakho ukuqhubeka nokusebenzisa uhlelo ngokuphelele</string>
+    <string name="permission_title">Konke kulungile</string>
+    <string name="profile">Iphrofayela</string>
+    <string name="save">londoloza</string>
+    <string name="my_Purchase_book">Ukuthengiselana Kwami</string>
+    <string name="my_downloaded_book">Umtapo Wami Wezincwadi</string>
+    <string name="please_select_subscription_package">Sicela ukhethe Iphakheji Yokubhaliselwe.</string>
+    <string name="enable_push_notification">Nika amandla isaziso sohlelo lokusebenza</string>
+    <string name="enable_theme">Nika amandla imodi yosuku /yasebusuku</string>
+    <string name="clear_cache">Sula inqolobane</string>
+    <string name="locally_cached_data">idatha egcinwe endaweni yangakini</string>
+    <string name="Privacy_policy">Inqubomgomo yobumfihlo</string>
+    <string name="balance">Ibhalansi</string>
+    <string name="are_you_sure_you_want_to_logout">Uqinisekile ukuthi ufuna ukuphuma ngemvume?</string>
+    <string name="logout">Phuma</string>
+    <string name="rate_app">Linganisela uhlelo lokusebenza</string>
+    <string name="share_app">Yabelana Nabangane</string>
+    <string name="about_us">Mayelana NATHI</string>
+    <string name="terms_and_conditions">Imigomo nemibandela</string>
+    <string name="please_give_feedback_to_author">Sicela unikeze impendulo kumbhali.</string>
+    <string name="downloading">Iyalanda ...</string>
+    <string name="loading">... ... + - Loading ... lindokuhle khozaPublic</string>
+    <string name="please_wait">Ngicela ulinde...</string>
+    <string name="change_language">Ulimi</string>
+    <string name="cancel">Khansela</string>
+    <string name="submit">Thumela</string>
+    <string name="add_rate">Faka isilinganiso</string>
+    <string name="Read">Funda</string>
+    <string name="my_package">Okubhaliselwe</string>
+    <string name="title_reward">Isikhwama semali</string>
+    <string name="latest_update">Isibuyekezo sakamuva:</string>
+    <string name="contents">Okuqukethwe</string>
+    <string name="do_you_want_to_exit">Ufuna ukuphuma?</string>
+    <string name="yes">Yebo</string>
+    <string name="no">Cha</string>
+    <string name="expires_on">Kuphelelwa yisikhathi ngomhlaka</string>
+    <string name="delete">SUSA</string>
+    <string name="okay">Kulungile!</string>
+    <string name="choose_one">Khetha eyodwa</string>
+    <string name="let_me_recommend_you_this_application">Ake ngincome lolu hlelo lokusebenza:</string>
+    <string name="share_with">Yabelana no</string>
+    <string name="language_already_selected">Ulimi seluvele lukhethiwe!</string>
+    <string name="are_you_sure_want_to_purchase">Uqinisekile ukuthi ufuna ukuthenga?</string>
+    <string name="purchase_now">Thenga Manje</string>
+    <string name="may_be_later">Mhlawumbe ngukuhamba kwesikhathi!</string>
+    <string name="your_balance_is_low_please_top_up_your_wallet">Ibhalansi yakho iphansi. Sicela Uphakamise I-Wallet Yakho</string>
+    <string name="use_my_referral_code">Sebenzisa ikhodi yami yokudlulisela</string>
+
+    <!--Payment Activity START-->
+    <string name="payment_details">Imininingwane Yokukhokha</string>
+    <string name="please_select_any_payment_method">Uyacelwa ukuthi ukhethe noma iyiphi indlela yokukhokha</string>
+    <string name="payment_methods">Izindlela Zokukhokha</string>
+    <string name="choose_a_payment_methods_to_pay">Khetha indlela yokukhokha Ukuze</string>
+    <string name="pay_with">Khokha nge-</string>
+    <string name="Continue">Qhubeka</string>
+    <string name="paypal">PayPal</string>
+    <string name="razorpay">RazorPay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">I-Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">KHOKHA</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">Uxolo, asikwazanga ukuqinisekisa inkokhelo yakho, zama futhi sicela !!!</string>
+    <string name="payable_amount_is">Inani elikhokhwayo ngu:</string>
+    <string name="verification">Ukuqinisekisa</string>
+    <string name="verification_success">Ukuqinisekisa kuphumelele.</string>
+    <string name="verification_note">*Sicela uqinisekise imininingwane yakho elandelayo ukuze uqhubeke.</string>
+    <!--Payment Activity END-->
+
+    <!--Prime Membership & Vouchers START-->
+    <string name="Prime_Membership">Ubulungu Obuyinhloko</string>
+    <string name="Prime_Benefits">Izinzuzo Eziyinhloko</string>
+    <string name="View_All">Buka konke</string>
+    <string name="Exclusive_for_Newcomer">Okukhethekile kofikayo</string>
+    <string name="Prime_Lists_for_Gems">Uhlu LweNdunankulu Lamagugu</string>
+    <string name="View_all_books">Buka zonke izincwadi >></string>
+    <string name="About_Prime">Mayelana noNdunankulu</string>
+    <string name="vouchers_history">Umlando wamavawusha</string>
+    <string name="vouchers">Amavawusha</string>
+    <string name="gems">Amagugu</string>
+    <string name="tips">Amathiphu:</string>
+    <string name="watch_video_ad_for_vouchers">Buka Isikhangiso Sevidiyo Samavawusha</string>
+    <string name="watch">Bhekisisani</string>
+    <string name="continuous_check_in">Ukungena okuqhubekayo</string>
+    <string name="voucher_gems_tips">1. Amagugu anenani elifanayo ngezinhlamvu zemali. Onke amavawusha namagugu azophelelwa isikhathi. Sicela usebenzise ngaphambi komnqamulajuqu. \N 2. Amagugu anenani elifanayo ngezinhlamvu zemali. Onke amavawusha namaGugu azophelelwa isikhathi. Sicela usebenzise ngaphambi komnqamulajuqu. \N 3. Amagugu anenani elifanayo ngezinhlamvu zemali. Onke amavawusha namagugu azophelelwa isikhathi. Sicela usebenzise ngaphambi komnqamulajuqu.</string>
+    <string name="coins">Izinhlamvu zemali</string>
+    <string name="prime">UNdunankulu</string>
+    <string name="daily_claim_vouchers">Amavawusha wesimangalo sansuku zonke</string>
+    <string name="recharge">Shaja kabusha</string>
+    <string name="get_more_coins">Thola Izinhlamvu zemali eziningi</string>
+    <string name="earn_rewards">Thola Imivuzo</string>
+    <string name="check_in">Ngena</string>
+    <string name="my_transaction">Okwenziwayo Kwami</string>
+    <string name="my_books">Izincwadi Zami</string>
+    <string name="books">Izincwadi</string>
+    <string name="magazines">Omagazini</string>
+    <string name="wallet_blc_in_coins">Ibhalansi yeWallet</string>
+    <string name="Wallet">Isikhwama semali</string>
+    <string name="wallet_history">Umlando We-Wallet</string>
+    <string name="transaction_history">Umlando Wokwenziwe</string>
+    <string name="add_money_to_wallet">Faka Imali ku-Wallet</string>
+    <string name="you_are_login_with_social_media">Ungena ngemvume ngemithombo yezokuxhumana.</string>
+    <string name="comments_in_total">Amazwana esewonke</string>
+    <string name="this_file_is_not_available">Leli fayela alitholakali.</string>
+    <string name="wallet_balance">Ibhalansi yeWallet</string>
+    <string name="payment_gateways">Izindlela zokukhokha</string>
+    <string name="recharge_your_wallet">Shaja isikhwama sakho semali</string>
+    <string name="add_to_wallet">Faka esikhwameni semali</string>
+    <string name="enter_amount">Faka inani langokwezifiso ...</string>
+    <string name="your_current_balance_is">Ibhalansi yakho yamanje ngu:</string>
+    <string name="use_wallet_balance">Sebenzisa ibhalansi yesikhwama semali</string>
+    <string name="pay_now">Khokha manje</string>
+    <string name="please_enter_valid_amount">Sicela ufake inani elivumelekile.</string>
+    <string name="new_password_have_been_send_to_register_email_address">Kuthunyelwe iphasiwedi entsha ekhelini le-imeyili elibhalisiwe.</string>
+    <string name="send">Thumela</string>
+    <string name="update">Vuselela</string>
+    <string name="enter_phone_number_profile">Faka inombolo yocingo ...</string>
+    <string name="enter_email_profile">Faka i-imeyili ...</string>
+    <string name="enter_address_profile">Enter address...</string>
+    <string name="enter_your_name_profile">Faka igama lakho ...</string>
+    <string name="update_profile">Buyekeza iphrofayili</string>
+    <string name="enter_password_profile">Faka iphasiwedi ...</string>
+    <string name="take_photo">Thatha isithombe.</string>
+    <string name="choose_from_gallery">Khetha kugalari.</string>
+    <string name="add_photo">Faka isithombe!</string>
+    <string name="no_books_available">Azikho Izincwadi Ezitholakalayo.</string>
+    <string name="something_went_wrong">Kukhona into engahambanga kahle!!!</string>
+    <!--Prime Membership & Vouchers END-->
+
+    <!--- AuthorRegsiter START -->
+    <string name="author_name">Igama lombhali</string>
+    <string name="author_address">Ikheli</string>
+    <string name="author_email">I-imeyili</string>
+    <string name="author_password">Iphasiwedi</string>
+    <string name="author_bankdetail">Imininingwane Yasebhange</string>
+    <string name="author_bankname">Igama Lebhange</string>
+    <string name="author_accountnum">Inombolo Ye-akhawunti</string>
+    <string name="author_ifsc">Ikhodi ye-IFSC</string>
+    <string name="author_bankholder">Igama lomphathi webhange</string>
+    <string name="author_register">Irejista Yombhali</string>
+    <string name="enter_author_name">Faka Igama Lakho.</string>
+    <string name="enter_address">Faka Ikheli Lakho.</string>
+    <string name="enter_author_email">Faka I-imeyili Yakho.</string>
+    <string name="enter_author_password">Faka Iphasiwedi Yakho.</string>
+    <string name="enter_author_bank_name">Faka Igama Lebhange Lakho.</string>
+    <string name="enter_author_account_number">Faka Inombolo Ye-akhawunti Yakho Yasebhange.</string>
+    <string name="enter_author_ifsc_code">Faka ikhodi ye-IFSC.</string>
+    <string name="enter_author_bank_holder_name">Faka Igama Lomnikazi Webhange.</string>
+    <!--- AuthorRegsiter END -->
+
+    <!-- Book Upload START -->
+    <string name="we_need_storage_and_upload_document_file">Sidinga imvume yesitoreji ukuze silayishe amafayela edokhumenti.</string>
+    <string name="upload_book">Layisha Incwadi</string>
+    <string name="book_upload">Bhukha Layisha</string>
+    <string name="book_title">Isihloko Sencwadi</string>
+    <string name="book_category">Isigaba sencwadi</string>
+    <string name="book_cost">Izindleko Zencwadi</string>
+    <string name="book_description_title">Incazelo Yencwadi</string>
+    <string name="book_description">Bhala okuthile okuthakazelisayo ngeNcwadi yakho...</string>
+    <string name="upload_samplebook">Layisha isampula yencwadi</string>
+    <string name="upload_fullbook">Layisha ibhuku eligcwele</string>
+    <string name="doc_format">Ifomethi ye-pdf, ifayela le-epub</string>
+    <string name="cover_format">Fometha png, jpg</string>
+    <string name="book_coverposter">Iphosta Yekhava</string>
+    <string name="book_coverposter_name">Igama lesithombe</string>
+    <string name="book_name">Igama lencwadi</string>
+    <string name="fill_up_all_fields">Sicela, ugcwalise zonke izinkambu.</string>
+    <string name="enter_book_title">Faka Isihloko Sencwadi.</string>
+    <string name="enter_book_description">Faka Incazelo Yencwadi.</string>
+    <string name="enter_book_cost">Faka Izindleko Zencwadi.</string>
+    <string name="select_book_category">Sicela, ukhethe Isigaba Sencwadi.</string>
+    <string name="select_sample_book">Sicela, khetha Incwadi Yesampula.</string>
+    <string name="select_full_book">Sicela, khetha Incwadi Egcwele.</string>
+    <string name="select_book_cover">Sicela, ukhethe isithombe sekhava yencwadi.</string>
+    <!-- Book Upload END -->
+
+    <!-- Magazine Upload START -->
+    <string name="upload_magazine">Layisha Umagazini</string>
+    <string name="magazine_upload">Ukulayisha Umagazini</string>
+    <string name="magazine_title">Isihloko Semagazini</string>
+    <string name="magazine_category">Isigaba sikamagazini</string>
+    <string name="magazine_cost">Izindleko Zomagazini</string>
+    <string name="magazine_description_title">Incazelo Kamagazini</string>
+    <string name="magazine_description">Bhala okuthile okuthakazelisayo mayelana neMagazini yakho...</string>
+    <string name="upload_samplemagazine">Layisha Isampula Lomagazini</string>
+    <string name="upload_fullmagazine">Layisha Umagazini Ogcwele</string>
+    <string name="magazine_coverposter">Iphosta Yekhava</string>
+    <string name="magazine_coverposter_name">Igama lesithombe</string>
+    <string name="magazine_name">Igama Lomagazini</string>
+    <string name="enter_magazine_title">Faka Isihloko Semagazini</string>
+    <string name="enter_magazine_description">Faka Incazelo Kamagazini.</string>
+    <string name="enter_magazine_cost">Faka Izindleko Zomagazini.</string>
+    <string name="select_magazine_category">Sicela, ukhethe Isigaba Somagazini.</string>
+    <string name="select_sample_magazine">Sicela, khetha Umagazini Oyisampula.</string>
+    <string name="select_full_magazine">Sicela, khetha Umagazini Ogcwele.</string>
+    <string name="select_magazine_cover">Sicela, ukhethe isithombe sekhava yomagazini.</string>
+    <!-- Magazine Upload END -->
+
+    <string name="upload_your_documents">Layisha Amadokhumenti Akho...</string>
+    <string name="add_documents">Engeza Amadokhumenti!</string>
+    <string name="upload_new_doc_desc">Layisha Incwadi yakho entsha noma Umagazini.</string>
+    <string name="internal_storage">Isitoreji sangaphakathi</string>
+    <string name="views">Ukubuka</string>
+    <string name="no_magazines_available">Abekho Omagazini.</string>
+    <string name="add_book_or_magazine">Engeza Incwadi noma Umagazini</string>
+    <string name="edit_author_s_profile">Hlela Iphrofayela Yombhali</string>
+    <string name="about">Mayelana</string>
+    <string name="add_new_comment">Engeza Amazwana Amasha</string>
+    <string name="your_rate">Isilinganiso sakho</string>
+    <string name="story_developement">Ukuthuthukiswa Kwezindaba</string>
+    <string name="add_a_comment_here">Engeza amazwana lapha</string>
+    <string name="add_books">Engeza Izincwadi</string>
+    <string name="add_magazines">Engeza Omagazini</string>
+    <string name="author_portfolio">Iphothifoliyo Yombhali</string>
+    <string name="author_bio">Umbhali Bio</string>
+    <string name="enter_author_bio">Faka umlando wombhali.</string>
+    <string name="update_document_visibility">Buyekeza Ukubonakala Kwedokhumenti!</string>
+    <string name="update_doc_visibility_desc_inactive">Ngemva Kokukhetha Okungasebenzi, ibhuku/umagazini wakho ngeke ubonakale kwabanye.</string>
+    <string name="update_doc_visibility_desc_active">Ngemva Kokukhetha Okusebenzayo, incwadi/umagazini wakho uzobonakala kwabanye.</string>
+    <string name="active">Iyasebenza</string>
+    <string name="inactive">Iyasebenza</string>
+    <string name="sell">ukudayiswa</string>
+    <string name="sells">ukuthengisa</string>
+    <string name="edit">Hlela</string>
+    <string name="add">Engeza</string>
+    <string name="Become_Author">Iba Umbhali</string>
+    <string name="update_book">Buyekeza Incwadi</string>
+    <string name="update_magazine">Buyekeza Umagazini</string>
+    <string name="upgrade_plan_to">Thuthukisa uhlelo ukuze</string>
+    <string name="highly_experience">Isipiliyoni Esiphezulu</string>
+    <string name="sample_book">Incwadi Yesampula</string>
+    <string name="sample_magazine">Isampula Umagazini</string>
+    <string name="enter_valid_email">Faka i-imeyili evumelekile.</string>
+    <string name="we_need_storage_permission_to_read_document_file">Sidinga imvume yesitoreji ukuze sifunde amafayela edokhumenti.</string>
+
+</resources>

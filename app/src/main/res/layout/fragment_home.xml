@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/whitelightbackground"
+    android:orientation="vertical">
+
+    <!--Shimmer-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:shimmer_duration="@integer/shimmerDuration">
+
+        <!-- Adding 3 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shim_home" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Banner with Dots indicator-->
+                <LinearLayout
+                    android:id="@+id/lyAds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/backgroundcolor">
+
+                    <!--Banner-->
+                    <RelativeLayout
+                        android:id="@+id/ryBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/homeBannerHeight"
+                        android:layout_marginTop="@dimen/margin4"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <!--Banner ViewPager-->
+                        <com.kenilt.loopingviewpager.widget.LoopingViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never" />
+
+                        <!--Dots indicator-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:color/transparent"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                                android:id="@+id/dotsIndicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:dotsColor="@color/white"
+                                app:dotsSize="5dp"
+                                app:dotsSpacing="3dp"
+                                app:dotsWidthFactor="1"
+                                app:selectedDotColor="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Other Views-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <!--Top Reading Books (Ebook Best)-->
+                    <LinearLayout
+                        android:id="@+id/ly_top_reading_Book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="18dp"
+                                android:weightSum="1.0">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/app_bestBook"
+                                    android:textColor="?attr/textPrimaryDarkColor"
+                                    android:textSize="@dimen/text_17" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:gravity="center_vertical|end">
+
+                                    <LinearLayout
+                                        android:id="@+id/ly_top_reading_viewAll"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|end"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:gravity="center"
+                                            android:text="@string/View_all"
+                                            android:textColor="?attr/viewtextcolor"
+                                            android:textSize="@dimen/text_12" />
+
+                                        <TextView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginTop="1dp"
+                                            android:background="@drawable/ic_plus2"
+                                            android:backgroundTint="?attr/toolbarbackTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_feature_item"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:nestedScrollingEnabled="false"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Ad View-->
+                    <LinearLayout
+                        android:id="@+id/lyNativeAdView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <!-- Template View for native ad -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.facebook.ads.NativeAdLayout
+                                    android:id="@+id/fbNativeTemplate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:visibility="gone" />
+
+                                <!--  This is your template view -->
+                                <com.google.android.ads.nativetemplates.TemplateView
+                                    android:id="@+id/nativeTemplate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:gnt_template_type="@layout/gnt_small_template_view" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Author-->
+                    <LinearLayout
+                        android:id="@+id/ly_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="18dp"
+                                android:weightSum="1.0">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/Authors"
+                                    android:textColor="?attr/textPrimaryDarkColor"
+                                    android:textSize="@dimen/text_17" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:gravity="center_vertical|end">
+
+                                    <LinearLayout
+                                        android:id="@+id/ly_author_viewAll"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|end"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:gravity="center"
+                                            android:text="@string/View_all"
+                                            android:textColor="?attr/viewtextcolor"
+                                            android:textSize="@dimen/text_12" />
+
+                                        <TextView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginTop="1dp"
+                                            android:background="@drawable/ic_plus2"
+                                            android:backgroundTint="?attr/toolbarbackTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_author"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:nestedScrollingEnabled="false"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Free Book-->
+                    <LinearLayout
+                        android:id="@+id/ly_free_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <!--Title & More-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="18dp"
+                                android:weightSum="1.0">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/Free_Book"
+                                    android:textColor="?attr/textPrimaryDarkColor"
+                                    android:textSize="@dimen/text_17" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:gravity="center_vertical|end"
+                                    android:visibility="visible">
+
+                                    <LinearLayout
+                                        android:id="@+id/ly_freebook_viewAll"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|end"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:gravity="center"
+                                            android:text="@string/View_all"
+                                            android:textColor="?attr/viewtextcolor"
+                                            android:textSize="@dimen/text_12" />
+
+                                        <TextView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginTop="1dp"
+                                            android:background="@drawable/ic_plus2"
+                                            android:backgroundTint="?attr/toolbarbackTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--Static Free book item 1-->
+                            <LinearLayout
+                                android:id="@+id/lyFreeOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="18dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="?attr/cardbackround"
+                                    app:cardCornerRadius="@dimen/card_corner_radius_4"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/viewAllItemWidth"
+                                        android:layout_height="@dimen/viewAllItemHeight">
+
+                                        <ImageView
+                                            android:id="@+id/ivFreeBook1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY" />
+
+                                        <LinearLayout
+                                            android:id="@+id/lySellCountFreeBook1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="@dimen/margin5"
+                                            android:background="@drawable/round_bg_r5_white"
+                                            android:backgroundTint="@color/overlayDark50"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:paddingHorizontal="5dp"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/txtSellCountFreeBook1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:text="0"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_11" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin3"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:gravity="center"
+                                                android:text="@string/sells"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_9" />
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1.0">
+
+                                    <TextView
+                                        android:id="@+id/txt_free_bookname_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_free_description_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:maxLines="3"
+                                        android:textColor="?attr/textcolor_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                    <TextView
+                                        android:id="@+id/txt_free_book_cat_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="12sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--Static Free book item 2-->
+                            <LinearLayout
+                                android:id="@+id/lyFreeTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="18dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="?attr/cardbackround"
+                                    app:cardCornerRadius="@dimen/card_corner_radius_4"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/viewAllItemWidth"
+                                        android:layout_height="@dimen/viewAllItemHeight">
+
+                                        <ImageView
+                                            android:id="@+id/ivFreeBook2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY" />
+
+                                        <LinearLayout
+                                            android:id="@+id/lySellCountFreeBook2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="@dimen/margin5"
+                                            android:background="@drawable/round_bg_r5_white"
+                                            android:backgroundTint="@color/overlayDark50"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:paddingHorizontal="5dp"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/txtSellCountFreeBook2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:text="0"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_11" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin3"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:gravity="center"
+                                                android:text="@string/sells"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_9" />
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1.0">
+
+                                    <TextView
+                                        android:id="@+id/txt_free_bookname_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_free_description_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:maxLines="3"
+                                        android:textColor="?attr/textcolor_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                    <TextView
+                                        android:id="@+id/txt_free_book_cat_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="12sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--Free book RecyclerView-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_freebook"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:nestedScrollingEnabled="false"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Paid Book-->
+                    <LinearLayout
+                        android:id="@+id/ly_paid_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="18dp"
+                                android:weightSum="1.0">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/Paid_Book"
+                                    android:textColor="?attr/textPrimaryDarkColor"
+                                    android:textSize="@dimen/text_17" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:gravity="center_vertical|end"
+                                    android:visibility="visible">
+
+                                    <LinearLayout
+                                        android:id="@+id/ly_paidbook_viewAll"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|end"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:gravity="center"
+                                            android:text="@string/View_all"
+                                            android:textColor="?attr/viewtextcolor"
+                                            android:textSize="@dimen/text_12" />
+
+                                        <TextView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginTop="1dp"
+                                            android:background="@drawable/ic_plus2"
+                                            android:backgroundTint="?attr/toolbarbackTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--Static Paid book item 1-->
+                            <LinearLayout
+                                android:id="@+id/lyPaidOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="18dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="?attr/cardbackround"
+                                    app:cardCornerRadius="@dimen/card_corner_radius_4"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/viewAllItemWidth"
+                                        android:layout_height="@dimen/viewAllItemHeight">
+
+                                        <ImageView
+                                            android:id="@+id/ivPaidBook1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY" />
+
+                                        <LinearLayout
+                                            android:id="@+id/lySellCountPaidBook1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="@dimen/margin5"
+                                            android:background="@drawable/round_bg_r5_white"
+                                            android:backgroundTint="@color/overlayDark50"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:paddingHorizontal="5dp"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/txtSellCountPaidBook1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:text="0"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_11" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin3"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:gravity="center"
+                                                android:text="@string/sells"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_9" />
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1.0">
+
+                                    <TextView
+                                        android:id="@+id/txt_paid_bookname_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_paid_description_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:maxLines="3"
+                                        android:textColor="?attr/textcolor_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                    <TextView
+                                        android:id="@+id/txt_paid_book_cat_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="12sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--Static Paid book item 2-->
+                            <LinearLayout
+                                android:id="@+id/lyPaidTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="18dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="?attr/cardbackround"
+                                    app:cardCornerRadius="@dimen/card_corner_radius_4"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/viewAllItemWidth"
+                                        android:layout_height="@dimen/viewAllItemHeight">
+
+                                        <ImageView
+                                            android:id="@+id/ivPaidBook2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY" />
+
+                                        <LinearLayout
+                                            android:id="@+id/lySellCountPaidBook2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="@dimen/margin5"
+                                            android:background="@drawable/round_bg_r5_white"
+                                            android:backgroundTint="@color/overlayDark50"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:paddingHorizontal="5dp"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/txtSellCountPaidBook2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:text="0"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_11" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin3"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:gravity="center"
+                                                android:text="@string/sells"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_9" />
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1.0">
+
+                                    <TextView
+                                        android:id="@+id/txt_paid_bookname_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_paid_description_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:maxLines="3"
+                                        android:textColor="?attr/textcolor_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                    <TextView
+                                        android:id="@+id/txt_paid_book_cat_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="12sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_paidbook"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:nestedScrollingEnabled="false"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Full AdView-->
+                    <LinearLayout
+                        android:id="@+id/lyFullAdView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <!-- Template View for fb nativeAd -->
+                            <com.facebook.ads.NativeAdLayout
+                                android:id="@+id/fbNativeFullTemplate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone" />
+
+                            <!-- Template View for Admob nativeAd -->
+                            <com.google.android.ads.nativetemplates.TemplateView
+                                android:id="@+id/nativeTemplate2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone"
+                                app:gnt_template_type="@layout/gnt_small_template_view" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--New Arrival-->
+                    <LinearLayout
+                        android:id="@+id/lyNewArrivalBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="18dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/New_Arrival_Book"
+                                    android:textColor="?attr/textPrimaryDarkColor"
+                                    android:textSize="@dimen/text_17" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:gravity="center_vertical|end"
+                                    android:visibility="invisible">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyNewArrivalViewAll"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|end"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:gravity="center"
+                                            android:text="@string/View_all"
+                                            android:textColor="?attr/viewtextcolor"
+                                            android:textSize="@dimen/text_12" />
+
+                                        <TextView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginTop="1dp"
+                                            android:background="@drawable/ic_plus2"
+                                            android:backgroundTint="?attr/toolbarbackTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="7dp"
+                                android:layout_marginTop="3dp"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_newarrival"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:nestedScrollingEnabled="false"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Continue read Book-->
+                    <LinearLayout
+                        android:id="@+id/lyContinueRead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="18dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/Continue_Reading"
+                                    android:textColor="?attr/textPrimaryDarkColor"
+                                    android:textSize="@dimen/text_17" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:gravity="center_vertical|end"
+                                    android:visibility="visible">
+
+                                    <LinearLayout
+                                        android:id="@+id/ly_continue_viewAll"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|end"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:gravity="center"
+                                            android:text="@string/View_all"
+                                            android:textColor="?attr/viewtextcolor"
+                                            android:textSize="@dimen/text_12" />
+
+                                        <TextView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginTop="1dp"
+                                            android:background="@drawable/ic_plus2"
+                                            android:backgroundTint="?attr/toolbarbackTint" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--Static Continue Read book item-->
+                            <LinearLayout
+                                android:id="@+id/lyContinueOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="18dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:cardBackgroundColor="?attr/cardbackround"
+                                    app:cardCornerRadius="@dimen/card_corner_radius_4"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/viewAllItemWidth"
+                                        android:layout_height="@dimen/viewAllItemHeight">
+
+                                        <ImageView
+                                            android:id="@+id/ivContinueRead"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY" />
+
+                                        <LinearLayout
+                                            android:id="@+id/lySellCountContinueRead"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="@dimen/margin5"
+                                            android:background="@drawable/round_bg_r5_white"
+                                            android:backgroundTint="@color/overlayDark50"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:paddingHorizontal="5dp"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/txtSellCountContinueRead"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:text="0"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_11" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin3"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:gravity="center"
+                                                android:text="@string/sells"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="@dimen/text_9" />
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1.0">
+
+                                    <TextView
+                                        android:id="@+id/txt_continue_bookname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_continue_desc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:maxLines="3"
+                                        android:textColor="?attr/textcolor_desc"
+                                        android:textSize="@dimen/text_12" />
+
+                                    <TextView
+                                        android:id="@+id/txt_continue_read_cat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:textColor="?attr/textcolor_s_desc"
+                                        android:textSize="12sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_continue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:nestedScrollingEnabled="false"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--You may Also Like-->
+                    <LinearLayout
+                        android:id="@+id/ly_you_may_also_like"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="18dp"
+                                android:weightSum="1.0">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/You_may_also_like"
+                                    android:textColor="?attr/textPrimaryDarkColor"
+                                    android:textSize="@dimen/text_17" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvAlsoLike"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:nestedScrollingEnabled="false"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

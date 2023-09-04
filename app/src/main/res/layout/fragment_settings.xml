@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/whitelightbackground"
+    android:orientation="vertical">
+
+    <!--Shimmer-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:shimmer_duration="@integer/shimmerDuration">
+
+        <!-- Adding 3 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shim_settings" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/rounded_corner_bottom"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--Top-->
+                        <RelativeLayout
+                            android:id="@+id/lyTop1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:visibility="visible">
+
+                            <!--Image & Name-->
+                            <LinearLayout
+                                android:id="@+id/ly_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <!--User Image-->
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:id="@+id/riv_user"
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_no_user"
+                                    android:visibility="visible"
+                                    app:riv_border_color="@color/colorAccent"
+                                    app:riv_border_width="3dp"
+                                    app:riv_oval="true" />
+
+                                <!--User Name-->
+                                <TextView
+                                    android:id="@+id/txt_user_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <!--Bottom-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/lyTop1"
+                            android:layout_marginTop="-10dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:orientation="vertical">
+
+                                <!--Balance-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="visible"
+                                        app:cardBackgroundColor="?attr/cardbackround"
+                                        app:cardCornerRadius="8dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:orientation="vertical">
+
+                                            <!--Balance Title-->
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dp"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="5dp"
+                                                    android:fontFamily="@font/roboto_medium"
+                                                    android:gravity="center_vertical"
+                                                    android:text="@string/Wallet"
+                                                    android:textColor="?attr/textcolor"
+                                                    android:textSize="@dimen/text_14_" />
+
+                                            </LinearLayout>
+
+                                            <!--Coins, Vouchers, Gems-->
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="5dp"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <!--Coins-->
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/txt_coins"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:fontFamily="@font/roboto_bold"
+                                                        android:gravity="center"
+                                                        android:text="0"
+                                                        android:textColor="@color/colorPrimaryDark"
+                                                        android:textSize="@dimen/text_18" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="@dimen/margin3"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center"
+                                                        android:text="@string/balance"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <!-- Recharge Wallet -->
+                                                <LinearLayout
+                                                    android:id="@+id/ly_package"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+                                                    <!--Image-->
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="23dp"
+                                                            android:layout_height="23dp"
+                                                            android:background="@drawable/ic_wallet_selected" />
+
+                                                    </LinearLayout>
+
+                                                    <!-- Get more coins -->
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="@dimen/margin8"
+                                                        android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/roboto_medium"
+                                                            android:gravity="center_vertical"
+                                                            android:text="@string/recharge"
+                                                            android:textColor="?attr/textcolor"
+                                                            android:textSize="@dimen/text_14_" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginTop="@dimen/margin3"
+                                                            android:fontFamily="@font/roboto_regular"
+                                                            android:gravity="center_vertical"
+                                                            android:text="@string/add_money_to_wallet"
+                                                            android:textColor="?attr/textcolor_desc"
+                                                            android:textSize="@dimen/text_14" />
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                                <!--Ad ViewPager with Dots indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="visible"
+                                        app:cardBackgroundColor="?attr/cardbackround"
+                                        app:cardCornerRadius="8dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/profileBannerHeight"
+                                            android:orientation="vertical">
+
+                                            <!-- Template View for native ad -->
+                                            <com.facebook.ads.NativeAdLayout
+                                                android:id="@+id/fbNativeTemplate"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:visibility="gone" />
+
+                                            <!--  This is your template view -->
+                                            <com.google.android.ads.nativetemplates.TemplateView
+                                                android:id="@+id/nativeTemplate"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:visibility="gone"
+                                                app:gnt_template_type="@layout/gnt_small_template_view" />
+
+                                            <!--Banner-->
+                                            <RelativeLayout
+                                                android:id="@+id/ryBanner"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:visibility="gone">
+
+                                                <!--Banner ViewPager-->
+                                                <com.kenilt.loopingviewpager.widget.LoopingViewPager
+                                                    android:id="@+id/viewPager"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:overScrollMode="never" />
+
+                                                <!--Dots indicator-->
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentBottom="true"
+                                                    android:layout_centerInParent="true"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:background="@android:color/transparent"
+                                                    android:orientation="horizontal"
+                                                    android:visibility="visible">
+
+                                                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                                                        android:id="@+id/dotsIndicator"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        app:dotsColor="@color/white"
+                                                        app:dotsSize="5dp"
+                                                        app:dotsSpacing="3dp"
+                                                        app:dotsWidthFactor="1"
+                                                        app:selectedDotColor="@color/colorPrimaryDark" />
+
+                                                </LinearLayout>
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                                <!--WalletHistory History, My Unlocked, Vouchers History-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="visible"
+                                        app:cardBackgroundColor="?attr/cardbackround"
+                                        app:cardCornerRadius="8dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:paddingHorizontal="@dimen/margin5"
+                                            android:paddingVertical="@dimen/margin12">
+
+                                            <!--WalletHistory History, My Unlocked, Vouchers History-->
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <!--WalletHistory History-->
+                                                <LinearLayout
+                                                    android:id="@+id/ly_my_transacation"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="25dp"
+                                                        android:layout_height="25dp"
+                                                        android:background="@drawable/ic_transaction"
+                                                        android:backgroundTint="?attr/icontintcolor" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:ellipsize="end"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center"
+                                                        android:paddingHorizontal="@dimen/margin5"
+                                                        android:singleLine="true"
+                                                        android:text="@string/my_transaction"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14" />
+
+                                                </LinearLayout>
+
+                                                <!--My Unlocked-->
+                                                <LinearLayout
+                                                    android:id="@+id/ly_my_library"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="25dp"
+                                                        android:layout_height="25dp"
+                                                        android:background="@drawable/ic_my_book"
+                                                        android:backgroundTint="?attr/icontintcolor" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:ellipsize="end"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center"
+                                                        android:maxLines="2"
+                                                        android:paddingHorizontal="@dimen/margin5"
+                                                        android:text="@string/my_library"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14" />
+
+                                                </LinearLayout>
+
+                                                <!-- Author Portfolio -->
+                                                <LinearLayout
+                                                    android:id="@+id/lyAuthorPortfolio"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="25dp"
+                                                        android:layout_height="25dp"
+                                                        android:background="@drawable/ic_portfolio"
+                                                        android:backgroundTint="?attr/icontintcolor" />
+
+                                                    <TextView
+                                                        android:id="@+id/txtAuthorPortfolio"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:ellipsize="end"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center"
+                                                        android:maxLines="2"
+                                                        android:paddingHorizontal="@dimen/margin5"
+                                                        android:text="@string/Become_Author"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                                <!--Other-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="15dp"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="visible"
+                                        app:cardBackgroundColor="?attr/cardbackround"
+                                        app:cardCornerRadius="8dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <!--Notifications-->
+                                            <LinearLayout
+                                                android:id="@+id/lyNotification"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_notification2"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.73">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/notifications"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.15"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:id="@+id/txtNotifyCount"
+                                                        android:layout_width="25dp"
+                                                        android:layout_height="25dp"
+                                                        android:background="@drawable/round_bg_circle"
+                                                        android:backgroundTint="@color/colorPrimary"
+                                                        android:fontFamily="@font/roboto_bold"
+                                                        android:gravity="center"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="@dimen/text_10"
+                                                        android:visibility="gone" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Push Notification-->
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_push_notification"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.71">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/enable_push_notification"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.17"
+                                                    android:gravity="center">
+
+                                                    <androidx.appcompat.widget.SwitchCompat
+                                                        android:id="@+id/switch_push"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentEnd="true"
+                                                        android:layout_centerVertical="true"
+                                                        android:theme="@style/SCBSwitch" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Day/Night theme-->
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp"
+                                                android:visibility="visible">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_day_night"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.71">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/enable_theme"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.17"
+                                                    android:gravity="center">
+
+                                                    <androidx.appcompat.widget.SwitchCompat
+                                                        android:id="@+id/switch_theme"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="center"
+                                                        android:theme="@style/SCBSwitch" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Change Language-->
+                                            <LinearLayout
+                                                android:id="@+id/ly_change_language"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_language"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/change_language"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.38"
+                                                    android:gravity="center">
+
+                                                    <Spinner
+                                                        android:id="@+id/spinner"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:backgroundTint="?attr/icontintcolor" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Clear Cache-->
+                                            <LinearLayout
+                                                android:id="@+id/ly_clear_cache"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_brush"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.76"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/clear_cache"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:fontFamily="@font/roboto_regular"
+                                                        android:text="@string/locally_cached_data"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="12sp" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_arrow_right"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Privacy Policy-->
+                                            <LinearLayout
+                                                android:id="@+id/ly_privacy_policy"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_notification"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.76">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/Privacy_policy"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_arrow_right"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--About Us-->
+                                            <LinearLayout
+                                                android:id="@+id/ly_about_us"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_about_us"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.76">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/about_us"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_arrow_right"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Terms & Conditions-->
+                                            <LinearLayout
+                                                android:id="@+id/lyTermsConditions"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_terms_and_conditions"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.76">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/terms_and_conditions"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_arrow_right"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Share with Friends-->
+                                            <LinearLayout
+                                                android:id="@+id/ly_share_app"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_share_2"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.76">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/share_app"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_arrow_right"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Rating-->
+                                            <LinearLayout
+                                                android:id="@+id/ly_rate_app"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="17dp"
+                                                        android:background="@drawable/ic_rate_app"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.76">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/rate_app"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_arrow_right"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <!--Login-->
+                                            <LinearLayout
+                                                android:id="@+id/ly_login"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="50dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_settings"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.76">
+
+                                                    <TextView
+                                                        android:id="@+id/txt_login"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:fontFamily="@font/roboto_medium"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/login"
+                                                        android:textColor="?attr/textcolor"
+                                                        android:textSize="@dimen/text_14_" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.12"
+                                                    android:gravity="center">
+
+                                                    <TextView
+                                                        android:layout_width="15dp"
+                                                        android:layout_height="15dp"
+                                                        android:background="@drawable/ic_arrow_right"
+                                                        android:backgroundTint="?attr/icontintcolor"
+                                                        android:gravity="center_vertical" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

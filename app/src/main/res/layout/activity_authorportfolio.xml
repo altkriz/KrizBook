@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:orientation="vertical"
+    tools:context=".Activity.AuthorPortfolio">
+
+    <!--Shimmer-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:shimmer_duration="@integer/shimmerDuration">
+
+        <!-- Adding 3 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shim_authordetails" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_with_back" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Toolbar Header-->
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:visibility="visible"
+                app:elevation="0dp">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/backgroundcolor"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:statusBarScrim="?attr/backgroundcolor">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_collapseMode="pin">
+
+                        <!-- Author's Image & Details -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_margin="@dimen/margin15"
+                            android:orientation="horizontal">
+
+                            <!-- Author's Details -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/round_bg_r17"
+                                android:backgroundTint="@color/primaryLight"
+                                android:minHeight="120dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/rlAuthorBGSize"
+                                    android:orientation="vertical"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <!-- Author's Name -->
+                                    <TextView
+                                        android:id="@+id/txtAuthorName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/spacing_small"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/text_primaryDark"
+                                        android:textSize="@dimen/text_18" />
+
+                                    <!-- Author's Emial -->
+                                    <TextView
+                                        android:id="@+id/txtAuthorEmailID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/spacing_small"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textColor="@color/text_darkGray"
+                                        android:textSize="@dimen/default_texts" />
+
+                                    <!-- Author's Address -->
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin5"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginEnd="@dimen/margin8"
+                                            app:srcCompat="@drawable/ic_location" />
+
+                                        <TextView
+                                            android:id="@+id/txtAuthorAddress"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/default_texts" />
+
+                                    </LinearLayout>
+
+                                    <!-- Total Views & Total Downloads -->
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin5"
+                                        android:orientation="horizontal">
+
+                                        <!-- Total Views -->
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="18dp"
+                                                android:layout_height="14dp"
+                                                android:background="@drawable/ic_views"
+                                                android:backgroundTint="?attr/grayTintColor" />
+
+                                            <TextView
+                                                android:id="@+id/txtTotalView"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin8"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:text="0"
+                                                android:textColor="@color/text_darkBlack"
+                                                android:textSize="@dimen/text_18" />
+
+                                        </LinearLayout>
+
+                                        <!-- Total Downloads -->
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="@dimen/margin15"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="18dp"
+                                                android:layout_height="14dp"
+                                                android:background="@drawable/ic_downloads"
+                                                android:backgroundTint="?attr/grayTintColor" />
+
+                                            <TextView
+                                                android:id="@+id/txtTotalDownload"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/margin8"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:text="0"
+                                                android:textColor="@color/text_darkBlack"
+                                                android:textSize="@dimen/text_18" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!-- Author's Image -->
+                            <RelativeLayout
+                                android:layout_width="@dimen/rlAuthorBGSize"
+                                android:layout_height="@dimen/rlAuthorBGSize">
+
+                                <View
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/round_bg_dotted_r0" />
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:id="@+id/ivAuthor"
+                                    android:layout_width="125dp"
+                                    android:layout_height="140dp"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_author"
+                                    app:riv_corner_radius="17dp" />
+
+                                <LinearLayout
+                                    android:id="@+id/lyAuthorEdit"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginEnd="5dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/ic_edit2"
+                                        android:gravity="center_vertical" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- AdMob AdView -->
+                    <RelativeLayout
+                        android:id="@+id/rlAdView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/backgroundcolor"
+                        android:visibility="gone" />
+
+                    <!-- Facebook AdView -->
+                    <LinearLayout
+                        android:id="@+id/lyFbAdView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundcolor"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+
+                    <!-- Books & Magazines -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin10"
+                        android:orientation="vertical">
+
+                        <!--TabLayout-->
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/tab_height_new"
+                            app:tabGravity="fill"
+                            app:tabIndicator="@drawable/tab_indicator_line"
+                            app:tabIndicatorColor="@color/colorPrimaryDark"
+                            app:tabIndicatorFullWidth="false"
+                            app:tabIndicatorHeight="2dp"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="?attr/textPrimaryColor"
+                            app:tabTextAppearance="@style/tab_text3"
+                            app:tabTextColor="?attr/textcolor_desc" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?attr/splitline" />
+
+                        <!-- Tab ViewPager -->
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/tabViewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

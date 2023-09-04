@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ई-पुस्तक</string>
+
+    <!--Welcome-->
+    <string name="next">अगला</string>
+    <string name="skip">छोड़ें</string>
+    <string name="start">समझ लिया</string>
+
+    <string name="wel_one">Best Book for you</string>
+    <string name="wel_two">Best Magazine for you</string>
+    <string name="wel_three">Become a Author</string>
+    <string name="wel_four">Payment Gateway &amp; Wallet</string>
+    <string name="wel_sub_one">From Classic to Contemopory you will find everything here</string>
+    <string name="wel_sub_two">The best Magazine Collections available here</string>
+    <string name="wel_sub_three">User become Author &amp; publish own Books / Magazine on Application</string>
+    <string name="wel_sub_four">To Buy a Paid book using Wallet &amp; Managed by Payment gateways</string>
+    <!--Welcome-->
+
+    <!--Network and Permission START-->
+    <string name="sorry_not_connected_to_internet">माफ़ करना! इंटरनेट से कनेक्ट नहीं है।</string>
+    <string name="internet_error">नेटवर्क कनेक्शन त्रुटि!</string>
+    <string name="permission_necessary">अनुमति आवश्यक</string>
+    <string name="storage_permission_is_necessary_to_wrote_event">ईवेंट को पढ़ने और लिखने के लिए संग्रहण अनुमति आवश्यक है।</string>
+    <string name="settings">समायोजन</string>
+    <string name="cancel_">रद्द करें</string>
+    <string name="permission">अनुमति</string>
+    <string name="permission_alert">अनुमति चेतावनी</string>
+    <string name="we_need_storage_permission_for_save_video">मीडिया फ़ाइल को बाह्य संग्रहण में सहेजने के लिए हमें संग्रहण अनुमति की आवश्यकता है।</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">प्रोफ़ाइल चित्र अपलोड करने के लिए हमें बाहरी संग्रहण और कैमरा अनुमति की आवश्यकता है।</string>
+    <string name="yesterday">बीता हुआ कल</string>
+    <string name="day_ago">दिन पहले</string>
+    <!--Network and Permission END-->
+
+    <!--Login-->
+    <string name="email">ईमेल पता</string>
+    <string name="email_hint">ईमेल</string>
+    <string name="password">कुंजिका</string>
+    <string name="remember">मुझे याद रखें</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="skip1">छोड़ें</string>
+    <string name="dont">खाता नहीं है?</string>
+    <string name="signup">साइन अप करें</string>
+    <string name="enter_email">ईमेल दर्ज करें।</string>
+    <string name="enter_password">पास वर्ड दर्ज करें।</string>
+    <string name="enter_phone_number">फोन नंबर दर्ज।</string>
+    <string name="enter_fullname">पूरा नाम दर्ज करें।</string>
+    <string name="guest_user">अतिथि उपयेागकर्ता</string>
+    <!--End Login-->
+
+    <!--Registration-->
+    <string name="full_name">पूरा नाम</string>
+    <string name="phone">फ़ोन</string>
+    <string name="signup_cap">साइन अप करें</string>
+    <string name="already_account">पहले से ही एक खाता है?</string>
+    <!--End Registration-->
+
+    <!--OTP Login START-->
+    <string name="otp_verification">ओटीपी सत्यापन</string>
+    <string name="enter_your_mobile_no">अपना मोबाइल संख्या दर्ज करे।</string>
+    <string name="enter_otp">प्राप्त ओटीपी दर्ज करें।</string>
+    <string name="enter_coutry_code">अपना देश कोड दर्ज करें।</string>
+    <string name="you_will_receive_a_4_digit_code_to_verify_next">अगली बार सत्यापित करने के लिए आपको एक 6 अंकों का कोड प्राप्त होगा।</string>
+    <string name="send_otp">ओटीपी भेजें</string>
+    <string name="enter_otp_code_to_sent_to_mobile_no">मोबाइल नंबर पर \n भेजने के लिए ओटीपी कोड दर्ज करें।</string>
+    <string name="verify_and_proceed">सत्यापित करें और आगे बढ़ें</string>
+    <string name="resend_otp">ओटीपी पुनः भेजें</string>
+    <!--OTP Login END-->
+
+    <!--About Us-->
+    <string name="Company">कंपनी</string>
+    <string name="website">वेबसाइट</string>
+    <string name="Contact">संपर्क करें</string>
+    <!--End About Us-->
+
+    <!--Home-->
+    <string name="Category">श्रेणी</string>
+    <string name="Categories">श्रेणियाँ</string>
+    <string name="View_all">अधिक</string>
+    <string name="app_bestBook">ईबुक बेस्ट</string>
+    <string name="New_Arrival_Book">नई आगमन पुस्तक</string>
+    <string name="You_may_also_like">आपको यह भी पसंद आ सकता हैं</string>
+    <string name="Authors">लेखकों</string>
+    <string name="Free_Book">नि:शुल्क विज्ञप्ति</string>
+    <string name="Paid_Book">भुगतान की गई विज्ञप्ति</string>
+    <string name="Continue_Reading">जारी रखें पढ़ रहे हैं</string>
+    <string name="Popular_Stories">लोकप्रिय कहानियां</string>
+    <string name="Magazine_category">पत्रिका श्रेणियाँ</string>
+    <string name="Top_dowloaded">शीर्ष डाउनलोड</string>
+    <string name="Most_viewed">सबसे ज्यादा देखा गया</string>
+    <!--End Home-->
+
+    <!--Search-->
+    <string name="Search">खोज</string>
+    <string name="See_All">सभी देखें</string>
+    <string name="Payment">भुगतान</string>
+    <string name="Please_select_any_payment_method">कृपया कोई भी भुगतान विधि चुनें</string>
+    <string name="CONTINUE">जारी रखें</string>
+    <string name="Books">पुस्तकें</string>
+    <string name="book">पुस्तक :</string>
+    <string name="book_author">पुस्तक लेखक:</string>
+    <string name="information_of_book">पुस्तक की जानकारी</string>
+    <string name="magazine">पत्रिका :</string>
+    <string name="magazine_author">पत्रिका लेखक:</string>
+    <string name="information_of_magazine">पत्रिका की जानकारी</string>
+    <string name="Reviews">समीक्षा</string>
+    <string name="Downloads">डाउनलोड</string>
+    <string name="Book_Details">पुस्तक विवरण</string>
+    <string name="Earn_Rewards">पुरस्कार अर्जित करें</string>
+    <string name="Vouchers_History">वाउचर इतिहास</string>
+    <string name="What_is_this_book_about">यह क़िताब किसके बारे में है ?</string>
+    <string name="book_introduction">पुस्तक परिचय</string>
+    <string name="thanks_for_feedback">आपके बहुमूल्य फीडबैक के लिए शुक्रिया।</string>
+    <string name="Encourage_authors">लेखकों को प्रोत्साहित करें</string>
+    <string name="copyright_information">कॉपीराइट संबंधी जानकारी</string>
+    <string name="sir_we_were_meant_to_be">महोदय, हम बनने के लिए बने थे</string>
+    <string name="magazine_introduction">पत्रिका परिचय</string>
+    <string name="magazine_details">पत्रिका विवरण</string>
+    <string name="add_a_comment">एक टिप्पणी जोड़े</string>
+    <string name="Author_caps">लेखक</string>
+    <string name="Publish_at">पर प्रकाशित करें</string>
+    <string name="Related_Books">संबंधित पुस्तकें</string>
+    <string name="populars_with_same_genres">समान शैलियों वाले लोकप्रिय</string>
+    <string name="Comments">टिप्पणियाँ</string>
+    <string name="Write_your_comments">अपनी टिप्पणियाँ लिखें</string>
+    <string name="remove_from_library">लाइब्रेरी से निकालें</string>
+    <string name="add_to_library">पुस्तकालय में जोड़ें</string>
+    <string name="free">मुफ़्त</string>
+    <string name="my_library">मेरा पुस्तकालय</string>
+    <string name="paid">भुगतान किया गया</string>
+    <string name="brought">लाया</string>
+    <string name="downloaded">डाउनलोड</string>
+    <string name="by">द्वारा</string>
+    <string name="chapters">अध्याय</string>
+    <string name="chapter">अध्याय</string>
+    <string name="buy_now">अभी खरीदें</string>
+    <string name="read_now">अभी पढ़ो</string>
+    <string name="pack_up">छोड़ना</string>
+    <string name="show_all">सब दिखाओ</string>
+    <string name="please_enter_comment">कृपया, टिप्पणी दर्ज करें।</string>
+    <string name="already_download">पहले से डाउनलोड</string>
+    <string name="magazine_download_success">पत्रिका डाउनलोड सफलता</string>
+    <string name="book_download_success">पुस्तक डाउनलोड सफलता</string>
+    <string name="please_try_again">कृपया पुन: प्रयास करें।</string>
+    <string name="let_me_recommend_you_this_application_to_read_full_book">पूरी सामग्री पढ़ने के लिए मैं आपको इस एप्लिकेशन की अनुशंसा करता हूं।</string>
+    <string name="My_Purchase_Books">मेरी खरीद पुस्तकें</string>
+    <string name="ALLOW_PERMISSION">अनुमति दें</string>
+    <!--End Search-->
+
+    <string name="title_home">घर</string>
+    <string name="title_genres">शैलियां</string>
+    <string name="title_magazine">पत्रिका</string>
+    <string name="title_featured">विशेष रुप से प्रदर्शित</string>
+    <string name="title_search">खोज</string>
+    <string name="title_bookmark">बुकमार्क</string>
+    <string name="title_library">पुस्तकालय</string>
+    <string name="title_Premium">अधिमूल्य</string>
+    <string name="title_settings">समायोजन</string>
+    <string name="title_profile">प्रोफ़ाइल</string>
+    <string name="isRTL">असत्य</string>
+    <string name="internet_connection">इंटरनेट कनेक्शन उपलब्ध नहीं है</string>
+    <string name="permission_desc">अब हमें एप्लिकेशन का पूरी तरह से उपयोग जारी रखने के लिए आपकी अनुमति की आवश्यकता है</string>
+    <string name="permission_title">सब ठीक है</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="save">बचा ले</string>
+    <string name="my_Purchase_book">मेरे लेन-देन</string>
+    <string name="my_downloaded_book">मेरा पुस्तकालय</string>
+    <string name="please_select_subscription_package">कृपया सदस्यता पैकेज चुनें।</string>
+    <string name="enable_push_notification">पुश सूचना सक्षम करें</string>
+    <string name="enable_theme">दिन/रात मोड सक्षम करें</string>
+    <string name="clear_cache">कैश को साफ़ करें</string>
+    <string name="locally_cached_data">स्थानीय रूप से कैश्ड डेटा</string>
+    <string name="Privacy_policy">गोपनीयता नीति</string>
+    <string name="balance">संतुलन</string>
+    <string name="are_you_sure_you_want_to_logout">क्या आप लॉग आउट करना चाहते हैं ?</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="rate_app">एप्प का मूल्यांकन</string>
+    <string name="share_app">दोस्तों के साथ बांटें</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="terms_and_conditions">नियम एवं शर्तें</string>
+    <string name="downloading">डाउनलोड हो रहा है...</string>
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें...</string>
+    <string name="change_language">भाषा</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="submit">प्रस्तुत करना</string>
+    <string name="add_rate">दर जोड़ें</string>
+    <string name="please_give_feedback_to_author">कृपया लेखक को प्रतिक्रिया दें।</string>
+    <string name="Read">पढ़ना</string>
+    <string name="my_package">अंशदान</string>
+    <string name="title_reward">बटुआ</string>
+    <string name="latest_update">नवीनतम अद्यतन :</string>
+    <string name="contents">अंतर्वस्तु</string>
+    <string name="do_you_want_to_exit">क्या आपको बाहर निकलना है ?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="expires_on">पर समय सीमा समाप्त</string>
+    <string name="delete">हटाएँ</string>
+    <string name="okay">ठीक!</string>
+    <string name="choose_one">एक का चयन</string>
+    <string name="let_me_recommend_you_this_application">मैं आपको इस एप्लिकेशन की अनुशंसा करता हूं:</string>
+    <string name="share_with">के साथ शेयर करें</string>
+    <string name="language_already_selected">भाषा पहले ही चुनी जा चुकी है!</string>
+    <string name="are_you_sure_want_to_purchase">क्या आप निश्चित रूप से खरीदना चाहते हैं?</string>
+    <string name="purchase_now">अभी खरीदो</string>
+    <string name="may_be_later">शायद बाद में!</string>
+    <string name="your_balance_is_low_please_top_up_your_wallet">आपका बैलेंस कम है। कृपया अपना वॉलेट टॉप अप करें</string>
+    <string name="use_my_referral_code">मेरे रेफरल कोड का प्रयोग करें</string>
+
+    <!--Payment Activity START-->
+    <string name="payment_details">भुगतान विवरण</string>
+    <string name="please_select_any_payment_method">कृपया, किसी भी भुगतान विधि का चयन करें</string>
+    <string name="payment_methods">भुगतान की विधि</string>
+    <string name="choose_a_payment_methods_to_pay">भुगतान करने का माध्यम चुनें</string>
+    <string name="pay_with">के साथ भुगतान करें</string>
+    <string name="Continue">जारी रखें</string>
+    <string name="paypal">Paypal</string>
+    <string name="razorpay">Razorpay</string>
+    <string name="paytm">Paytm</string>
+    <string name="upi">UPI</string>
+    <string name="flutterwave">Flutterwave</string>
+    <string name="payumoney">PayUMoney</string>
+    <string name="pay">भुगतान करना</string>
+    <string name="sorry_we_could_not_verify_your_payment_try_later">क्षमा करें, हम आपका भुगतान सत्यापित नहीं कर सके, कृपया पुनः प्रयास करें!!!</string>
+    <string name="payable_amount_is">देय राशि है:</string>
+    <string name="verification">सत्यापन</string>
+    <string name="verification_success">सत्यापन सफल।</string>
+    <string name="verification_note">*कृपया, जारी रखने के लिए अपने निम्नलिखित विवरण सत्यापित करें।</string>
+    <!--Payment Activity END-->
+
+    <!--Prime Membership & Vouchers START-->
+    <string name="Prime_Membership">प्रधान सदस्यता</string>
+    <string name="Prime_Benefits">प्रमुख लाभ</string>
+    <string name="View_All">सभी देखें</string>
+    <string name="Exclusive_for_Newcomer">नवागंतुक के लिए विशेष</string>
+    <string name="Prime_Lists_for_Gems">रत्नों के लिए प्रमुख सूचियाँ</string>
+    <string name="View_all_books">सभी पुस्तकें देखें >></string>
+    <string name="About_Prime">प्राइम के बारे में</string>
+    <string name="vouchers_history">वाउचर इतिहास</string>
+    <string name="vouchers">वाउचर</string>
+    <string name="gems">रत्न</string>
+    <string name="tips">युक्तियाँ :</string>
+    <string name="watch_video_ad_for_vouchers">वाउचर के लिए वीडियो विज्ञापन देखें</string>
+    <string name="watch">घड़ी</string>
+    <string name="continuous_check_in">निरंतर चेक-इन</string>
+    <string name="voucher_gems_tips">1. सिक्कों के साथ रत्नों का मूल्य समान होता है। सभी वाउचर और रत्न ओवरटाइम समाप्त हो जाएंगे। कृपया समय सीमा से पहले उपयोग करें।\n2. सिक्कों के साथ रत्नों का मूल्य समान होता है। सभी वाउचर और रत्न ओवरटाइम समाप्त हो जाएंगे। कृपया समय सीमा से पहले उपयोग करें।\n3. सिक्कों के साथ रत्नों का मूल्य समान होता है। सभी वाउचर और रत्न ओवरटाइम समाप्त हो जाएंगे। कृपया समय सीमा से पहले उपयोग करें।</string>
+    <string name="coins">सिक्के</string>
+    <string name="prime">प्रधान</string>
+    <string name="daily_claim_vouchers">दैनिक दावा वाउचर</string>
+    <string name="recharge">फिर से दाम लगाना</string>
+    <string name="get_more_coins">अधिक सिक्के प्राप्त करें</string>
+    <string name="earn_rewards">पुरस्कार अर्जित करें</string>
+    <string name="check_in">चेक इन</string>
+    <string name="my_transaction">मेरा लेन-देन</string>
+    <string name="my_books">मेरी पुस्तकें</string>
+    <string name="books">पुस्तकें</string>
+    <string name="magazines">पत्रिका</string>
+    <string name="wallet_blc_in_coins">वॉलेट बैलेंस</string>
+    <string name="Wallet">बटुआ</string>
+    <string name="wallet_history">वॉलेट इतिहास</string>
+    <string name="transaction_history">लेनदेन इतिहास</string>
+    <string name="add_money_to_wallet">वॉलेट में पैसे जोड़ें</string>
+    <string name="you_are_login_with_social_media">आप सोशल मीडिया से लॉग इन कर रहे हैं।</string>
+    <string name="comments_in_total">कुल टिप्पणियाँ</string>
+    <string name="this_file_is_not_available">यह फ़ाइल उपलब्ध नहीं है।</string>
+    <string name="wallet_balance">वॉलेट बैलेंस</string>
+    <string name="payment_gateways">भुगतान द्वार</string>
+    <string name="recharge_your_wallet">अपना वॉलेट रिचार्ज करें</string>
+    <string name="add_to_wallet">वॉलेट में जोड़ें</string>
+    <string name="enter_amount">कस्टम राशि दर्ज करें...</string>
+    <string name="your_current_balance_is">आपका वर्तमान शेष है:</string>
+    <string name="use_wallet_balance">वॉलेट बैलेंस का उपयोग करें</string>
+    <string name="pay_now">अब भुगतान करें</string>
+    <string name="please_enter_valid_amount">कृपया मान्य राशि दर्ज करें।</string>
+    <string name="new_password_have_been_send_to_register_email_address">नया पासवर्ड पंजीकृत ईमेल पते पर भेज दिया गया है।</string>
+    <string name="send">भेजना</string>
+    <string name="update">अद्यतन</string>
+    <string name="enter_phone_number_profile">फोन नंबर दर्ज करें...</string>
+    <string name="enter_email_profile">ईमेल दर्ज करें...</string>
+    <string name="enter_address_profile">पता दर्ज करें...</string>
+    <string name="enter_your_name_profile">अपना नाम दर्ज करें...</string>
+    <string name="update_profile">प्रोफ़ाइल को नवीनतम बनाओ</string>
+    <string name="enter_password_profile">पास वर्ड दर्ज करें...</string>
+    <string name="take_photo">फोटो लो।</string>
+    <string name="choose_from_gallery">गैलरी से चयन करो।</string>
+    <string name="add_photo">तस्वीर जोड़ो!</string>
+    <string name="forgot_password">पासवर्ड भूल गए ?</string>
+    <string name="no_books_available">कोई पुस्तक उपलब्ध नहीं है।</string>
+    <string name="register">रजिस्टर करें</string>
+    <string name="or_login_using_social_media">या सोशल मीडिया का उपयोग करके लॉगिन करें</string>
+    <string name="notifications">सूचनाएं</string>
+    <string name="marked_as_read">पढ़ा हुआ के रूप में चिह्नित किया गया।</string>
+    <string name="something_went_wrong">कुछ गलत हो गया!!!</string>
+    <!--Prime Membership & Vouchers END-->
+
+    <!--- AuthorRegsiter START -->
+    <string name="author_name">लेखक का नाम</string>
+    <string name="author_address">पता</string>
+    <string name="author_email">ईमेल</string>
+    <string name="author_password">पासवर्ड</string>
+    <string name="author_bankdetail">बैंक विवरण</string>
+    <string name="author_bankname">बैंक का नाम</string>
+    <string name="author_accountnum">खाता संख्या</string>
+    <string name="author_ifsc">आईएफएससी कोड</string>
+    <string name="author_bankholder">बैंक धारक का नाम</string>
+    <string name="author_register">लेखक रजिस्टर</string>
+    <string name="enter_author_name">अपना नाम दर्ज करें।</string>
+    <string name="enter_address">अपना पता दर्ज करें।</string>
+    <string name="enter_author_email">अपना ईमेल दर्ज करें।</string>
+    <string name="enter_author_password">अपना पासवर्ड डालें।</string>
+    <string name="enter_author_bank_name">अपने बैंक का नाम दर्ज करें।</string>
+    <string name="enter_author_account_number">अपना बैंक खाता नंबर दर्ज करें।</string>
+    <string name="enter_author_ifsc_code">IFSC कोड दर्ज करें।</string>
+    <string name="enter_author_bank_holder_name">बैंक धारक का नाम दर्ज करें।</string>
+    <!--- AuthorRegsiter END -->
+
+    <!-- Book Upload START -->
+    <string name="we_need_storage_and_upload_document_file">दस्तावेज़ फ़ाइलों को अपलोड करने के लिए हमें संग्रहण अनुमति की आवश्यकता है।</string>
+    <string name="upload_book">पुस्तक अपलोड करें</string>
+    <string name="book_upload">पुस्तक अपलोड</string>
+    <string name="book_title">पुस्तक का शीर्षक</string>
+    <string name="book_category">पुस्तक श्रेणी</string>
+    <string name="book_cost">पुस्तक लागत</string>
+    <string name="book_description_title">पुस्तक विवरण</string>
+    <string name="book_description">अपनी किताब के बारे में कुछ दिलचस्प लिखें...</string>
+    <string name="upload_samplebook">नमूना पुस्तक अपलोड करें</string>
+    <string name="upload_fullbook">पूरी किताब अपलोड करें</string>
+    <string name="doc_format">प्रारूप पीडीएफ, एपब फ़ाइल</string>
+    <string name="cover_format">प्रारूप पीएनजी, जेपीजी</string>
+    <string name="book_coverposter">कवर पोस्टर</string>
+    <string name="book_coverposter_name">छवि का नाम</string>
+    <string name="book_name">पुस्तक का नाम</string>
+    <string name="fill_up_all_fields">कृपया, सभी फ़ील्ड भरें.</string>
+    <string name="enter_book_title">पुस्तक का शीर्षक दर्ज करें।</string>
+    <string name="enter_book_description">पुस्तक विवरण दर्ज करें।</string>
+    <string name="enter_book_cost">पुस्तक लागत दर्ज करें।</string>
+    <string name="select_book_category">कृपया, पुस्तक श्रेणी का चयन करें।</string>
+    <string name="select_sample_book">कृपया, नमूना पुस्तक का चयन करें।</string>
+    <string name="select_full_book">कृपया, पूर्ण पुस्तक का चयन करें।</string>
+    <string name="select_book_cover">कृपया, बुक कवर इमेज चुनें।</string>
+    <!-- Book Upload END -->
+
+    <!-- Magazine Upload START -->
+    <string name="upload_magazine">पत्रिका अपलोड करें</string>
+    <string name="magazine_upload">पत्रिका अपलोड</string>
+    <string name="magazine_title">पत्रिका शीर्षक</string>
+    <string name="magazine_category">पत्रिका श्रेणी</string>
+    <string name="magazine_cost">पत्रिका लागत</string>
+    <string name="magazine_description_title">पत्रिका विवरण</string>
+    <string name="magazine_description">अपनी पत्रिका के बारे में कुछ रोचक लिखें...</string>
+    <string name="upload_samplemagazine">नमूना पत्रिका अपलोड करें</string>
+    <string name="upload_fullmagazine">पूरी पत्रिका अपलोड करें</string>
+    <string name="magazine_coverposter">कवर पोस्टर</string>
+    <string name="magazine_coverposter_name">छवि का नाम</string>
+    <string name="magazine_name">पत्रिका का नाम</string>
+    <string name="enter_magazine_title">पत्रिका शीर्षक दर्ज करें</string>
+    <string name="enter_magazine_description">पत्रिका विवरण दर्ज करें।</string>
+    <string name="enter_magazine_cost">पत्रिका लागत दर्ज करें।</string>
+    <string name="select_magazine_category">कृपया, पत्रिका श्रेणी का चयन करें।</string>
+    <string name="select_sample_magazine">कृपया, नमूना पत्रिका चुनें।</string>
+    <string name="select_full_magazine">कृपया, पूर्ण पत्रिका का चयन करें।</string>
+    <string name="select_magazine_cover">कृपया, पत्रिका कवर छवि का चयन करें।</string>
+    <!-- Magazine Upload END -->
+
+    <string name="upload_your_documents">अपने दस्तावेज़ अपलोड करें...</string>
+    <string name="add_documents">दस्तावेज़ जोड़ें!</string>
+    <string name="upload_new_doc_desc">अपनी नई पुस्तक या पत्रिका अपलोड करें।</string>
+    <string name="internal_storage">आंतरिक स्टोरेज</string>
+    <string name="views">विचारों</string>
+    <string name="no_magazines_available">कोई पत्रिका उपलब्ध नहीं है।</string>
+    <string name="add_book_or_magazine">पुस्तक या पत्रिका जोड़ें</string>
+    <string name="edit_author_s_profile">लेखक प्रोफ़ाइल संपादित करें</string>
+    <string name="about">के बारे में</string>
+    <string name="add_new_comment">नई टिप्पणी जोड़ें</string>
+    <string name="your_rate">आपकी दर</string>
+    <string name="story_developement">कहानी विकास</string>
+    <string name="add_a_comment_here">यहां एक टिप्पणी जोड़ें</string>
+    <string name="add_books">पुस्तकें जोड़ें</string>
+    <string name="add_magazines">पत्रिकाएं जोड़ें</string>
+    <string name="author_portfolio">लेखक पोर्टफोलियो</string>
+    <string name="author_bio">लेखक बायो</string>
+    <string name="enter_author_bio">लेखक जैव दर्ज करें।</string>
+    <string name="update_document_visibility">दस्तावेज़ दृश्यता अपडेट करें!</string>
+    <string name="update_doc_visibility_desc_inactive">निष्क्रिय चुनने के बाद, आपकी पुस्तक/पत्रिका दूसरों को दिखाई नहीं देगी।</string>
+    <string name="update_doc_visibility_desc_active">सक्रिय चुनने के बाद, आपकी पुस्तक/पत्रिका अन्य लोगों को दिखाई देगी।</string>
+    <string name="active">सक्रिय</string>
+    <string name="inactive">निष्क्रिय</string>
+    <string name="sell">बिक्री</string>
+    <string name="sells">बिक्री</string>
+    <string name="edit">संपादन करना</string>
+    <string name="add">जोड़ें</string>
+    <string name="Become_Author">लेखक बनें</string>
+    <string name="update_book">अद्यतन पुस्तक</string>
+    <string name="update_magazine">अद्यतन पत्रिका</string>
+    <string name="upgrade_plan_to">योजना को अपग्रेड करें</string>
+    <string name="highly_experience">अत्यधिक अनुभव</string>
+    <string name="sample_book">नमूना पुस्तक</string>
+    <string name="sample_magazine">नमूना पत्रिका</string>
+    <string name="enter_valid_email">Enter valid email.</string>
+    <string name="we_need_storage_permission_to_read_document_file">दस्तावेज़ फ़ाइलों को पढ़ने के लिए हमें संग्रहण अनुमति की आवश्यकता है।</string>
+
+</resources>
